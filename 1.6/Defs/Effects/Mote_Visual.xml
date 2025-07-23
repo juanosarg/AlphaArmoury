@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>AArmoury_Mote_BloodPuff</defName>
+		<graphicData>
+			<texPath>Things/Mote/BloodSplash</texPath>
+			<color>(131, 34, 34, 180)</color>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.25</solidTime>
+			<fadeOutTime>0.1</fadeOutTime>
+		</mote>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<WeaponTraitDef>
+		<defName>AArmoury_Oversized</defName>
+		<label>oversized</label>
+		<description>This weapon is oversized, making it slower to aim, heavier, and more dangerous in close combat.</description>
+		<commonality>1</commonality>
+		<canGenerateAlone>false</canGenerateAlone>
+		<weaponCategory>Ranged</weaponCategory>
+		<exclusionTags>
+			<li>Weight</li>
+		</exclusionTags>
+		<statOffsets>
+			<RangedWeapon_WarmupMultiplier>0.1</RangedWeapon_WarmupMultiplier>
+		</statOffsets>
+		<statFactors>
+			<Mass>2</Mass>
+			<MeleeWeapon_DamageMultiplier>1.5</MeleeWeapon_DamageMultiplier>
+		</statFactors>
+		<traitAdjectives>
+			<li>huge</li>
+			<li>oversized</li>
+			<li>gigantic</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<sizeMultiplier>1.4</sizeMultiplier>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_Undersized</defName>
+		<label>undersized</label>
+		<description>This weapon is undersized, making it faster to aim, lighter, and less dangerous in close combat.</description>
+		<commonality>1</commonality>
+		<canGenerateAlone>false</canGenerateAlone>
+		<weaponCategory>Ranged</weaponCategory>
+		<exclusionTags>
+			<li>Weight</li>
+		</exclusionTags>
+		<statOffsets>
+			<RangedWeapon_WarmupMultiplier>-0.1</RangedWeapon_WarmupMultiplier>
+		</statOffsets>
+		<statFactors>
+			<Mass>0.5</Mass>
+			<MeleeWeapon_DamageMultiplier>0.5</MeleeWeapon_DamageMultiplier>
+		</statFactors>
+		<traitAdjectives>
+			<li>small</li>
+			<li>undersized</li>
+			<li>tiny</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<sizeMultiplier>0.75</sizeMultiplier>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>

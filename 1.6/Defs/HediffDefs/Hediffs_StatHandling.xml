@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	 <HediffDef>
+        <defName>AArmoury_MeleeCooldown</defName>
+        <label>melee cooldown</label>
+        <description>The weapon held by this person has a much faster melee attack than usual.</description>    
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

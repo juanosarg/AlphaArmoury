@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DamageDef>
+		<defName>AArmoury_RotstinkDust</defName>
+		<label>rotstink dust</label>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(0.64, 0.35, 0.15, 0.05)</explosionColorEdge>
+		<harmsHealth>false</harmsHealth>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+	</DamageDef>
+	<DamageDef>
+		<defName>AArmoury_AcidSpit</defName>
+		<label>acid</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>VEF_AcidBurn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_ThermalBlasts</defName>
+		<label>thermal damage</label>
+		<additionalHediffs>
+			<li>
+				<hediff>Heatstroke</hediff>
+				<severityPerDamageDealt>0.05</severityPerDamageDealt>
+				<victimSeverityScaling>Flammability</victimSeverityScaling>
+				<inverseStatScaling>false</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_NeedleProjectiles</defName>
+		<label>paralyzing needle</label>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_Paralysis</hediff>
+				<severityPerDamageDealt>0.005</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<DamageDef>
+		<defName>AArmoury_Flame_Lesser</defName>
+		<workerClass>DamageWorker_Flame</workerClass>
+		<label>flame</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>1</defaultDamage>
+		<defaultArmorPenetration>0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastFlame</explosionCellFleck>
+		<explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+		<explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+		<soundExplosion>Explosion_Flame</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
+	</DamageDef>
+</Defs>

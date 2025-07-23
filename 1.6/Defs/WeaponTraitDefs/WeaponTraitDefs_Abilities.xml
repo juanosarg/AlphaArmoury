@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<WeaponTraitDef>
+		<defName>AArmoury_SkipField</defName>
+		<label>skip field</label>
+		<description>This weapon generates a localized skip fields that allows its user to self-skip.</description>
+		<commonality>0.5</commonality>
+		
+		<weaponCategory>Ranged</weaponCategory>
+		
+		
+		<traitAdjectives>
+			<li>skip</li>
+			
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>AArmoury_SkipField</abilityToAdd>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_InvisibilityField</defName>
+		<label>invisibility field</label>
+		<description>This weapon generates a field of psychic invisibility that will conceal its user for a time.</description>
+		<commonality>0.5</commonality>
+		
+		<weaponCategory>Ranged</weaponCategory>
+		
+		
+		<traitAdjectives>
+			<li>skip</li>
+			
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>AArmoury_InvisibilityField</abilityToAdd>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	
+</Defs>

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_FlareLauncher</defName>
+		<label>flare launcher</label>
+		<description>This weapon has an attached flare launcher. Once fired, it must be reloaded using bioferrite.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>flaring</li>
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>80</MarketValue>
+		</statOffsets>
+		<abilityProps>
+			<abilityDef>AArmoury_LaunchFlare</abilityDef>
+			<maxCharges>3</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>flare</chargeNoun>
+			<ammoDef>Bioferrite</ammoDef>
+			<ammoCountPerCharge>5</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_DeadlifeLauncher</defName>
+		<label>deadlife launcher</label>
+		<description>This weapon has an attached deadlife launcher. Once fired, it must be reloaded using shards.</description>
+		<commonality>0.1</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>deadlife</li>
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>1000</MarketValue>
+		</statOffsets>
+		<abilityProps>
+			<abilityDef>AArmoury_DeadlifeLauncher</abilityDef>
+			<maxCharges>1</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>deadlife</chargeNoun>
+			<ammoDef>Shard</ammoDef>
+			<ammoCountPerCharge>1</ammoCountPerCharge>
+			<baseReloadTicks>400</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_ToxLauncher</defName>
+		<label>tox launcher</label>
+		<description>This weapon has an attached tox launcher. Once fired, it must be reloaded using steel.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>tox</li>
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>100</MarketValue>
+		</statOffsets>
+		<abilityProps>
+			<abilityDef>AArmoury_ToxLauncher</abilityDef>
+			<maxCharges>3</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>tox canisters</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>15</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_RotstinkLauncher</defName>
+		<label>rotstink launcher</label>
+		<description>This weapon has an attached rotstink launcher. Once fired, it must be reloaded using steel.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>rot</li>
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_RotstinkLauncher</abilityDef>
+			<maxCharges>6</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>rotstink canisters</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>2</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_MagmaLauncher</defName>
+		<label>magma launcher</label>
+		<description>This weapon has an attached magma grenade launcher. Once fired, it must be reloaded using a lot of steel. Magma grenades won't work on water.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>magmatic</li>
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_MagmaLauncher</abilityDef>
+			<maxCharges>2</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>magma grenades</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>50</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_ArchoteggLauncher</defName>
+		<label>archotegg launcher</label>
+		<description>This weapon ███cluck ███▌▌egg 0101▌▌feather-collapse ▌▌[TIME] inexhaustible nesting [REDACTED] GRAVITY ▌▌do not ███shell fractals███do not███[ERROR].\n\nThe ███cosmic YOLK ███fracture █cluck▌▌FEATHER cascade ███INITIATE █▌▌▌GOLDEN BEAK██▌▌NULL ██DESTINY ████ERROR.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>███▌▌egg 0101</li>
+			<li>███DISALLOWED ▌▌▌▌[YOLK-REALM]</li>
+			<li>[REDACTED] ██eggvector</li>
+			<li>[WING FRACTAL ████FORM</li>
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_ArchoteggLauncher</abilityDef>
+			<maxCharges>3</maxCharges>
+			<soundReload>Pawn_Chicken_Call</soundReload>
+			<chargeNoun>archotegg</chargeNoun>
+			<ammoDef>ComponentIndustrial</ammoDef>
+			<ammoCountPerCharge>1</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>AArmoury_AcidLauncher</defName>
+		<label>acid launcher</label>
+		<description>This weapon has an attached acid grenade launcher. Once fired, it must be reloaded using components.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>corrossive</li>
+			<li>acidic</li>
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_AcidLauncher</abilityDef>
+			<maxCharges>2</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>acid grenades</chargeNoun>
+			<ammoDef>ComponentIndustrial</ammoDef>
+			<ammoCountPerCharge>2</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_ShrapnelLauncher</defName>
+		<label>shrapnel launcher</label>
+		<description>This weapon has an attached shrapnel grenade launcher. Once fired, it must be reloaded using steel.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>fragmentary</li>
+			<li>shrapnel</li>
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_ShrapnelLauncher</abilityDef>
+			<maxCharges>3</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>shrapnel grenades</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>20</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_SwarmLauncher</defName>
+		<label>swarm launcher</label>
+		<description>This weapon has an attached rocket swarm launcher. Once fired, it must be reloaded using advanced components.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>swarming</li>
+			
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_SwarmLauncher</abilityDef>
+			<maxCharges>2</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>rocket swarm</chargeNoun>
+			<ammoDef>ComponentSpacer</ammoDef>
+			<ammoCountPerCharge>2</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_FirefoamLauncher</defName>
+		<label>firefoam launcher</label>
+		<description>This weapon has an attached firefoam launcher. Once fired, it must be reloaded using chemfuel.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>extinguishing</li>
+			
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_FirefoamLauncher</abilityDef>
+			<maxCharges>3</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>firefoam</chargeNoun>
+			<ammoDef>Chemfuel</ammoDef>
+			<ammoCountPerCharge>15</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_Chainsaw</defName>
+		<label>attached chainsaw</label>
+		<description>This weapon has an attached chainsaw, just like the Emperor intended.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		 <equippedHediffs>
+            <li>AArmoury_MeleeCooldown</li>
+        </equippedHediffs>
+		<statFactors>		
+			<MeleeWeapon_DamageMultiplier>2</MeleeWeapon_DamageMultiplier>
+		</statFactors>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<meleeSoundOverride>AArmoury_Chainsaw</meleeSoundOverride>
+				<graphicOverrides>
+					
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chainsaw/AArmoury_ChainsawShotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chainsaw/AArmoury_ChainsawHMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chainsaw/AArmoury_ChainsawLMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chainsaw/AArmoury_ChainsawAssault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chainsaw/AArmoury_ChainsawCharge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>close combat</li>
+			
+		</traitAdjectives>
+	</WeaponTraitDef>
+</Defs>

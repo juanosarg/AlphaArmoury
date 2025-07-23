@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <VEF.OptionalFeatures.ModDef>
+        <defName>AArmoury_OptionalFeatures</defName>
+        <label>Alpha Armoury</label>
+        <description>VE Framework optional features for Alpha Armoury</description>
+        <Activate>
+            <li>WeaponTraitDefMechanics</li>
+        </Activate>
+    </VEF.OptionalFeatures.ModDef>
+</Defs>

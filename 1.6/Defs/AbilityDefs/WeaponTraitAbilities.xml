@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>AArmoury_LaunchFlare</defName>
+    <label>launch flare</label>
+    <description>Launch a disruptor flare. Can be reloaded using bioferrite.</description>
+    <iconPath>UI/Commands/AArmoury_LaunchFlare</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>12.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>FlareLaunch</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Grenade_DisruptorFlare</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+   <AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
+    <defName>AArmoury_DeadlifeLauncher</defName>
+    <label>launch deadlife canister</label>
+    <description>Launch a deadlife canister. Can be reloaded using shards.</description>
+    <iconPath>UI/Commands/AArmoury_DeadlifeLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Grenade_Deadlife</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  
+  <AbilityDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>AArmoury_ToxLauncher</defName>
+    <label>launch tox grenade</label>
+    <description>Launch a tox grenade. Can be reloaded using steel.</description>
+    <iconPath>UI/Commands/AArmoury_ToxLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>Proj_GrenadeTox</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+   <AbilityDef>
+    <defName>AArmoury_RotstinkLauncher</defName>
+    <label>launch rotstink grenade</label>
+    <description>Launch a rotstink grenade. Can be reloaded using steel.</description>
+    <iconPath>UI/Commands/AArmoury_RotstinkLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_RotstinkGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+   <AbilityDef>
+    <defName>AArmoury_MagmaLauncher</defName>
+    <label>launch magma grenade</label>
+    <description>Launch a magma grenade. Can be reloaded using quite a lot of steel.</description>
+    <iconPath>UI/Commands/AArmoury_MagmaLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_MagmaGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+    <defName>AArmoury_ArchoteggLauncher</defName>
+    <label>archotegg grenade</label>
+    <description>This weapon ███cluck ███▌▌egg 0101▌▌feather-collapse ▌▌[TIME] inexhaustible nesting [REDACTED] GRAVITY ▌▌do not ███shell fractals███do not███[ERROR].\n\nThe ███cosmic YOLK ███fracture █cluck▌▌FEATHER cascade ███INITIATE █▌▌▌GOLDEN BEAK██▌▌NULL ██DESTINY ████ERROR.\n\nCan be reloaded using  components.</description>
+    <iconPath>UI/Commands/AArmoury_ArchoteggLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Pawn_Chicken_Call</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_Egg</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+    <defName>AArmoury_AcidLauncher</defName>
+    <label>acid grenade</label>
+    <description>Launch an acid grenade. Can be reloaded using components.</description>
+    <iconPath>UI/Commands/AArmoury_AcidLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_AcidGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+    <defName>AArmoury_ShrapnelLauncher</defName>
+    <label>shrapnel grenade</label>
+    <description>Launch a shrapnel grenade that produces a cloud of projectiles. Very hard to aim. Can be reloaded using steel.</description>
+    <iconPath>UI/Commands/AArmoury_ShrapnelLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_ShrapnelGrenade</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+    <defName>AArmoury_SwarmLauncher</defName>
+    <label>rocket swarm</label>
+    <description>Launch a swarm of small rockets. Can be reloaded using advanced components.</description>
+    <iconPath>UI/Commands/AArmoury_SwarmLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>RocketswarmLauncher_Fire</soundCast>
+    
+	  
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="AlphaArmoury.CompProperties_AbilityLaunchProjectile_Multi">
+        <projectileDef>AArmoury_SwarmRocket</projectileDef>
+		<count>5</count>
+      </li>
+    </comps>
+  </AbilityDef>
+   <AbilityDef>
+    <defName>AArmoury_FirefoamLauncher</defName>
+    <label>firefoam launcher</label>
+    <description>Launch a firefoam grenade. Can be reloaded using chemfuel.</description>
+    <iconPath>UI/Commands/AArmoury_FirefoamLauncher</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>23.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+    
+	  
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_FirefoamGrenade</projectileDef>
+		
+      </li>
+    </comps>
+  </AbilityDef>
+  <AbilityDef>
+		<defName>AArmoury_SkipField</defName>
+		<label>self skip</label>
+		<description>Teleport to a desired position not too far from the starting point.</description>
+		<iconPath>UI/Commands/AArmoury_SelfSkip</iconPath>
+		<cooldownTicksRange>4800</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.25</warmupTime>
+			<range>20.9</range>
+			<drawAimPie>False</drawAimPie>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityTeleport">
+				<compClass>AlphaArmoury.CompAbilityEffect_SelfSkip</compClass>
+				<destination>Selected</destination>
+				<requiresLineOfSight>True</requiresLineOfSight>
+				<range>20.9</range>
+				<clamorType>Ability</clamorType>
+				<clamorRadius>10</clamorRadius>
+				<destClamorType>Ability</destClamorType>
+				<destClamorRadius>10</destClamorRadius>
+				<stunTicks>18~60</stunTicks>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	<AbilityDef>
+		<defName>AArmoury_InvisibilityField</defName>
+		<label>invisibility field</label>
+		<description>Generate a field of psychic invisibility that will conceal its caster for a time.</description>
+		<iconPath>UI/Commands/AArmoury_Invisibility</iconPath>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<writeCombatLog>True</writeCombatLog>
+		<hotKey>Misc12</hotKey>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+			<ai_IsWeapon>false</ai_IsWeapon>
+		</verbProperties>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<comps>
+			<li Class="AlphaArmoury.CompProperties_GiveHediff">
+				<hediffDef>AArmoury_Invisibility</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+</Defs>
