@@ -311,5 +311,29 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
+	<AbilityDef>
+    <defName>AArmoury_MineDeployer</defName>
+    <label>mine deployer</label>
+    <description>Deploys a mine that will explode in contact. Can be reloaded using steel.</description>
+    <iconPath>UI/Commands/AArmoury_MineDeployer</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>13.9</range>
+      <warmupTime>1.5</warmupTime>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>AArmoury_MineProjectile</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
 
 </Defs>

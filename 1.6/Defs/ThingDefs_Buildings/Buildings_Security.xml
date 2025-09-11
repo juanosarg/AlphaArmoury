@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AArmoury_Mine</defName>
+		<label>mine</label>
+		<description>An anti-personnel mine that will detonate on contact.</description>
+		<thingClass>Building_TrapExplosive</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AArmoury_Mine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<uiOrder>40</uiOrder>
+		<statBases>
+		
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>2</Flammability>
+			<Beauty>-10</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+		</statBases>
+		
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_chillDestination>false</ai_chillDestination>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<startWickHitPointsPercent>0.9</startWickHitPointsPercent>
+				<preExplosionSpawnSingleThingDef>Filth_BlastMark</preExplosionSpawnSingleThingDef>
+				<wickTicks>7</wickTicks>
+				<startWickOnDamageTaken>
+					<li>Bullet</li>
+					<li>Arrow</li>
+					<li>ArrowHighVelocity</li>
+				</startWickOnDamageTaken>
+			</li>
+		</comps>
+		<specialDisplayRadius>2.9</specialDisplayRadius>
+	</ThingDef>
+</Defs>

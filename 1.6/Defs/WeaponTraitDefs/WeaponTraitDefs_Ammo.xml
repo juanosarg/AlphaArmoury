@@ -139,6 +139,17 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>AArmoury_MiniRocket</projectileOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_MiniRocketSniper</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_MiniRocketBolt</value>
+					</li>
+				
+				</projectileOverrides>
 				<soundOverride>AArmoury_Rocket</soundOverride>
 				<graphicOverrides>
 					<li>

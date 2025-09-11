@@ -322,4 +322,29 @@
 			
 		</traitAdjectives>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_MineDeployer</defName>
+		<label>mine deployer</label>
+		<description>This weapon has an attached mine launcher. Once fired, it must be reloaded using steel.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+			
+		</exclusionTags>
+		<traitAdjectives>
+			<li>mine launching</li>
+			
+		</traitAdjectives>
+		
+		<abilityProps>
+			<abilityDef>AArmoury_MineDeployer</abilityDef>
+			<maxCharges>3</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>mines</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>20</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
 </Defs>

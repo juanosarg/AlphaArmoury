@@ -26,5 +26,7 @@ namespace AlphaArmoury
 
         public static ThingDef AArmoury_SwarmRocket;
 
+        public static WeaponTraitDef AArmoury_PsychicResilience;
+
     }
 }
