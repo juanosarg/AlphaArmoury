@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 	<AArmoury_NeedToTargetCaster>This ability needs to target its caster</AArmoury_NeedToTargetCaster>
+	
+	<AArmoury_MinWeaponTraits>Minimum weapon traits</AArmoury_MinWeaponTraits>
+	<AArmoury_MinWeaponTraitsDesc>By default, unique weapons have a minimum of 1 weapon trait. Changes to this will only affect newly spawned weapons, not existing ones.</AArmoury_MinWeaponTraitsDesc>
+	
+	<AArmoury_MaxWeaponTraits>Maximum weapon traits</AArmoury_MaxWeaponTraits>
+	<AArmoury_MaxWeaponTraitsDesc>By default, unique weapons have a maximum of 3 weapon traits. Changes to this will only affect newly spawned weapons, not existing ones.</AArmoury_MaxWeaponTraitsDesc>
+	
+	<AArmoury_Reset>Reset</AArmoury_Reset>
 </LanguageData>

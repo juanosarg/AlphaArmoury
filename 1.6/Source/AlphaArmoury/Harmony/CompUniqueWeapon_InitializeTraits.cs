@@ -18,33 +18,31 @@ namespace AlphaArmoury
         {
             var codes = codeInstructions.ToList();
 
-            var myMethod = AccessTools.Method(typeof(IntRange), nameof(IntRange.RandomInRange));
+            var traitsRangeField = AccessTools.Field(typeof(CompUniqueWeapon), "NumTraitsRange");
             var changeTraitsAmount = AccessTools.Method(typeof(AlphaArmoury_CompUniqueWeapon_InitializeTraits_Patch), "changeTraitsAmount");
-
            
+          
             for (var i = 0; i < codes.Count; i++)
             {
 
-                if (codes[i].opcode == OpCodes.Call && codes[i].OperandIs(myMethod)
+                if (codes[i].opcode == OpCodes.Ldsfld && codes[i].OperandIs(traitsRangeField)
                   )
                 {
-                 
-                   
-                    yield return new CodeInstruction(OpCodes.Call, changeTraitsAmount);
+                    codes[i].opcode = OpCodes.Call;
+                    codes[i].operand = changeTraitsAmount;
+                    yield return codes[i];
 
                 }
+               
               
                 else yield return codes[i];
             }
         }
 
 
-        public static SoundDef changeTraitsAmount(IntRange range)
+        public static Verse.IntRange changeTraitsAmount()
         {
-           
-
-
-           
+            return new IntRange(AlphaArmoury_Settings.minWeaponTraits,AlphaArmoury_Settings.maxWeaponTraits);
         }
 
     }
