@@ -40,4 +40,64 @@
 		</modExtensions>
 	</WeaponTraitDef>
 	
+	<WeaponTraitDef>
+		<defName>AArmoury_Sludge</defName>
+		<label>sludge spewer</label>
+		<description>This weapon can project a spray of acidic slug. The sludge will stick to targets and burn them, and turn terrain into insect sludge.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_SingleBulletFiring</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+			
+				<soundOverride>AcidSpray_Resolve</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sludge/AArmoury_SludgeRevolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>Cutout</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sludge/AArmoury_SludgeBolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>Cutout</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sludge/AArmoury_SludgeSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>Cutout</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<MarketValue>300</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>acidic</li>
+		</traitAdjectives>
+		<abilityProps>
+			<abilityDef>AArmoury_Sludge</abilityDef>
+			<maxCharges>5</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>sludge</chargeNoun>
+			<ammoDef>Chemfuel</ammoDef>
+			<ammoCountPerCharge>20</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	
+	
+	
 </Defs>

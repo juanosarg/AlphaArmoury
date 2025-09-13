@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_Flechettes"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Flechette/AArmoury_FlechetteHellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_MiniRocket"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Rockets/AArmoury_RocketsHellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_Cryo"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Cryo/AArmoury_CryoHellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_Laser"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Laser/AArmoury_LaserHellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_ThermalBlasts"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatHellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -13,17 +13,18 @@
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
 		<stealable>false</stealable>
+		<passability>Standable</passability>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<uiOrder>40</uiOrder>
+		<blockLight>false</blockLight>
+		<blockWind>false</blockWind>
 		<statBases>
-		
 			<MaxHitPoints>20</MaxHitPoints>
 			<WorkToBuild>1400</WorkToBuild>
 			<Flammability>2</Flammability>
 			<Beauty>-10</Beauty>
 			<TrapSpringChance>1.0</TrapSpringChance>
 		</statBases>
-		
 		<building>
 			<isTrap>true</isTrap>
 			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
@@ -47,5 +48,47 @@
 			</li>
 		</comps>
 		<specialDisplayRadius>2.9</specialDisplayRadius>
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>AArmoury_Caltrops</defName>
+		<label>caltrops</label>
+		<description>Scattered clusters of sharpened spikes designed to wound and slow intruders. They will break down in a short time.</description>
+		<thingClass>Building_TrapDamager</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AArmoury_Caltrops</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>false</rotatable>
+		<passability>Standable</passability>
+		<tickerType>Normal</tickerType>
+		<stealable>false</stealable>
+		<blockLight>false</blockLight>
+		<blockWind>false</blockWind>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<pathCost>40</pathCost>
+		<pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>-10</Beauty>
+			<TrapSpringChance>1.0</TrapSpringChance>
+			<TrapMeleeDamage>5</TrapMeleeDamage>
+		</statBases>
+		<building>
+			<isTrap>true</isTrap>
+			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
+			<expandHomeArea>false</expandHomeArea>
+			<trapDestroyOnSpring>false</trapDestroyOnSpring>
+			<trapDamageCategory>Sharp</trapDamageCategory>
+			<ai_chillDestination>false</ai_chillDestination>
+			<neverBuildable>true</neverBuildable>
+			<deconstructible>false</deconstructible>
+		</building>
+		<comps>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>120000</lifespanTicks>
+			</li>
+		</comps>
 	</ThingDef>
 </Defs>

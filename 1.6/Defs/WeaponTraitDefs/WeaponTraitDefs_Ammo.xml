@@ -99,14 +99,6 @@
 						</value>
 					</li>
 					<li>
-						<key>Gun_HellcatRifle_Unique</key>
-						<value>
-							<texPath>Things/Weapon/AArmoury_Flechette/AArmoury_FlechetteHellcat</texPath>
-							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-						</value>
-					</li>
-					<li>
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>
 							<texPath>Things/Weapon/AArmoury_Flechette/AArmoury_FlechetteBeam</texPath>
@@ -148,7 +140,6 @@
 						<key>Gun_BoltActionRifle_Unique</key>
 						<value>AArmoury_MiniRocketBolt</value>
 					</li>
-				
 				</projectileOverrides>
 				<soundOverride>AArmoury_Rocket</soundOverride>
 				<graphicOverrides>
@@ -168,7 +159,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_HeavySMG_Unique</key>
 						<value>
@@ -209,16 +199,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
-					<li>
-						<key>Gun_HellcatRifle_Unique</key>
-						<value>
-							<texPath>Things/Weapon/AArmoury_Rockets/AArmoury_RocketsHellcat</texPath>
-							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-						</value>
-					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -285,7 +265,6 @@
 		<weaponCategory>BulletFiring</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
-			
 		</exclusionTags>
 		<forcedColor>UniqueWeapon_IceBlue</forcedColor>
 		<damageDefOverride>Frostbite</damageDefOverride>
@@ -299,7 +278,6 @@
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -317,7 +295,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_HeavySMG_Unique</key>
 						<value>
@@ -358,16 +335,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
-					<li>
-						<key>Gun_HellcatRifle_Unique</key>
-						<value>
-							<texPath>Things/Weapon/AArmoury_Cryo/AArmoury_CryoHellcat</texPath>
-							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-						</value>
-					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -502,7 +469,7 @@
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
-					</li>					
+					</li>
 					<li>
 						<key>Gun_Minigun_Unique</key>
 						<value>
@@ -511,7 +478,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_BoltActionRifle_Unique</key>
 						<value>
@@ -520,7 +486,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_HeavySMG_Unique</key>
 						<value>
@@ -537,7 +502,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
 						<value>
@@ -546,17 +510,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
-					
-					<li>
-						<key>Gun_HellcatRifle_Unique</key>
-						<value>
-							<texPath>Things/Weapon/AArmoury_Laser/AArmoury_LaserHellcat</texPath>
-							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-						</value>
-					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -633,7 +586,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_ThermalBlasts</defName>
 		<label>thermal blasts</label>
-		<description>Instead of bullets, this gun fires concentrated thermal blasts that cause instant heatstroke in its targets. Usless against non-flammable enemies such as mechanoids.</description>
+		<description>Instead of bullets, this gun fires concentrated thermal blasts that cause instant heatstroke in its targets. Useless against non-flammable enemies such as mechanoids.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<exclusionTags>
@@ -643,8 +596,6 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>AArmoury_ThermalBlasts</projectileOverride>
 				<soundOverride>AArmoury_Vapor</soundOverride>
-				
-				
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -727,14 +678,6 @@
 						</value>
 					</li>
 					<li>
-						<key>Gun_HellcatRifle_Unique</key>
-						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatHellcat</texPath>
-							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-						</value>
-					</li>
-					<li>
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>
 							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatBeam</texPath>
@@ -751,8 +694,6 @@
 						</value>
 					</li>
 				</graphicOverrides>
-			
-				
 			</li>
 		</modExtensions>
 		<traitAdjectives>
@@ -862,7 +803,6 @@
 			<li>electric</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_NerveSpiker</defName>
 		<label>nerve spiker</label>
@@ -871,9 +811,7 @@
 		<weaponCategory>AArmoury_SingleBulletFiring</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
-			
 		</exclusionTags>
-		
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>NerveSpiker_Spike</projectileOverride>
@@ -890,7 +828,7 @@
 					<li>
 						<key>Gun_BoltActionRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Nerve/AArmoury_NerveRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Nerve/AArmoury_NerveBolt</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -913,7 +851,6 @@
 			<li>spiking</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_Thumper</defName>
 		<label>thumper rounds</label>
@@ -928,7 +865,6 @@
 				<projectileOverride>Bullet_ThumpCannon</projectileOverride>
 				<soundOverride>ThumpCannon_Fire</soundOverride>
 				<graphicOverrides>
-					
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
 						<value>
@@ -942,7 +878,8 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>breaching</li>
-			
 		</traitAdjectives>
 	</WeaponTraitDef>
+	
+	
 </Defs>

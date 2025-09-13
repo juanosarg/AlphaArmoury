@@ -1,21 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_PsychicResilience</defName>
 		<label>psychic resilience</label>
 		<description>This weapon's wielder will not crack under pressure. As long as they are drafted, they will not be at risk of suffering a mental break.</description>
 		<commonality>0.25</commonality>
-		
 		<weaponCategory>Ranged</weaponCategory>
-		
-		
 		<traitAdjectives>
 			<li>resilient</li>
 			<li>psychic</li>
 		</traitAdjectives>
-		
 	</WeaponTraitDef>
-	
-	
+	<WeaponTraitDef>
+		<defName>AArmoury_Satiating</defName>
+		<label>satiating</label>
+		<description>This weapon psychically suppresses the wielder's appetite.</description>
+		<commonality>0.25</commonality>
+		<equippedHediffs>
+			<li>AArmoury_ReducedHunger</li>
+		</equippedHediffs>
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>satiating</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
 </Defs>

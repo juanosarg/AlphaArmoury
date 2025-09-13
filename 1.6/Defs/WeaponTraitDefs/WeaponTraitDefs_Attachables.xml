@@ -8,7 +8,6 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>flaring</li>
@@ -29,12 +28,11 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_DeadlifeLauncher</defName>
 		<label>deadlife launcher</label>
-		<description>This weapon has an attached deadlife launcher. Once fired, it must be reloaded using shards.</description>
+		<description>This weapon has an attached deadlife launcher. Once fired, it must be reloaded using a shard.</description>
 		<commonality>0.1</commonality>
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>deadlife</li>
@@ -52,6 +50,31 @@
 			<baseReloadTicks>400</baseReloadTicks>
 		</abilityProps>
 	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_FleshMelter</defName>
+		<label>fleshmelter launcher</label>
+		<description>This weapon has an attached fleshmelter launcher. Once fired, it must be reloaded using a shard.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>melting</li>
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>300</MarketValue>
+		</statOffsets>
+		<abilityProps>
+			<abilityDef>AArmoury_FleshMelter</abilityDef>
+			<maxCharges>1</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>fleshmelter</chargeNoun>
+			<ammoDef>Shard</ammoDef>
+			<ammoCountPerCharge>1</ammoCountPerCharge>
+			<baseReloadTicks>400</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_ToxLauncher</defName>
 		<label>tox launcher</label>
@@ -60,7 +83,6 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>tox</li>
@@ -78,6 +100,31 @@
 			<baseReloadTicks>60</baseReloadTicks>
 		</abilityProps>
 	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_HellsphereLauncher</defName>
+		<label>hellsphere launcher</label>
+		<description>This weapon has an attached hellsphere launcher. Once fired, it must be reloaded using advanced components.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>hellish</li>
+		</traitAdjectives>
+		<statOffsets>
+			<MarketValue>300</MarketValue>
+		</statOffsets>
+		<abilityProps>
+			<abilityDef>AArmoury_HellsphereLauncher</abilityDef>
+			<maxCharges>1</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>hellsphere</chargeNoun>
+			<ammoDef>ComponentSpacer</ammoDef>
+			<ammoCountPerCharge>5</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
 	<WeaponTraitDef>
 		<defName>AArmoury_RotstinkLauncher</defName>
 		<label>rotstink launcher</label>
@@ -86,12 +133,10 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>rot</li>
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_RotstinkLauncher</abilityDef>
 			<maxCharges>6</maxCharges>
@@ -110,12 +155,10 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>magmatic</li>
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_MagmaLauncher</abilityDef>
 			<maxCharges>2</maxCharges>
@@ -134,7 +177,6 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>███▌▌egg 0101</li>
@@ -142,7 +184,6 @@
 			<li>[REDACTED] ██eggvector</li>
 			<li>[WING FRACTAL ████FORM</li>
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_ArchoteggLauncher</abilityDef>
 			<maxCharges>3</maxCharges>
@@ -153,7 +194,6 @@
 			<baseReloadTicks>60</baseReloadTicks>
 		</abilityProps>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_AcidLauncher</defName>
 		<label>acid launcher</label>
@@ -162,13 +202,11 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>corrossive</li>
 			<li>acidic</li>
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_AcidLauncher</abilityDef>
 			<maxCharges>2</maxCharges>
@@ -187,13 +225,11 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>fragmentary</li>
 			<li>shrapnel</li>
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_ShrapnelLauncher</abilityDef>
 			<maxCharges>3</maxCharges>
@@ -212,13 +248,10 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>swarming</li>
-			
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_SwarmLauncher</abilityDef>
 			<maxCharges>2</maxCharges>
@@ -237,13 +270,10 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>extinguishing</li>
-			
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_FirefoamLauncher</abilityDef>
 			<maxCharges>3</maxCharges>
@@ -263,17 +293,16 @@
 		<exclusionTags>
 			<li>Attachment</li>
 		</exclusionTags>
-		 <equippedHediffs>
-            <li>AArmoury_MeleeCooldown</li>
-        </equippedHediffs>
-		<statFactors>		
+		<equippedHediffs>
+			<li>AArmoury_MeleeCooldown</li>
+		</equippedHediffs>
+		<statFactors>
 			<MeleeWeapon_DamageMultiplier>2</MeleeWeapon_DamageMultiplier>
 		</statFactors>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<meleeSoundOverride>AArmoury_Chainsaw</meleeSoundOverride>
 				<graphicOverrides>
-					
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
 						<value>
@@ -319,7 +348,6 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>close combat</li>
-			
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
@@ -330,13 +358,10 @@
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
-			
 		</exclusionTags>
 		<traitAdjectives>
 			<li>mine launching</li>
-			
 		</traitAdjectives>
-		
 		<abilityProps>
 			<abilityDef>AArmoury_MineDeployer</abilityDef>
 			<maxCharges>3</maxCharges>
@@ -344,6 +369,75 @@
 			<chargeNoun>mines</chargeNoun>
 			<ammoDef>Steel</ammoDef>
 			<ammoCountPerCharge>20</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_Caltrops</defName>
+		<label>caltrop launcher</label>
+		<description>This weapon has an attached caltrop launcher. Once fired, it can be reloaded using steel.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>caltrop launching</li>
+		</traitAdjectives>
+		<abilityProps>
+			<abilityDef>AArmoury_Caltrops</abilityDef>
+			<maxCharges>5</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>caltrops</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>20</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_BarricadeDeployer</defName>
+		<label>barricade deployer</label>
+		<description>This weapon has an attached barricade deployer. Once fired, it can be reloaded using steel.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>barricade deploying</li>
+		</traitAdjectives>
+		<abilityProps>
+			<abilityDef>AArmoury_BarricadeDeployer</abilityDef>
+			<maxCharges>5</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>barricade</chargeNoun>
+			<ammoDef>Steel</ammoDef>
+			<ammoCountPerCharge>25</ammoCountPerCharge>
+			<baseReloadTicks>60</baseReloadTicks>
+		</abilityProps>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_PesticideCanisters</defName>
+		<label>pesticide canisters</label>
+		<description>This weapon has an attachment to fire pesticide canisters. They will destroy all blighted plants in a large area. Can be reloaded using chemfuel.</description>
+		<commonality>0.5</commonality>
+		
+		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
+		
+		<exclusionTags>
+			<li>Attachment</li>
+		</exclusionTags>
+		<traitAdjectives>
+			<li>pesticidal</li>
+			
+		</traitAdjectives>
+		<abilityProps>
+			<abilityDef>AArmoury_PesticideCanisters</abilityDef>
+			<maxCharges>2</maxCharges>
+			<soundReload>Standard_Reload</soundReload>
+			<chargeNoun>pesticide</chargeNoun>
+			<ammoDef>Chemfuel</ammoDef>
+			<ammoCountPerCharge>50</ammoCountPerCharge>
 			<baseReloadTicks>60</baseReloadTicks>
 		</abilityProps>
 	</WeaponTraitDef>

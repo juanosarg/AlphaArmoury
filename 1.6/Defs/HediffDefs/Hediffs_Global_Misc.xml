@@ -7,6 +7,7 @@
 		<description>This person has psychically shifted their skin tones to camouflage in almost any surroundings.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
@@ -19,6 +20,23 @@
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 		</comps>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>AArmoury_ReducedHunger</defName>
+		<label>reduced hunger</label>
+		<description>A wielded weapon is psychically suppressing this person's appetite.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				 <hungerRateFactorOffset>-0.3</hungerRateFactorOffset>
+				
+			</li>
+		</stages>
 	</HediffDef>
 	
 	<HediffDef ParentName="DiseaseBase">

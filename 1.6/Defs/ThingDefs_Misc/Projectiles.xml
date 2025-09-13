@@ -560,4 +560,56 @@
 			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>AArmoury_CaltropProjectile</defName>
+		<label>caltrops</label>
+		<thingClass>Projectile_SpawnsThing</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_CaltropProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<speed>10</speed>
+			<damageAmountBase>0</damageAmountBase>
+			<spawnsThingDef>AArmoury_Caltrops</spawnsThingDef>
+			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>AArmoury_BarricadeProjectile</defName>
+		<label>barricade</label>
+		<thingClass>AlphaArmoury.Projectile_SpawnsSteelThing</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_BarricadeProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<speed>10</speed>
+			<damageAmountBase>0</damageAmountBase>
+			<spawnsThingDef>Barricade</spawnsThingDef>
+			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_PesticideCanistersProjectile</defName>
+		<label>pesticide canister</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_PesticideCanistersProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_PesticideShot</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<explosionRadius>5.9</explosionRadius>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+			<soundExplode>Explosion_Smoke</soundExplode>
+			<screenShakeFactor>0.5</screenShakeFactor>
+		</projectile>
+	</ThingDef>
 </Defs>
