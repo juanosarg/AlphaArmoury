@@ -302,6 +302,7 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<meleeSoundOverride>AArmoury_Chainsaw</meleeSoundOverride>
+				<meleeDamageOverride>Cut</meleeDamageOverride>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>

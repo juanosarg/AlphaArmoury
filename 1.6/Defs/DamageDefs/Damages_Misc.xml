@@ -55,6 +55,21 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_NetDamage</defName>
+		<label>net</label>
+		<hediff>Crush</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_NetHediff</hediff>
+				<severityPerDamageDealt>0.1</severityPerDamageDealt>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 	<DamageDef>
 		<defName>AArmoury_Flame_Lesser</defName>
 		<workerClass>DamageWorker_Flame</workerClass>

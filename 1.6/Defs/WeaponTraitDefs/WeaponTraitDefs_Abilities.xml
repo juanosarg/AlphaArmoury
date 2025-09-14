@@ -59,7 +59,7 @@
 						<value>
 							<texPath>Things/Weapon/AArmoury_Sludge/AArmoury_SludgeRevolver</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>Cutout</shaderType>
+							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
 					<li>
@@ -67,7 +67,7 @@
 						<value>
 							<texPath>Things/Weapon/AArmoury_Sludge/AArmoury_SludgeBolt</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>Cutout</shaderType>
+							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
 					<li>
@@ -75,7 +75,7 @@
 						<value>
 							<texPath>Things/Weapon/AArmoury_Sludge/AArmoury_SludgeSniper</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>Cutout</shaderType>
+							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
 				</graphicOverrides>

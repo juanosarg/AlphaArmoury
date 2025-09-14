@@ -881,5 +881,161 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	
+	<WeaponTraitDef>
+		<defName>AArmoury_NetGun</defName>
+		<label>net gun</label>
+		<description>This launcher fires tangled nets to entangle and immobilize targets.\n\n-Negates the forced miss radius of this weapon.</description>
+		<commonality>1</commonality>
+		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+			
+		</exclusionTags>
+		<workerClass>AlphaArmoury.WeaponTraitWorker_NoForcedMiss</workerClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_Net</projectileOverride>
+				<graphicOverrides>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_NetGun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>net launching</li>
+			<li>immobilizing</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_SyringerGun</defName>
+		<label>syringer gun</label>
+		<description>This rifle has been modified to fire mutagenic syringes that can cause random harmful mutations on their targets.</description>
+		<commonality>1</commonality>
+		<weaponCategory>AArmoury_Gun_SniperRifle_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+			
+		</exclusionTags>
+	
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_Syringe</projectileOverride>
+				<soundOverride>AArmoury_Dart</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Syringer</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>mutagenic</li>
+			
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>AArmoury_ShatterRounds</defName>
+		<label>shatter rounds</label>
+		<description>This weapon fires shatter rounds that will create shrapnel upon impact.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>BulletFiring</weaponCategory>
+		<statOffsets>
+			<MarketValue>200</MarketValue>
+		</statOffsets>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_ShatterRounds</projectileOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_ShatterRounds_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_ShatterRounds_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_ShatterRounds_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_ShatterRounds_Lesser</value>
+					</li>
+					
+				</projectileOverrides>
+				
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>shaterring</li>
+			
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_Electric</defName>
+		<label>electrified</label>
+		<description>This weapon fires microscopic mechanite charges that cause a bolt of lightning to impact their targets.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_SingleBulletFiring</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_Electric</projectileOverride>
+				<soundOverride>Thunder_OffMap</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Electric/AArmoury_ElectricRevolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Electric/AArmoury_ElectricBolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Electric/AArmoury_ElectricSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<statOffsets>
+			<MarketValue>250</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>electric</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
 	
 </Defs>

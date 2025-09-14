@@ -612,4 +612,96 @@
 			<screenShakeFactor>0.5</screenShakeFactor>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Net</defName>
+		<label>net</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Net</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>20</speed>
+			<damageDef>AArmoury_NetDamage</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_Syringe</defName>
+		<label>needle</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Syringe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Syringe</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_ShatterRounds</defName>
+		<label>shatter round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_ShatterRounds</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_ShatterRounds_Lesser</defName>
+		<label>shatter round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_ShatterRounds_lesser</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Bullet_Shrapnel_Lesser</defName>
+		<label>shrapnel</label>
+		<thingClass>VEF.Weapons.Projectile_ShrapnelPiece</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Electric</defName>
+		<label>electric potential</label>
+		<graphicData>
+			<texPath>UI/AArmoury_Transparent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Electric</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
 </Defs>
