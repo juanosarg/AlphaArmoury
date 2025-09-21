@@ -704,4 +704,52 @@
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TachyonicFeed</defName>
+		<label>tachyonic fed bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeed</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TachyonicFeed_Lesser</defName>
+		<label>tachyonic fed bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeed</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TachyonicFeed_Greater</defName>
+		<label>tachyonic fed bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeed</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
 </Defs>

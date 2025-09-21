@@ -330,6 +330,7 @@
     <Compile Include="Projectiles\Projectile_ShatterRounds_lesser.cs" />
     <Compile Include="Projectiles\Projectile_SpawnsSteelThing.cs" />
     <Compile Include="Projectiles\Projectile_Syringe.cs" />
+    <Compile Include="Projectiles\Projectile_TachyonicFeed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings\AlphaArmoury_Mod.cs" />
     <Compile Include="Settings\AlphaArmoury_Settings.cs" />
