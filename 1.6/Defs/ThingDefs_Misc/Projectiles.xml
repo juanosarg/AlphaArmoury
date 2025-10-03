@@ -69,6 +69,11 @@
 			<speed>50</speed>
 			<soundExplode>Interact_Ignite</soundExplode>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
 		<defName>AArmoury_MiniRocketSniper</defName>
@@ -86,6 +91,11 @@
 			<speed>50</speed>
 			<soundExplode>Interact_Ignite</soundExplode>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
 		<defName>AArmoury_AcidGrenade</defName>
@@ -162,6 +172,11 @@
 			<damageAmountBase>10</damageAmountBase>
 			<speed>55</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet" MayRequire="VanillaExpanded.VPlantsE">
 		<defName>AArmoury_FertilizerShot</defName>
@@ -435,6 +450,11 @@
 			<li>Marble</li>
 			<li>SmoothedMarble</li>
 		</stopWhenHitAt>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</VEF.Weapons.ExpandableProjectileDef>
 	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>AArmoury_Bullet_AcidSpewer</defName>
@@ -673,6 +693,11 @@
 			<stoppingPower>1</stoppingPower>
 			<speed>55</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Bullet_Shrapnel_Lesser</defName>
@@ -687,6 +712,11 @@
 			<damageAmountBase>5</damageAmountBase>
 			<speed>55</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Electric</defName>
@@ -735,6 +765,11 @@
 			<stoppingPower>1</stoppingPower>
 			<speed>100</speed>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_TachyonicFeed_Greater</defName>
@@ -750,6 +785,239 @@
 			<damageAmountBase>18</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<speed>100</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>AArmoury_TachyonicFeed_Arrow</defName>
+		<label>tachyonic arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_TachyonicArrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeed</thingClass>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>44</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TachyonicFeed_Charge</defName>
+		<label>tachyonic charge shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeed</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TachyonicFeed_Charge_Greater</defName>
+		<label>tachyonic charge lance shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/ChargeLanceShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeed</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TachyonicBeamRepeater</defName>
+		<label>tachyonic beam repeater laser</label>
+		<thingClass>AlphaArmoury.Projectile_TachyonicFeedBeam</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>BeamBypassShields</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<beamMoteDef>Mote_BeamRepeaterLaser</beamMoteDef>
+			<beamStartOffset>0.5</beamStartOffset>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_Hemovoric</defName>
+		<label>hemovoric bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Hemovoric</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Hemovoric_Lesser</defName>
+		<label>hemovoric bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Hemovoric</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>10</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Hemovoric_Greater</defName>
+		<label>hemovoric bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Hemovoric</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>AArmoury_Hemovoric_Arrow</defName>
+		<label>hemovoric arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricArrow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Hemovoric</thingClass>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>44</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Hemovoric_Charge</defName>
+		<label>hemovoric charge shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricCharge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Hemovoric</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Hemovoric_Charge_Greater</defName>
+		<label>hemovoric charge lance shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricCharge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Hemovoric</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_HemovoricRepeater</defName>
+		<label>hemovoric beam repeater laser</label>
+		<thingClass>AlphaArmoury.Projectile_HemovoricBeam</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>BeamBypassShields</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<beamMoteDef>Mote_BeamRepeaterLaser</beamMoteDef>
+			<beamStartOffset>0.5</beamStartOffset>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_Hemovoric_Feedback</defName>
+		<label>hemovoric feedback</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Hemovoric</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_HemovoricFeedback</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>10</speed>
 		</projectile>
 	</ThingDef>
 </Defs>

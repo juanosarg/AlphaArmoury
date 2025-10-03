@@ -1041,9 +1041,9 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_TachyonicFeed</defName>
 		<label>tachyonic feed</label>
-		<description>Bullets fired by this weapon will cause increased, scaling damage on moving targets.</description>
+		<description>Projectiles fired by this weapon will cause increased, scaling damage on moving targets.</description>
 		<commonality>0.25</commonality>
-		<weaponCategory>BulletFiring</weaponCategory>
+		<weaponCategory>Ranged</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
 		</exclusionTags>
@@ -1079,13 +1079,29 @@
 						<key>Gun_BoltActionRifle_Unique</key>
 						<value>AArmoury_TachyonicFeed_Greater</value>
 					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>AArmoury_TachyonicFeed_Arrow</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>AArmoury_TachyonicFeed_Charge</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>AArmoury_TachyonicFeed_Charge_Greater</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>AArmoury_TachyonicBeamRepeater</value>
+					</li>
 					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatRevolver</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicRevolver</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1093,7 +1109,7 @@
 					<li>
 						<key>Gun_BoltActionRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatBolt</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicBolt</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1101,7 +1117,7 @@
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatShotgun</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicShotgun</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1109,7 +1125,7 @@
 					<li>
 						<key>Gun_HeavySMG_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatHMG</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicHMG</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1117,7 +1133,7 @@
 					<li>
 						<key>Gun_LMG_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatLMG</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicLMG</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1125,7 +1141,7 @@
 					<li>
 						<key>Gun_AssaultRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatAssault</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicAssault</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1133,7 +1149,7 @@
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatSniper</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicSniper</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1141,7 +1157,39 @@
 					<li>
 						<key>Gun_Minigun_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Heat/AArmoury_HeatMinigun</texPath>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicMinigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicCharge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicLance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicBeam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicBow</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1152,6 +1200,171 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>tachyonic</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_Hemovoric</defName>
+		<label>hemovoric</label>
+		<description>Projectiles fired by this weapon will drain blood from their target and attempt to transfer it to the shooter. Which is obviously quite useless unless the shooter is a Sanguophage!</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Ranged</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_Hemovoric</projectileOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_Hemovoric_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_Hemovoric_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_Hemovoric_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_Hemovoric_Lesser</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_Hemovoric_Greater</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_Hemovoric_Greater</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_Hemovoric_Greater</value>
+					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>AArmoury_Hemovoric_Arrow</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>AArmoury_Hemovoric_Charge</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>AArmoury_Hemovoric_Charge_Greater</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>AArmoury_HemovoricRepeater</value>
+					</li>
+					
+				</projectileOverrides>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricRevolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricBolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricShotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricHMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricLMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricAssault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricMinigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricCharge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricLance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricBeam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricBow</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>hemovoric</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 	

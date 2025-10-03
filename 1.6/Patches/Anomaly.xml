@@ -71,6 +71,41 @@
 						</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_TachyonicFeed"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Tachyonic/AArmoury_TachyonicHellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Biotech</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/WeaponTraitDef[defName = "AArmoury_Hemovoric"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+								<value>
+									<li>
+										<key>Gun_HellcatRifle_Unique</key>
+										<value>
+											<texPath>Things/Weapon/AArmoury_Hemovoric/AArmoury_HemovoricHellcat</texPath>
+											<graphicClass>Graphic_Random</graphicClass>
+											<shaderType>CutoutComplex</shaderType>
+										</value>
+									</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
 			</operations>
 		</match>
 	</Operation>
