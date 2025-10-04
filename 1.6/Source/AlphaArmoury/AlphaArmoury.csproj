@@ -319,6 +319,8 @@
     <Compile Include="Harmony\MentalBreakWorker_TryStart.cs" />
     <Compile Include="Harmony\VerbProperties_GetForceMissFactorFor.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
+    <Compile Include="Projectiles\Projectile_PsychicBeam.cs" />
+    <Compile Include="Projectiles\Projectile_Psychic.cs" />
     <Compile Include="Projectiles\Projectile_HemovoricBeam.cs" />
     <Compile Include="Projectiles\Projectile_Hemovoric.cs" />
     <Compile Include="Projectiles\Projectile_Electric.cs" />
@@ -329,6 +331,7 @@
     <Compile Include="Projectiles\Projectile_MagmaShot.cs" />
     <Compile Include="Projectiles\Projectile_PesticideShot.cs" />
     <Compile Include="Projectiles\Projectile_PotatoShot.cs" />
+    <Compile Include="Projectiles\Projectile_PsychicFeedback.cs" />
     <Compile Include="Projectiles\Projectile_ShatterRounds.cs" />
     <Compile Include="Projectiles\Projectile_ShatterRounds_lesser.cs" />
     <Compile Include="Projectiles\Projectile_SpawnsSteelThing.cs" />
