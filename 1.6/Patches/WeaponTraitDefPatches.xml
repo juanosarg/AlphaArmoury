@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "StabilizerBrace"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_StabilizerBrace</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "PulseCharger"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_PulseBullet</projectileOverride>
+				<lowPreferenceProjectileOverride>true</lowPreferenceProjectileOverride>
+				<soundOverride>AArmoury_Pulse</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_PulseCharger</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+</Patch>

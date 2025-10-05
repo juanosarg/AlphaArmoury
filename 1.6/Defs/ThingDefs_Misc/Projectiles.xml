@@ -885,7 +885,7 @@
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet"  MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric_Lesser</defName>
 		<label>hemovoric bullet</label>
 		<graphicData>
@@ -906,7 +906,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet"  MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric_Greater</defName>
 		<label>hemovoric bullet</label>
 		<graphicData>
@@ -927,7 +927,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="BaseProjectileNeolithic"  MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseProjectileNeolithic" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric_Arrow</defName>
 		<label>hemovoric arrow</label>
 		<graphicData>
@@ -946,7 +946,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet"  MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric_Charge</defName>
 		<label>hemovoric charge shot</label>
 		<graphicData>
@@ -961,7 +961,7 @@
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet"  MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric_Charge_Greater</defName>
 		<label>hemovoric charge lance shot</label>
 		<graphicData>
@@ -983,7 +983,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="BaseBullet"  MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_HemovoricRepeater</defName>
 		<label>hemovoric beam repeater laser</label>
 		<thingClass>AlphaArmoury.Projectile_HemovoricBeam</thingClass>
@@ -1025,9 +1025,6 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
-	
-	
 	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>AArmoury_Psychic</defName>
 		<label>Psychic bullet</label>
@@ -1186,5 +1183,18 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_PulseBullet</defName>
+		<label>revolver bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_PulseBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
 </Defs>
