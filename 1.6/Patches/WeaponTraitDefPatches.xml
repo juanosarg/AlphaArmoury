@@ -4,6 +4,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "StabilizerBrace"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -24,6 +25,7 @@
 				<projectileOverride>AArmoury_PulseBullet</projectileOverride>
 				<lowPreferenceProjectileOverride>true</lowPreferenceProjectileOverride>
 				<soundOverride>AArmoury_Pulse</soundOverride>
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -36,5 +38,108 @@
 				</graphicOverrides>
 			</li>
 		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "PrecisionScope"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_PrecisionScope</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "RangefinderScope"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_RangefinderScope</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "ExtendedBarrel"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedBarrel/AArmoury_ExtendedBarrel_Bolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedBarrel/AArmoury_ExtendedBarrel_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedBarrel/AArmoury_ExtendedBarrel_Sniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedBarrel/AArmoury_ExtendedBarrel_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+				<sizeMultiplier>1.4</sizeMultiplier>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "ExtendedBarrel"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_ExtendedBarrel/AArmoury_ExtendedBarrel_Hellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
 	</Operation>
 </Patch>

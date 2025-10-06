@@ -5,7 +5,7 @@
 		<defName>AArmoury_Oversized</defName>
 		<label>oversized</label>
 		<description>This weapon is oversized, making it slower to aim, heavier, and more dangerous in close combat.</description>
-		<commonality>1</commonality>
+		<commonality>0.25</commonality>
 		<canGenerateAlone>false</canGenerateAlone>
 		<weaponCategory>Ranged</weaponCategory>
 		<exclusionTags>
@@ -33,7 +33,7 @@
 		<defName>AArmoury_Undersized</defName>
 		<label>undersized</label>
 		<description>This weapon is undersized, making it faster to aim, lighter, and less dangerous in close combat.</description>
-		<commonality>1</commonality>
+		<commonality>0.25</commonality>
 		<canGenerateAlone>false</canGenerateAlone>
 		<weaponCategory>Ranged</weaponCategory>
 		<exclusionTags>
