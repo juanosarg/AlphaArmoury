@@ -1696,4 +1696,26 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_Looping</defName>
+		<label>looping</label>
+		<description>Looping.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_SingleBulletFiring</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_Looping</projectileOverride>
+				
+				
+			</li>
+		</modExtensions>
+		
+		<traitAdjectives>
+			<li>looping</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
 </Defs>

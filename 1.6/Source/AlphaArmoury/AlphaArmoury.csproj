@@ -320,6 +320,7 @@
     <Compile Include="Harmony\MentalBreakWorker_TryStart.cs" />
     <Compile Include="Harmony\VerbProperties_GetForceMissFactorFor.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
+    <Compile Include="Projectiles\Projectile_Looping.cs" />
     <Compile Include="Projectiles\Projectile_PsychicBeam.cs" />
     <Compile Include="Projectiles\Projectile_Psychic.cs" />
     <Compile Include="Projectiles\Projectile_HemovoricBeam.cs" />

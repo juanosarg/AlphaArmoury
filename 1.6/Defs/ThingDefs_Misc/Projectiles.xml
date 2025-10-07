@@ -1681,4 +1681,21 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Looping</defName>
+		<label>looping hellcat rifle bullet</label>
+		<thingClass>AlphaArmoury.Projectile_Looping</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>20</speed>
+			<arcHeightFactor>2</arcHeightFactor>
+		</projectile>
+		
+	</ThingDef>
 </Defs>
