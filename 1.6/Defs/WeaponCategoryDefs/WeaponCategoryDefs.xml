@@ -51,4 +51,7 @@
 	<WeaponCategoryDef>
 		<defName>AArmoury_Machineguns</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>AArmoury_AllButBeamAndLauncher</defName>
+	</WeaponCategoryDef>
 </Defs>

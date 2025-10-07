@@ -557,8 +557,8 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_AcidicRepeater</defName>
 		<label>acidic repeater</label>
-		<description>Instead of gamma ray laser bursts, this repeater will produce a bunch of dangerous acidic blasts.</description>
-		<commonality>1</commonality>
+		<description>Instead of gamma ray laser bursts, this repeater will produce a bunch of extremely dangerous acidic blasts.</description>
+		<commonality>0.25</commonality>
 		<weaponCategory>AArmoury_Gun_BeamRepeater_Unique</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
@@ -1531,6 +1531,168 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>psychic</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<WeaponTraitDef>
+		<defName>AArmoury_Splitting</defName>
+		<label>bullet splitting</label>
+		<description>Projectiles fired by this weapon will be duplicated at half strength.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_AllButBeamAndLauncher</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				
+				<projectileOverrides>
+					
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>AArmoury_Splitting_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_Splitting_Bolt</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_Splitting_Shotgun</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_Splitting_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_Splitting_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_Splitting_Assault</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_Splitting_Minigun</value>
+					</li>
+					
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_Splitting_Sniper</value>
+					</li>
+					
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>AArmoury_Splitting_Arrow</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>AArmoury_Splitting_Charge</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>AArmoury_Splitting_Lance</value>
+					</li>
+					
+					
+				</projectileOverrides>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingRevolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingBolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingShotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingHMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingLMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingAssault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingMinigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingCharge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingLance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Splitting/AArmoury_SplittingBow</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>splitting</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 	
