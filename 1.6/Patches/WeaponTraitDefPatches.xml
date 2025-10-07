@@ -142,4 +142,117 @@
 			</operations>
 		</match>
 	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "ChargeCapacitor"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ChargeCapacitor/AArmoury_ChargeCapacitor_Lance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ChargeCapacitor/AArmoury_ChargeCapacitor_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+				
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPPulser"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EMPPulser/AArmoury_EMPPulser_Lance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EMPPulser/AArmoury_EMPPulser_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+				
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "ShortenedBarrel"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ShortenedBarrel</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					
+				</graphicOverrides>
+				
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "ExtendedMagazine"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedMagazine/AArmoury_ExtendedMagazine_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedMagazine/AArmoury_ExtendedMagazine_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedMagazine/AArmoury_ExtendedMagazine_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+				</graphicOverrides>
+				
+			</li>
+		</value>
+	</Operation>
 </Patch>
