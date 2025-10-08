@@ -1407,7 +1407,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>5.5</damageAmountBase>
+			<damageAmountBase>6</damageAmountBase>
 			<speed>70</speed>
 			<arcHeightFactor>2</arcHeightFactor>
 		</projectile>
@@ -1427,7 +1427,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>5.5</damageAmountBase>
+			<damageAmountBase>6</damageAmountBase>
 			<speed>70</speed>
 			<arcHeightFactor>-2</arcHeightFactor>
 		</projectile>
@@ -1487,7 +1487,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12.5</damageAmountBase>
+			<damageAmountBase>13</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<speed>100</speed>
 			<arcHeightFactor>2</arcHeightFactor>
@@ -1508,7 +1508,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12.5</damageAmountBase>
+			<damageAmountBase>13</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<speed>100</speed>
 			<arcHeightFactor>-2</arcHeightFactor>
@@ -1529,7 +1529,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Arrow</damageDef>
-			<damageAmountBase>8.5</damageAmountBase>
+			<damageAmountBase>9</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<armorPenetrationBase>0.15</armorPenetrationBase>
 			<arcHeightFactor>2</arcHeightFactor>
@@ -1546,7 +1546,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Arrow</damageDef>
-			<damageAmountBase>8.5</damageAmountBase>
+			<damageAmountBase>9</damageAmountBase>
 			<stoppingPower>1.5</stoppingPower>
 			<armorPenetrationBase>0.15</armorPenetrationBase>
 			<arcHeightFactor>-2</arcHeightFactor>

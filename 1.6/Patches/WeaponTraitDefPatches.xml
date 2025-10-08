@@ -281,6 +281,18 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPLauncher"]/exclusionTags</xpath>
+		<value>
+			<li>AArmoury_EMPLauncher</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WeaponTraitDef[defName = "IncendiaryLauncher"]/exclusionTags</xpath>
+		<value>
+			<li>AArmoury_IncendiaryLauncher</li>
+		</value>
+	</Operation>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Anomaly</li>

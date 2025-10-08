@@ -4,6 +4,10 @@ using RimWorld;
 using Verse;
 using LudeonTK;
 using VEF.Weapons;
+using static HarmonyLib.Code;
+using VEF.Abilities;
+using System.Security.Cryptography;
+using System;
 
 namespace AlphaArmoury
 {
@@ -31,26 +35,26 @@ namespace AlphaArmoury
             Thing.allowDestroyNonDestroyable = true;
             if (usedCells == null)
             {
-                 usedCells = new BoolGrid( Map);
+                usedCells = new BoolGrid(Map);
             }
             else
             {
-                 usedCells.ClearAndResizeTo( Map);
+                usedCells.ClearAndResizeTo(Map);
             }
-             overRect = new CellRect( Map.Center.x - (Map.Size.x / 2) + 100,  Map.Center.z - (Map.Size.z / 2) + 100, Map.Size.x - 200, Map.Size.z - 200);
-           
-            GenDebug.ClearArea( overRect, Find.CurrentMap);
+            overRect = new CellRect(Map.Center.x - (Map.Size.x / 2) + 100, Map.Center.z - (Map.Size.z / 2) + 100, Map.Size.x - 200, Map.Size.z - 200);
+
+            GenDebug.ClearArea(overRect, Find.CurrentMap);
 
 
             List<ThingDef> uniqueWeapons = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.GetCompProperties<CompProperties_UniqueWeapon>() != null).ToList();
             List<WeaponTraitDef> traits = DefDatabase<WeaponTraitDef>.AllDefsListForReading.Where(x => x.weaponCategory != InternalDefOf.BladeLink).ToList();
 
-            FillWithItems(overRect, uniqueWeapons,traits);
+            FillWithItems(overRect, uniqueWeapons, traits);
 
 
 
-             ClearAllHomeArea();
-             FillWithHomeArea( overRect);
+            ClearAllHomeArea();
+            FillWithHomeArea(overRect);
             DebugSettings.godMode = godMode;
             Thing.allowDestroyNonDestroyable = false;
         }
@@ -68,7 +72,7 @@ namespace AlphaArmoury
 
                     if (CanAddTrait(trait, compProperties))
                     {
-                        while (cellCounter < cells.Count &&(cells[cellCounter].x % 7 == 6 || cells[cellCounter].z % 7 == 6))
+                        while (cellCounter < cells.Count && (cells[cellCounter].x % 7 == 6 || cells[cellCounter].z % 7 == 6))
                         {
                             cellCounter++;
                         }
@@ -78,37 +82,88 @@ namespace AlphaArmoury
 
                         Thing weapon = BetterDebugSpawn(uniqueWeapon, cells[cellCounter], -1, true);
                         CompUniqueWeapon comp = weapon.TryGetComp<CompUniqueWeapon>();
-                        List< WeaponTraitDef > traitsToRemove = new List< WeaponTraitDef >();
+                        List<WeaponTraitDef> traitsToRemove = new List<WeaponTraitDef>();
+
                         foreach (WeaponTraitDef removeTrait in comp.TraitsListForReading)
                         {
                             traitsToRemove.Add(removeTrait);
                         }
-                        foreach(WeaponTraitDef traitToRemove in traitsToRemove)
+                        foreach (WeaponTraitDef traitToRemove in traitsToRemove)
                         {
                             comp.TraitsListForReading.Remove(traitToRemove);
                         }
-                       
+
+                        CompEquippableAbilityReloadable compEquippableAbilityReloadable = weapon.TryGetComp<CompEquippableAbilityReloadable>();
+
+                        ReflectionCache.comps((ThingWithComps)weapon).RemoveWhere(x => x.props.compClass == typeof(CompEquippableAbilityReloadable));
+
                         comp.AddTrait(trait);
                         weapon.Notify_ColorChanged();
-                        CompApplyWeaponTraits comp2 = weapon.TryGetComp<CompApplyWeaponTraits>();
-                        comp2.DeleteCaches();
-                        comp2.Notify_ForceRefresh();
-                        
+                        CompApplyWeaponTraits compApplyWeaponTraits = weapon.TryGetComp<CompApplyWeaponTraits>();
+                        compApplyWeaponTraits.DeleteCaches();
+                        compApplyWeaponTraits.Notify_ForceRefresh();
+
+
+                        ThingComp thingComp = null;
+                        try
+                        {
+                            thingComp = (ThingComp)Activator.CreateInstance(typeof(CompEquippableAbilityReloadable));
+                            thingComp.parent = (ThingWithComps)weapon;
+                            ReflectionCache.comps((ThingWithComps)weapon).Add(thingComp);
+                            if (trait.abilityProps != null)
+                            {
+                                thingComp.Initialize(trait.abilityProps);
+                               
+                            }
+                            else thingComp.Initialize(weapon.def.comps[0]);
+
+
+
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Error("Could not instantiate or initialize a ThingComp: " + ex);
+
+                        }
+
+                        if (trait.abilityProps?.maxCharges != null)
+                         {
+
+                             CompEquippableAbilityReloadable compEquippableAbilityReloadableAfterReadd = weapon.TryGetComp<CompEquippableAbilityReloadable>();
+                             if (compEquippableAbilityReloadableAfterReadd.AbilityForReading != null)
+                             {
+
+                                 ((CompEquippableAbility)(compEquippableAbilityReloadableAfterReadd)).AbilityForReading.maxCharges = trait.abilityProps.maxCharges;
+                                 compEquippableAbilityReloadableAfterReadd.RemainingCharges = trait.abilityProps.maxCharges-1;
+                                
+                            }
+
+
+                         }
+
+                      
+
+
+
+
+
+
+
                         cellCounter++;
                     }
 
                 }
-                
+
             }
 
-          
+
 
 
         }
 
         public static bool CanAddTrait(WeaponTraitDef trait, CompProperties_UniqueWeapon comp)
         {
-            
+
             if (!comp.weaponCategories.Contains(trait.weaponCategory))
             {
                 return false;
@@ -117,16 +172,16 @@ namespace AlphaArmoury
             {
                 return false;
             }
-            
+
             return true;
         }
 
 
-     
+
 
         public static Thing BetterDebugSpawn(ThingDef def, IntVec3 c, int stackCount = -1, bool direct = false, ThingStyleDef thingStyleDef = null, bool canBeMinified = true, WipeMode? wipeMode = null)
         {
-            
+
             if (stackCount <= 0)
             {
                 stackCount = def.stackLimit;
@@ -168,13 +223,13 @@ namespace AlphaArmoury
 
 
 
-     
+
 
         private static void ClearAllHomeArea()
         {
-            foreach (IntVec3 c in  Map.AllCells)
+            foreach (IntVec3 c in Map.AllCells)
             {
-                 Map.areaManager.Home[c] = false;
+                Map.areaManager.Home[c] = false;
             }
         }
 

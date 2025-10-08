@@ -77,12 +77,13 @@
 	</WeaponTraitDef>
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_ToxLauncher</defName>
-		<label>tox launcher</label>
-		<description>This weapon has an attached tox launcher. Once fired, it must be reloaded using steel.</description>
+		<label>tox grenade launcher</label>
+		<description>This weapon has an attached tox grenade launcher. Once fired, it must be reloaded using steel.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
+			<li>AArmoury_ToxLauncher</li>
 		</exclusionTags>
 		<traitAdjectives>
 			<li>tox</li>

@@ -403,6 +403,97 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
+		<defName>AArmoury_IncendiaryLauncher</defName>
+		<label>incendiary launcher</label>
+		<description>This weapon fires incendiary canisters.</description>
+		<commonality>1</commonality>
+		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+			<li>AArmoury_IncendiaryLauncher</li>
+		</exclusionTags>
+		
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>Bullet_IncendiaryLauncher</projectileOverride>
+				<graphicOverrides>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_IncendiaryLauncher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>incendiary</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_EMPLauncher</defName>
+		<label>EMP launcher</label>
+		<description>This weapon fires EMP canisters.</description>
+		<commonality>1</commonality>
+		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+			<li>AArmoury_EMPLauncher</li>
+		</exclusionTags>
+		
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>Bullet_EMPLauncher</projectileOverride>
+				<graphicOverrides>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EMPLauncher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>EMP</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_ToxLauncherMain</defName>
+		<label>toxbomb launcher</label>
+		<description>This weapon fires toxic gas canisters.</description>
+		<commonality>1</commonality>
+		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+			<li>AArmoury_ToxLauncher</li>
+			
+		</exclusionTags>
+		
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>Bullet_ToxbombLauncher</projectileOverride>
+				<graphicOverrides>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxLauncher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>toxic</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
 		<defName>AArmoury_Flamethrower</defName>
 		<label>flamethrower</label>
 		<description>This launcher ignites its incendiary shells as soon as they leave the gun, releasing a huge cone of fire that burns everything in its path.</description>

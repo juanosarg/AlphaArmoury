@@ -78,7 +78,7 @@
 			</li>
 			<li Class="CompProperties_UniqueWeapon">
 				<weaponCategories>
-					<li>Ranged</li>
+					
 					<li>Attachable</li>
 					<li>AArmoury_Gun_Launcher_Unique</li>
 				</weaponCategories>
@@ -104,7 +104,7 @@
 	</ThingDef>
 	
 	
-	 <ThingDef ParentName="ApparelBase">
+	<!-- <ThingDef ParentName="ApparelBase">
     <defName>AArmoury_Apparel_CowboyHat</defName>
     <label>cowboy hat</label>
     <description>Stylish yet rugged, this hat keeps the sun and rain off - and it gives anyone who wears it a bit of extra charm. It is the most important part of traditional western attire.</description>
@@ -194,5 +194,5 @@
 		</comps>
 		<generateAllowChance>0</generateAllowChance>
 		<possessionCount>0</possessionCount>
-  </ThingDef>
+  </ThingDef>-->
 </Defs>
