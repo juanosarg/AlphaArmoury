@@ -54,4 +54,7 @@
 	<WeaponCategoryDef>
 		<defName>AArmoury_AllButBeamAndLauncher</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>AArmoury_All</defName>
+	</WeaponCategoryDef>
 </Defs>

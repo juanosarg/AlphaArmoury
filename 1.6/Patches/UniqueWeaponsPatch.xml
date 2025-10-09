@@ -8,6 +8,7 @@
 					<li>AArmoury_Gun_Revolver_Unique</li>
 					<li>AArmoury_SingleBulletFiring</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -16,6 +17,7 @@
 					<li>AArmoury_Gun_BoltActionRifle_Unique</li>
 					<li>AArmoury_SingleBulletFiring</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -23,6 +25,7 @@
 				<value>
 					<li>AArmoury_Gun_ChainShotGun_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -31,6 +34,7 @@
 					<li>AArmoury_Gun_HeavySMG_Unique</li>
 					<li>AArmoury_Machineguns</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -39,6 +43,7 @@
 					<li>AArmoury_Gun_LMG_Unique</li>
 					<li>AArmoury_Machineguns</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -46,6 +51,7 @@
 				<value>
 					<li>AArmoury_Gun_AssaultRifle_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -55,6 +61,7 @@
 					<li>AArmoury_SingleBulletFiring</li>
 					<li>AArmoury_LongRangeSnipers</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -63,6 +70,7 @@
 					<li>AArmoury_Gun_MiniGun_Unique</li>
 					<li>AArmoury_Machineguns</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -70,6 +78,7 @@
 				<value>
 					<li>AArmoury_Bow_Great_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -77,6 +86,7 @@
 				<value>
 					<li>AArmoury_Gun_ChargeRifle_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -85,6 +95,7 @@
 					<li>AArmoury_Gun_ChargeLance_Unique</li>
 					<li>AArmoury_LongRangeSnipers</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 			
@@ -92,6 +103,7 @@
 				<xpath>Defs/ThingDef[defName = "Gun_BeamRepeater_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 				<value>
 					<li>AArmoury_Gun_BeamRepeater_Unique</li>
+					<li>AArmoury_All</li>
 				</value>
 			</li>
 		</operations>
@@ -107,6 +119,7 @@
 					<value>
 						<li>AArmoury_Gun_HellcatRifle_Unique</li>
 						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
 					</value>
 				</li>
 			</operations>

@@ -6,6 +6,7 @@
 		<description>Launch a disruptor flare. Can be reloaded using bioferrite.</description>
 		<iconPath>UI/Commands/AArmoury_LaunchFlare</iconPath>
 		<aiCanUse>true</aiCanUse>
+		
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>12.9</range>

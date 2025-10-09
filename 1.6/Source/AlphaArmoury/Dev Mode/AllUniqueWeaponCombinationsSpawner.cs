@@ -134,7 +134,7 @@ namespace AlphaArmoury
                              {
 
                                  ((CompEquippableAbility)(compEquippableAbilityReloadableAfterReadd)).AbilityForReading.maxCharges = trait.abilityProps.maxCharges;
-                                 compEquippableAbilityReloadableAfterReadd.RemainingCharges = trait.abilityProps.maxCharges-1;
+                                 compEquippableAbilityReloadableAfterReadd.RemainingCharges = trait.abilityProps.maxCharges;
                                 
                             }
 

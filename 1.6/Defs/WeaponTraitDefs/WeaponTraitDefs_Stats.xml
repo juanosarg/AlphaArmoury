@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WeaponTraitDef>
+		<defName>AArmoury_RevolverScope</defName>
+		<label>revolver scope</label>
+		<description>This revolver is outfitted with a scope, allowing it to fire further.</description>
+		<commonality>0.4</commonality>
+		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
+		<exclusionTags>
+			<li>Scope</li>
+		</exclusionTags>
+		<statOffsets>
+			<RangedWeapon_RangeMultiplier>0.2</RangedWeapon_RangeMultiplier>
+			<MarketValue>20</MarketValue>
+		</statOffsets>
+		<traitAdjectives>
+			<li>scoped</li>
+			<li>farsight</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_RevolverScope</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+</Defs>
