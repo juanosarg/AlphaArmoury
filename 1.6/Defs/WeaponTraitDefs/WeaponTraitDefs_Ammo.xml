@@ -1108,7 +1108,7 @@
 		<label>syringer gun</label>
 		<description>This rifle has been modified to fire mutagenic syringes that can cause random harmful mutations on their targets.</description>
 		<commonality>1</commonality>
-		<weaponCategory>AArmoury_Gun_SniperRifle_Unique</weaponCategory>
+		<weaponCategory>AArmoury_BoltAndSnipers</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
 			
@@ -1122,7 +1122,23 @@
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Syringer</texPath>
+							<texPath>Things/Weapon/AArmoury_Syringer/AArmoury_SyringerSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Syringer/AArmoury_SyringerBolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Syringer/AArmoury_SyringerLance</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1899,7 +1915,7 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				
 				<projectileOverride>AArmoury_HealingMinigun</projectileOverride>
-				
+				<soundOverride>AArmoury_Pew</soundOverride>
 				<graphicOverrides>
 				
 					<li>

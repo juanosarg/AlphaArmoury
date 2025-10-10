@@ -49,6 +49,9 @@
 		<defName>AArmoury_LongRangeSnipers</defName>
 	</WeaponCategoryDef>
 	<WeaponCategoryDef>
+		<defName>AArmoury_BoltAndSnipers</defName>
+	</WeaponCategoryDef>
+	<WeaponCategoryDef>
 		<defName>AArmoury_Machineguns</defName>
 	</WeaponCategoryDef>
 	<WeaponCategoryDef>
