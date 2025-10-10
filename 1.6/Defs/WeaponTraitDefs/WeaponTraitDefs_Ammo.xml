@@ -1886,6 +1886,40 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	
+	<WeaponTraitDef>
+		<defName>AArmoury_HealingMinigun</defName>
+		<label>healing gun</label>
+		<description>This minigun fires mechanite needles filled with a powerful healin serum. They will heal their targets instead of harming them.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_Gun_MiniGun_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				
+				<projectileOverride>AArmoury_HealingMinigun</projectileOverride>
+				
+				<graphicOverrides>
+				
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_HealingMinigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>healing</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_Looping</defName>
 		<label>looping</label>

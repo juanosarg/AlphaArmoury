@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic</defName>
+		<label>psychic bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Psychic</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>20</speed>
+			<arcHeightFactor>5</arcHeightFactor>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic_Lesser</defName>
+		<label>psychic bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Psychic</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>20</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic_Greater</defName>
+		<label>psychic bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Psychic</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>20</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseProjectileNeolithic" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic_Arrow</defName>
+		<label>psychic arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Psychic</thingClass>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic_Charge</defName>
+		<label>psychic charge shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Psychic</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic_Charge_Greater</defName>
+		<label>psychic charge lance shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Psychic</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>20</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_PsychicRepeater</defName>
+		<label>psychic beam repeater laser</label>
+		<thingClass>AlphaArmoury.Projectile_PsychicBeam</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HemovoricBullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>BeamBypassShields</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<beamMoteDef>Mote_BeamRepeaterLaser</beamMoteDef>
+			<beamStartOffset>0.5</beamStartOffset>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_Psychic_Feedback</defName>
+		<label>psychic feedback</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_PsychicFeedback</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_PsychicFeedback</thingClass>
+		<projectile>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>
