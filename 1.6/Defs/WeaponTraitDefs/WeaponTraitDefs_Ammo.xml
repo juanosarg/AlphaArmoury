@@ -1936,6 +1936,169 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	
+	<WeaponTraitDef>
+		<defName>AArmoury_Lifesteal</defName>
+		<label>lifesteal</label>
+		<description>Projectiles fired by this weapon will drain health from their target and transfer it back to the wielder.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_AllButBeamAndLauncher</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				
+				<projectileOverrides>
+					
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>AArmoury_Lifesteal_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_Lifesteal_Bolt</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_Lifesteal_Shotgun</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_Lifesteal_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_Lifesteal_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_Lifesteal_Assault</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_Lifesteal_Minigun</value>
+					</li>
+					
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_Lifesteal_Sniper</value>
+					</li>
+					
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>AArmoury_Lifesteal_Arrow</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>AArmoury_Lifesteal_Charge</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>AArmoury_Lifesteal_Lance</value>
+					</li>
+					
+					
+				</projectileOverrides>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealRevolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealBolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealShotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealHMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealLMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealAssault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealMinigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealCharge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealLance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Lifesteal/AArmoury_LifestealBow</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>lifesteal</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_Looping</defName>
 		<label>looping</label>

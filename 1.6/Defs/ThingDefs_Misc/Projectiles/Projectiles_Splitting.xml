@@ -168,7 +168,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>6</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>46</speed>
 			<arcHeightFactor>2</arcHeightFactor>
@@ -189,7 +189,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>12</damageAmountBase>
+			<damageAmountBase>6</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>46</speed>
 			<arcHeightFactor>-2</arcHeightFactor>

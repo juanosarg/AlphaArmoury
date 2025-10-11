@@ -314,14 +314,18 @@
     <Compile Include="Comps\CompSpawnChicken.cs" />
     <Compile Include="Comps\Properties\CompProperties_SpawnChickenOnDestroyed.cs" />
     <Compile Include="Dev Mode\AllUniqueWeaponCombinationsSpawner.cs" />
+    <Compile Include="Harmony\CompUniqueWeapon_AddTrait.cs" />
     <Compile Include="Harmony\CompUniqueWeapon_InitializeTraits.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\MentalBreakWorker_TryStart.cs" />
     <Compile Include="Harmony\VerbProperties_GetForceMissFactorFor.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
+    <Compile Include="Projectiles\Movement types\Projectile_Sinusoid.cs" />
     <Compile Include="Projectiles\Projectile_Healing.cs" />
-    <Compile Include="Projectiles\Projectile_Looping.cs" />
+    <Compile Include="Projectiles\Movement types\Projectile_Looping.cs" />
+    <Compile Include="Projectiles\Projectile_Lifesteal.cs" />
+    <Compile Include="Projectiles\Projectile_LifestealFeed.cs" />
     <Compile Include="Projectiles\Projectile_PsychicBeam.cs" />
     <Compile Include="Projectiles\Projectile_Psychic.cs" />
     <Compile Include="Projectiles\Projectile_HemovoricBeam.cs" />
@@ -342,6 +346,7 @@
     <Compile Include="Projectiles\Projectile_Syringe.cs" />
     <Compile Include="Projectiles\Projectile_TachyonicFeed.cs" />
     <Compile Include="Projectiles\Projectile_TachyonicFeedBeam.cs" />
+    <Compile Include="Projectiles\Movement types\Projectile_SinusoidWithPerlin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflectionCache\ReflectionCache.cs" />
     <Compile Include="Settings\AlphaArmoury_Mod.cs" />
@@ -349,6 +354,7 @@
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="StaticCollections\StaticCollections.cs" />
     <Compile Include="Unused\Unused.cs" />
+    <Compile Include="WeaponTraitWorkers\WeaponTraitWorker_Extended.cs" />
     <Compile Include="WeaponTraitWorkers\WeaponTraitWorker_NoForcedMiss.cs" />
   </ItemGroup>
   <ItemGroup />

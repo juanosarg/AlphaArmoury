@@ -5,11 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using static HarmonyLib.Code;
 
 namespace AlphaArmoury
 {
-    public class Projectile_Healing : Bullet
+    public class Projectile_LifestealFeed: Projectile_Sinusoid
     {
 
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
@@ -20,7 +19,7 @@ namespace AlphaArmoury
             if (pawn?.health != null)
             {
 
-                List<Hediff_Injury> injuries = GetInjuries(pawn);
+                List<Hediff_Injury> injuries = Projectile_Healing.GetInjuries(pawn);
                 if (injuries.Count > 0)
                 {
                     Hediff_Injury injury = injuries.RandomElement();
@@ -30,19 +29,6 @@ namespace AlphaArmoury
             }
         }
 
-        public static List<Hediff_Injury> GetInjuries(Pawn pawn)
-        {
-            List<Hediff_Injury> injuries = new List<Hediff_Injury>();
-            for (int i = 0; i < pawn.health.hediffSet.hediffs.Count; i++)
-            {
-                if (pawn.health.hediffSet.hediffs[i] is Hediff_Injury hediff_Injury)
-                {
-                    
-                    injuries.Add(hediff_Injury);
 
-                }
-            }
-            return injuries;
-        }
     }
 }

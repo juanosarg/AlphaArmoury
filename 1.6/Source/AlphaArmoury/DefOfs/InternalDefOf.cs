@@ -25,7 +25,7 @@ namespace AlphaArmoury
         public static MentalStateDef AArmoury_Manhunter;
 
         public static ThingDef AArmoury_SwarmRocket, AArmoury_Bullet_Shrapnel, AArmoury_Bullet_Shrapnel_Lesser, 
-            AArmoury_Hemovoric_Feedback, AArmoury_Psychic_Feedback;
+            AArmoury_Hemovoric_Feedback, AArmoury_Psychic_Feedback, AArmoury_LifestealFeedback;
 
         public static WeaponTraitDef AArmoury_PsychicResilience;
 
