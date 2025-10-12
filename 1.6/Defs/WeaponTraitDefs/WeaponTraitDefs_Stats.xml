@@ -37,13 +37,13 @@
 		<defName>AArmoury_ReinforcedFrame</defName>
 		<label>reinforced frame</label>
 		<description>This weapon has been reinforced with a plasteel carapace increasing its resilience.</description>
-		<commonality>0.25</commonality>
+		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<statOffsets>
 			<MarketValue>50</MarketValue>
 			
 		</statOffsets>
-		<workerClass>AlphaArmoury.WeaponTraitWorker_Extended</workerClass>
+		<workerClass>VEF.Weapons.WeaponTraitWorker_Extended</workerClass>
 		<statFactors>
 			<DeteriorationRate>0.5</DeteriorationRate>
 			<MaxHitPoints>1.5</MaxHitPoints>
@@ -51,6 +51,7 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<refreshMaxHitPointsStat>true</refreshMaxHitPointsStat>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
