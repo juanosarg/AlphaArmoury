@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>AArmoury_WeaponKits</defName>
+		<label>weapon kits</label>
+		<parent>Manufactured</parent>
+		<iconPath>Things/Item/AArmoury_WeaponTweakingKit</iconPath>
+	</ThingCategoryDef>
+	
+</Defs>

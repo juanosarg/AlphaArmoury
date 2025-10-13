@@ -2,10 +2,10 @@
 <Defs>
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Revolver</defName>
-		<label>frost revolver bullet</label>
+		<defName>AArmoury_Poison_Revolver</defName>
+		<label>poison revolver bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.5</drawSize>
 		</graphicData>
@@ -23,10 +23,10 @@
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Bolt</defName>
-		<label>frost bolt-action rifle bullet</label>
+		<defName>AArmoury_Poison_Bolt</defName>
+		<label>poison bolt-action rifle bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -43,10 +43,10 @@
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Shotgun</defName>
-		<label>frost shotgun blast</label>
+		<defName>AArmoury_Poison_Shotgun</defName>
+		<label>poison shotgun pellets</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -63,11 +63,12 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_HeavySMG</defName>
-		<label>frost heavy SMG bullet</label>
+		<defName>AArmoury_Poison_HeavySMG</defName>
+		<label>poison heavy SMG bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -83,10 +84,10 @@
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_LMG</defName>
-		<label>frost LMG bullet</label>
+		<defName>AArmoury_Poison_LMG</defName>
+		<label>poison LMG bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -103,10 +104,10 @@
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Assault</defName>
-		<label>frost assault rifle bullet</label>
+		<defName>AArmoury_Poison_Assault</defName>
+		<label>poison assault rifle bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -122,10 +123,10 @@
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Minigun</defName>
-		<label>frost minigun bullet</label>
+		<defName>AArmoury_Poison_Minigun</defName>
+		<label>poison minigun bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -142,10 +143,10 @@
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Sniper</defName>
-		<label>frost sniper rifle bullet</label>
+		<defName>AArmoury_Poison_Sniper</defName>
+		<label>poison sniper rifle bullet</label>
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		
@@ -161,76 +162,13 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="BaseProjectileNeolithic">
-		<defName>AArmoury_Frost_Arrow</defName>
-		<label>frost arrow</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		
-		<projectile>
-			<damageDef>Arrow</damageDef>
-			<damageAmountBase>17</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
-			<armorPenetrationBase>0.15</armorPenetrationBase>
-			<speed>49</speed>
-		</projectile>
-		<modExtensions>
-			<li Class="VEF.Weapons.ProjectileExtension">
-				<excludeFromStaticCollection>true</excludeFromStaticCollection>
-			</li>
-		</modExtensions>
-	</ThingDef>
+	
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Charge</defName>
-		<label>frost charge shot</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>16</damageAmountBase>
-			<armorPenetrationBase>0.35</armorPenetrationBase>
-			<speed>70</speed>
-		</projectile>
-		<modExtensions>
-			<li Class="VEF.Weapons.ProjectileExtension">
-				<excludeFromStaticCollection>true</excludeFromStaticCollection>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Lance</defName>
-		<label>frost charge lance shot</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
-		</graphicData>
-		
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
-			<speed>120</speed>
-		</projectile>
-		<modExtensions>
-			<li Class="VEF.Weapons.ProjectileExtension">
-				<excludeFromStaticCollection>true</excludeFromStaticCollection>
-			</li>
-		</modExtensions>
-		
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Frost_Hellcat</defName>
-		<label>frost hellcat rifle bullet</label>
+		<defName>AArmoury_Poison_Hellcat</defName>
+		<label>poison hellcat rifle bullet</label>
 		
 		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Frost</texPath>
+			<texPath>Things/Projectile/AArmoury_Poison</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>

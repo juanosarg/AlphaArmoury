@@ -92,61 +92,12 @@ namespace AlphaArmoury
                         {
                             comp.TraitsListForReading.Remove(traitToRemove);
                         }
-
-                        CompEquippableAbilityReloadable compEquippableAbilityReloadable = weapon.TryGetComp<CompEquippableAbilityReloadable>();
-
-                        ReflectionCache.comps((ThingWithComps)weapon).RemoveWhere(x => x.props.compClass == typeof(CompEquippableAbilityReloadable));
-
+                                             
                         comp.AddTrait(trait);
                         weapon.Notify_ColorChanged();
                         CompApplyWeaponTraits compApplyWeaponTraits = weapon.TryGetComp<CompApplyWeaponTraits>();
                         compApplyWeaponTraits.DeleteCaches();
                         compApplyWeaponTraits.Notify_ForceRefresh();
-
-
-                        ThingComp thingComp = null;
-                        try
-                        {
-                            thingComp = (ThingComp)Activator.CreateInstance(typeof(CompEquippableAbilityReloadable));
-                            thingComp.parent = (ThingWithComps)weapon;
-                            ReflectionCache.comps((ThingWithComps)weapon).Add(thingComp);
-                            if (trait.abilityProps != null)
-                            {
-                                thingComp.Initialize(trait.abilityProps);
-                               
-                            }
-                            else thingComp.Initialize(weapon.def.comps[0]);
-
-
-
-                        }
-                        catch (Exception ex)
-                        {
-                            Log.Error("Could not instantiate or initialize a ThingComp: " + ex);
-
-                        }
-
-                        if (trait.abilityProps?.maxCharges != null)
-                         {
-
-                             CompEquippableAbilityReloadable compEquippableAbilityReloadableAfterReadd = weapon.TryGetComp<CompEquippableAbilityReloadable>();
-                             if (compEquippableAbilityReloadableAfterReadd.AbilityForReading != null)
-                             {
-
-                                 ((CompEquippableAbility)(compEquippableAbilityReloadableAfterReadd)).AbilityForReading.maxCharges = trait.abilityProps.maxCharges;
-                                 compEquippableAbilityReloadableAfterReadd.RemainingCharges = trait.abilityProps.maxCharges;
-                                
-                            }
-
-
-                         }
-
-                      
-
-
-
-
-
 
 
                         cellCounter++;

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<JobDef>
+		<defName>AArmoury_UseWeaponKit</defName>
+		<driverClass>AlphaArmoury.JobDriver_UseWeaponKit</driverClass>
+		<reportString>using weapon kit.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+</Defs>

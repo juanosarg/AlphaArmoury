@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="AArmoury_WeaponKitBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<preventSpawningInResourcePod>true</preventSpawningInResourcePod>
+		<tradeNeverGenerateStacked>true</tradeNeverGenerateStacked>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>true</alwaysHaulable>
+		<rotatable>false</rotatable>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<pathCost>14</pathCost>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_WeaponKitBase">
+		<defName>AArmoury_WeaponKit</defName>
+		<label>weapon tweaking kit</label>
+		<description>A weapon kit for a specific weapon modifier. It can be used on an unique weapon to add a trait to it, as long as the weapon supports it.</description>
+		<thingClass>AlphaArmoury.WeaponKit</thingClass>
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/AArmoury_WeaponTweakingKit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>AArmoury_WeaponKits</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Targetable">
+				<compClass>AlphaArmoury.CompTargetable_UniqueWeapons</compClass>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>AArmoury_UseWeaponKit</useJob>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="AlphaArmoury.CompProperties_UseEffectWeaponKit">
+				
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

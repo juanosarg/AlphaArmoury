@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 	<AArmoury_NeedToTargetCaster>This ability needs to target its caster</AArmoury_NeedToTargetCaster>
+	<AArmoury_Trait>Weapon trait in this kit: "{0}"</AArmoury_Trait>
+	<AArmoury_CantApply>Can't apply "{0}" to {1}. {2}</AArmoury_CantApply>
+	<AArmoury_CantAcceptCategory>Weapon doesn't accept that trait category.</AArmoury_CantAcceptCategory>
+	<AArmoury_CantGenerateAlone>That trait can't be generated alone.</AArmoury_CantGenerateAlone>
+	<AArmoury_TraitConflicts>Trait conflicts with existing trait "{0}".</AArmoury_TraitConflicts>
 	
 	<AArmoury_MinWeaponTraits>Minimum weapon traits</AArmoury_MinWeaponTraits>
 	<AArmoury_MinWeaponTraitsDesc>By default, unique weapons have a minimum of 1 weapon trait. Changes to this will only affect newly spawned weapons, not existing ones.</AArmoury_MinWeaponTraitsDesc>
@@ -9,4 +14,6 @@
 	<AArmoury_MaxWeaponTraitsDesc>By default, unique weapons have a maximum of 3 weapon traits. Changes to this will only affect newly spawned weapons, not existing ones.</AArmoury_MaxWeaponTraitsDesc>
 	
 	<AArmoury_Reset>Reset</AArmoury_Reset>
+	
+	
 </LanguageData>

@@ -1,6 +1,112 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "IncendiaryRounds"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<soundOverride>AArmoury_Incendiary</soundOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>AArmoury_Incendiary_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_Incendiary_Bolt</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_Incendiary_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_Incendiary_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_Incendiary_Assault</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_Incendiary_Minigun</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_Incendiary_Sniper</value>
+					</li>
+				</projectileOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "IncendiaryPellets"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<soundOverride>AArmoury_Incendiary</soundOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_Incendiary_Shotgun</value>
+					</li>
+					
+				</projectileOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "ToxRounds"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<soundOverride>AArmoury_Acid</soundOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>AArmoury_Poison_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_Poison_Bolt</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_Poison_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_Poison_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_Poison_Assault</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_Poison_Minigun</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_Poison_Sniper</value>
+					</li>
+				</projectileOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "ToxPellets"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<soundOverride>AArmoury_Acid</soundOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_Poison_Shotgun</value>
+					</li>
+					
+				</projectileOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/WeaponTraitDef[defName = "StabilizerBrace"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
@@ -43,7 +149,6 @@
 		<xpath>Defs/WeaponTraitDef[defName = "PrecisionScope"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				
 				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
 				<graphicOverrides>
 					<li>
@@ -62,7 +167,6 @@
 		<xpath>Defs/WeaponTraitDef[defName = "RangefinderScope"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				
 				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
 				<graphicOverrides>
 					<li>
@@ -120,7 +224,6 @@
 			</li>
 		</value>
 	</Operation>
-	
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/WeaponTraitDef[defName = "ChargeCapacitor"]</xpath>
 		<value>
@@ -135,7 +238,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_ChargeRifle_Unique</key>
 						<value>
@@ -145,7 +247,6 @@
 						</value>
 					</li>
 				</graphicOverrides>
-				
 			</li>
 		</value>
 	</Operation>
@@ -163,7 +264,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Gun_ChargeRifle_Unique</key>
 						<value>
@@ -173,7 +273,6 @@
 						</value>
 					</li>
 				</graphicOverrides>
-				
 			</li>
 		</value>
 	</Operation>
@@ -191,10 +290,7 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
-					
 				</graphicOverrides>
-				
 			</li>
 		</value>
 	</Operation>
@@ -253,7 +349,6 @@
 						</value>
 					</li>
 				</graphicOverrides>
-				
 			</li>
 		</value>
 	</Operation>
@@ -263,7 +358,6 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
 				<graphicOverrides>
-					
 					<li>
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>
@@ -273,7 +367,6 @@
 						</value>
 					</li>
 				</graphicOverrides>
-				
 			</li>
 		</value>
 	</Operation>
@@ -283,7 +376,6 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
 				<graphicOverrides>
-					
 					<li>
 						<key>Gun_Revolver_Unique</key>
 						<value>
@@ -293,7 +385,6 @@
 						</value>
 					</li>
 				</graphicOverrides>
-				
 			</li>
 		</value>
 	</Operation>
@@ -341,7 +432,24 @@
 						</li>
 					</value>
 				</li>
-				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "IncendiaryRounds"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/projectileOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>AArmoury_Incendiary_Hellcat</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "ToxRounds"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/projectileOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>AArmoury_Poison_Hellcat</value>
+						</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>

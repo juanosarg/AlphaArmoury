@@ -32,5 +32,7 @@ namespace AlphaArmoury
         [MayRequire("Ludeon.RimWorld.Royalty")]
         public static WeaponCategoryDef BladeLink;
 
+        public static SoundDef Standard_Reload;
+
     }
 }

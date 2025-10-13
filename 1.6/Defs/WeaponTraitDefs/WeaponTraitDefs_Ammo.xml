@@ -848,7 +848,7 @@
 		<label>vanometric 3D printer</label>
 		<description>A very rare archotech device that allows the weapon to work without the need for either ammunation or any power source. It seem to be very ancient tech and is malfunctioning, causing the weapon to produce random results every time it is fired.\n\nThis will either annihilate its target, or cause unbound chaos.</description>
 		<commonality>0.05</commonality>
-		<weaponCategory>Ranged</weaponCategory>
+		<weaponCategory>AArmoury_All</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
 		</exclusionTags>

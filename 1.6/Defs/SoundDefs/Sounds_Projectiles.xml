@@ -24,7 +24,30 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
+	<!-- ======================== Incendiary ======================== -->
+	<SoundDef>
+		<defName>AArmoury_Incendiary</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AArmoury_Incendiary</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<!-- ======================== Frost ======================== -->
 	<SoundDef>
 		<defName>AArmoury_Frost</defName>
@@ -49,7 +72,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
 	<!-- ======================== Bayonet ======================== -->
 	<SoundDef>
 		<defName>AArmoury_Bayonet</defName>
@@ -98,7 +120,7 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-		<!-- ======================== Shatter ======================== -->
+	<!-- ======================== Shatter ======================== -->
 	<SoundDef>
 		<defName>AArmoury_Shatter</defName>
 		<context>MapOnly</context>
@@ -294,7 +316,6 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-	
 	<!-- ======================== Chainsaw ======================== -->
 	<SoundDef>
 		<defName>AArmoury_Chainsaw</defName>
