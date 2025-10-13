@@ -236,6 +236,22 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedMagazine/AArmoury_ExtendedMagazine_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ExtendedMagazine/AArmoury_ExtendedMagazine_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
 				</graphicOverrides>
 				
 			</li>

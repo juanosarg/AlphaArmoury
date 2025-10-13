@@ -1,18 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_SkipField</defName>
 		<label>skip field</label>
 		<description>This weapon generates a localized skip fields that allows its user to self-skip.</description>
 		<commonality>0.5</commonality>
-		
 		<weaponCategory>Ranged</weaponCategory>
-		
-		
 		<traitAdjectives>
 			<li>skip</li>
-			
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
@@ -25,13 +20,9 @@
 		<label>invisibility field</label>
 		<description>This weapon generates a field of psychic invisibility that will conceal its user for a time.</description>
 		<commonality>0.5</commonality>
-		
 		<weaponCategory>Ranged</weaponCategory>
-		
-		
 		<traitAdjectives>
 			<li>skip</li>
-			
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
@@ -39,7 +30,6 @@
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_Sludge</defName>
 		<label>sludge spewer</label>
@@ -51,7 +41,6 @@
 		</exclusionTags>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-			
 				<soundOverride>AcidSpray_Resolve</soundOverride>
 				<graphicOverrides>
 					<li>
@@ -79,6 +68,15 @@
 						</value>
 					</li>
 				</graphicOverrides>
+				<abilityWithCharges>
+					<abilityDef>AArmoury_Sludge</abilityDef>
+					<maxCharges>5</maxCharges>
+					<soundReload>Standard_Reload</soundReload>
+					<chargeNoun>sludge</chargeNoun>
+					<ammoDef>Chemfuel</ammoDef>
+					<ammoCountPerCharge>20</ammoCountPerCharge>
+					<baseReloadTicks>60</baseReloadTicks>
+				</abilityWithCharges>
 			</li>
 		</modExtensions>
 		<statOffsets>
@@ -87,17 +85,5 @@
 		<traitAdjectives>
 			<li>acidic</li>
 		</traitAdjectives>
-		<abilityProps>
-			<abilityDef>AArmoury_Sludge</abilityDef>
-			<maxCharges>5</maxCharges>
-			<soundReload>Standard_Reload</soundReload>
-			<chargeNoun>sludge</chargeNoun>
-			<ammoDef>Chemfuel</ammoDef>
-			<ammoCountPerCharge>20</ammoCountPerCharge>
-			<baseReloadTicks>60</baseReloadTicks>
-		</abilityProps>
 	</WeaponTraitDef>
-	
-	
-	
 </Defs>

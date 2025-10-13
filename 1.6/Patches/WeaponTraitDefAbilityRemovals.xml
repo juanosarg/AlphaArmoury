@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPPulser"]/abilityProps</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPPulser"]/exclusionTags/li[text()="Ability"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPPulser"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>EMPPulse</abilityToAdd>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WeaponTraitDef[defName = "GrenadeLauncher"]/abilityProps</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "GrenadeLauncher"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityWithCharges>
+					<abilityDef>LaunchFragGrenade</abilityDef>
+					<maxCharges>1</maxCharges>
+					<soundReload>Standard_Reload</soundReload>
+					<chargeNoun>grenade</chargeNoun>
+					<ammoDef>Steel</ammoDef>
+					<ammoCountPerCharge>25</ammoCountPerCharge>
+					<baseReloadTicks>60</baseReloadTicks>
+				</abilityWithCharges>
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPLauncher"]/abilityProps</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "EMPLauncher"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityWithCharges>
+					<abilityDef>LaunchEMPShell</abilityDef>
+					<maxCharges>2</maxCharges>
+					<soundReload>Standard_Reload</soundReload>
+					<chargeNoun>shell</chargeNoun>
+					<ammoDef>Steel</ammoDef>
+					<ammoCountPerCharge>15</ammoCountPerCharge>
+					<baseReloadTicks>60</baseReloadTicks>
+				</abilityWithCharges>
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WeaponTraitDef[defName = "SmokeLauncher"]/abilityProps</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "SmokeLauncher"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityWithCharges>
+					<abilityDef>LaunchSmokeShell</abilityDef>
+					<maxCharges>2</maxCharges>
+					<soundReload>Standard_Reload</soundReload>
+					<chargeNoun>shell</chargeNoun>
+					<ammoDef>Steel</ammoDef>
+					<ammoCountPerCharge>15</ammoCountPerCharge>
+					<baseReloadTicks>60</baseReloadTicks>
+				</abilityWithCharges>
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/WeaponTraitDef[defName = "IncendiaryLauncher"]/abilityProps</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/WeaponTraitDef[defName = "IncendiaryLauncher"]</xpath>
+		<value>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityWithCharges>
+					<abilityDef>LaunchIncendiaryShell</abilityDef>
+					<maxCharges>1</maxCharges>
+					<soundReload>Standard_Reload</soundReload>
+					<chargeNoun>shell</chargeNoun>
+					<ammoDef>Chemfuel</ammoDef>
+					<ammoCountPerCharge>15</ammoCountPerCharge>
+					<baseReloadTicks>60</baseReloadTicks>
+				</abilityWithCharges>
+				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/WeaponTraitDef[defName = "BioferriteBurner"]/abilityProps</xpath>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/WeaponTraitDef[defName = "BioferriteBurner"]</xpath>
+					<value>
+						<li Class="VEF.Weapons.WeaponTraitDefExtension">
+							<abilityWithCharges>
+								<abilityDef>HellcatBurner</abilityDef>
+								<maxCharges>1</maxCharges>
+								<soundReload>Standard_Reload</soundReload>
+								<chargeNoun>burner charge</chargeNoun>
+								<ammoDef>Bioferrite</ammoDef>
+								<ammoCountPerCharge>10</ammoCountPerCharge>
+								<baseReloadTicks>60</baseReloadTicks>
+							</abilityWithCharges>
+							<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+							<graphicOverrides>
+								<li>
+									<key>Gun_ChainShotgun_Unique</key>
+									<value>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Shotgun</texPath>
+										<graphicClass>Graphic_Random</graphicClass>
+										<shaderType>CutoutComplex</shaderType>
+									</value>
+								</li>
+								<li>
+									<key>Gun_HeavySMG_Unique</key>
+									<value>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_HMG</texPath>
+										<graphicClass>Graphic_Random</graphicClass>
+										<shaderType>CutoutComplex</shaderType>
+									</value>
+								</li>
+								<li>
+									<key>Gun_LMG_Unique</key>
+									<value>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_LMG</texPath>
+										<graphicClass>Graphic_Random</graphicClass>
+										<shaderType>CutoutComplex</shaderType>
+									</value>
+								</li>
+								<li>
+									<key>Gun_AssaultRifle_Unique</key>
+									<value>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Assault</texPath>
+										<graphicClass>Graphic_Random</graphicClass>
+										<shaderType>CutoutComplex</shaderType>
+									</value>
+								</li>
+								<li>
+									<key>Gun_ChargeRifle_Unique</key>
+									<value>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Charge</texPath>
+										<graphicClass>Graphic_Random</graphicClass>
+										<shaderType>CutoutComplex</shaderType>
+									</value>
+								</li>
+								<li>
+									<key>AArmoury_Gun_Launcher_Unique</key>
+									<value>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Launcher</texPath>
+										<graphicClass>Graphic_Random</graphicClass>
+										<shaderType>CutoutComplex</shaderType>
+									</value>
+								</li>
+							</graphicOverrides>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

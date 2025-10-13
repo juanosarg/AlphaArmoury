@@ -278,6 +278,58 @@
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<soundOverride>AArmoury_Frost</soundOverride>
+				<projectileOverrides>
+					
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>AArmoury_Frost_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_Frost_Bolt</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_Frost_Shotgun</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_Frost_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_Frost_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_Frost_Assault</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_Frost_Minigun</value>
+					</li>
+					
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_Frost_Sniper</value>
+					</li>
+					
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>AArmoury_Frost_Arrow</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>AArmoury_Frost_Charge</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>AArmoury_Frost_Lance</value>
+					</li>
+					
+					
+				</projectileOverrides>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -2099,7 +2151,7 @@
 	</WeaponTraitDef>
 	
 	
-	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
+	<!--<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_Looping</defName>
 		<label>looping</label>
 		<description>Looping.</description>
@@ -2119,6 +2171,6 @@
 		<traitAdjectives>
 			<li>looping</li>
 		</traitAdjectives>
-	</WeaponTraitDef>
+	</WeaponTraitDef>-->
 	
 </Defs>
