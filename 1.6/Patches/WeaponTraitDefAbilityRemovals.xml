@@ -30,7 +30,7 @@
 					<ammoCountPerCharge>25</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
 				</abilityWithCharges>
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>-11</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -100,7 +100,7 @@
 					<ammoCountPerCharge>15</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
 				</abilityWithCharges>
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>-11</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -170,7 +170,7 @@
 					<ammoCountPerCharge>15</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
 				</abilityWithCharges>
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>-11</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -240,7 +240,7 @@
 					<ammoCountPerCharge>15</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
 				</abilityWithCharges>
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>-11</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -316,7 +316,7 @@
 								<ammoCountPerCharge>10</ammoCountPerCharge>
 								<baseReloadTicks>60</baseReloadTicks>
 							</abilityWithCharges>
-							<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+							<graphicOverridePriority>-11</graphicOverridePriority>
 							<graphicOverrides>
 								<li>
 									<key>Gun_ChainShotgun_Unique</key>

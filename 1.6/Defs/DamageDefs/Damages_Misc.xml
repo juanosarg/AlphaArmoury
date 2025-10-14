@@ -93,4 +93,19 @@
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
 		<scaleDamageToBuildingsBasedOnFlammability>true</scaleDamageToBuildingsBasedOnFlammability>
 	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_Chemburster</defName>
+		<label>bullet</label>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_Chemburster</hediff>
+				<severityPerDamageDealt>0.5</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
 </Defs>

@@ -110,7 +110,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "StabilizerBrace"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>0</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -131,7 +131,7 @@
 				<projectileOverride>AArmoury_PulseBullet</projectileOverride>
 				<lowPreferenceProjectileOverride>true</lowPreferenceProjectileOverride>
 				<soundOverride>AArmoury_Pulse</soundOverride>
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>-1</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -149,7 +149,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "PrecisionScope"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>2</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
@@ -167,7 +167,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "RangefinderScope"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>3</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
@@ -185,7 +185,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "ExtendedBarrel"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>4</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_BoltActionRifle_Unique</key>
@@ -228,7 +228,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "ChargeCapacitor"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>5</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChargeLance_Unique</key>
@@ -254,7 +254,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "EMPPulser"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>6</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChargeLance_Unique</key>
@@ -280,7 +280,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "ShortenedBarrel"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>7</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -298,7 +298,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "ExtendedMagazine"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>8</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -356,7 +356,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "FrequencyAmplifier"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>9</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_BeamRepeater_Unique</key>
@@ -374,7 +374,7 @@
 		<xpath>Defs/WeaponTraitDef[defName = "ImprovedSights"]</xpath>
 		<value>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				<graphicOverrideCommonality>0.001</graphicOverrideCommonality>
+				<graphicOverridePriority>10</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>

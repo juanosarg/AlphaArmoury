@@ -308,15 +308,20 @@
   <ItemGroup>
     <Compile Include="Abilities\CompAbilityEffect_LaunchProjectile_Multi.cs" />
     <Compile Include="Abilities\CompAbilityEffect_SelfSkip.cs" />
+    <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityLaunchProjectile_Multi.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Remover.cs" />
     <Compile Include="Comps\CompSpawnChicken.cs" />
     <Compile Include="Comps\CompTargetable_UniqueWeapons.cs" />
     <Compile Include="Comps\CompUseEffect_WeaponKit.cs" />
+    <Compile Include="Comps\CompUseEffect_WeaponKit_Remover.cs" />
     <Compile Include="Comps\Properties\CompProperties_SpawnChickenOnDestroyed.cs" />
     <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit.cs" />
+    <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit_Remover.cs" />
     <Compile Include="Dev Mode\AllUniqueWeaponCombinationsSpawner.cs" />
     <Compile Include="Harmony\CompUniqueWeapon_InitializeTraits.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />

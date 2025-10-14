@@ -28,10 +28,13 @@ namespace AlphaArmoury
                 {
                     comp.AddTrait(kit.trait);
                     comp.Setup(fromSave: true);
-                    comp.Notify_ColorChanged();
+                   
                     CompApplyWeaponTraits compApplyWeaponTraits = thing.TryGetComp<CompApplyWeaponTraits>();
-                    compApplyWeaponTraits.DeleteCaches();
-                    compApplyWeaponTraits.Notify_ForceRefresh();
+                    if (compApplyWeaponTraits != null) {
+                        compApplyWeaponTraits.DeleteCaches();
+                        compApplyWeaponTraits.Notify_ForceRefresh();
+                    }
+                     comp.Notify_ColorChanged();
 
                 }
                 else

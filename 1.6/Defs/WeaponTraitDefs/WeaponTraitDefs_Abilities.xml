@@ -86,4 +86,19 @@
 			<li>acidic</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_Detonation</defName>
+		<label>detonation</label>
+		<description>This weapon generates ultra heated gasses that can be released in the form of a powerful explosion. It will not harm the wielder.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>skip</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>AArmoury_Detonation</abilityToAdd>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>

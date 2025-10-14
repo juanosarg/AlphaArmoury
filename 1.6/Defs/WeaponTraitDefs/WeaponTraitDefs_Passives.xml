@@ -24,4 +24,33 @@
 			<li>satiating</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_SharpshootersFocus</defName>
+		<label>sharpshooter’s focus</label>
+		<description>This weapon is so easy to handle and wield that it will increase the wielders shooting skill just by having it equipped.</description>
+		<commonality>0.25</commonality>
+		<equippedHediffs>
+			<li>AArmoury_SharpshootersFocus</li>
+		</equippedHediffs>
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>focused</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_AdrenalRush</defName>
+		<label>adrenal rush</label>
+		<description>This weapon floods the wielder with a surge of combat stimulants upon landing a kill, briefly heightening reflexes and movement speed.</description>
+		<commonality>0.25</commonality>
+		
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>adrenal</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<killHediff>AArmoury_AdrenalRush</killHediff>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>

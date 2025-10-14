@@ -280,7 +280,6 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<soundOverride>AArmoury_Frost</soundOverride>
 				<projectileOverrides>
-					
 					<li>
 						<key>Gun_Revolver_Unique</key>
 						<value>AArmoury_Frost_Revolver</value>
@@ -309,12 +308,10 @@
 						<key>Gun_Minigun_Unique</key>
 						<value>AArmoury_Frost_Minigun</value>
 					</li>
-					
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
 						<value>AArmoury_Frost_Sniper</value>
 					</li>
-					
 					<li>
 						<key>Bow_Great_Unique</key>
 						<value>AArmoury_Frost_Arrow</value>
@@ -327,8 +324,6 @@
 						<key>Gun_ChargeLance_Unique</key>
 						<value>AArmoury_Frost_Lance</value>
 					</li>
-					
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -464,7 +459,6 @@
 			<li>AmmoType</li>
 			<li>AArmoury_IncendiaryLauncher</li>
 		</exclusionTags>
-		
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>Bullet_IncendiaryLauncher</projectileOverride>
@@ -494,7 +488,6 @@
 			<li>AmmoType</li>
 			<li>AArmoury_EMPLauncher</li>
 		</exclusionTags>
-		
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>Bullet_EMPLauncher</projectileOverride>
@@ -523,9 +516,7 @@
 		<exclusionTags>
 			<li>AmmoType</li>
 			<li>AArmoury_ToxLauncher</li>
-			
 		</exclusionTags>
-		
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>Bullet_ToxbombLauncher</projectileOverride>
@@ -936,7 +927,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Bow_Great_Unique</key>
 						<value>
@@ -1122,7 +1112,6 @@
 			<li>breaching</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_NetGun</defName>
 		<label>net gun</label>
@@ -1131,7 +1120,6 @@
 		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
-			
 		</exclusionTags>
 		<workerClass>AlphaArmoury.WeaponTraitWorker_NoForcedMiss</workerClass>
 		<modExtensions>
@@ -1154,7 +1142,6 @@
 			<li>immobilizing</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_SyringerGun</defName>
 		<label>syringer gun</label>
@@ -1163,9 +1150,7 @@
 		<weaponCategory>AArmoury_BoltAndSnipers</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
-			
 		</exclusionTags>
-	
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>AArmoury_Syringe</projectileOverride>
@@ -1200,10 +1185,8 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>mutagenic</li>
-			
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_ShatterRounds</defName>
 		<label>shatter rounds</label>
@@ -1236,17 +1219,13 @@
 						<key>Gun_Minigun_Unique</key>
 						<value>AArmoury_ShatterRounds_Lesser</value>
 					</li>
-					
 				</projectileOverrides>
-				
 			</li>
 		</modExtensions>
 		<traitAdjectives>
 			<li>shaterring</li>
-			
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_Electric</defName>
 		<label>electrified</label>
@@ -1295,7 +1274,6 @@
 			<li>electric</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_TachyonicFeed</defName>
 		<label>tachyonic feed</label>
@@ -1353,7 +1331,6 @@
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>AArmoury_TachyonicBeamRepeater</value>
 					</li>
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -1452,7 +1429,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -1460,7 +1436,6 @@
 			<li>tachyonic</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric</defName>
 		<label>hemovoric</label>
@@ -1518,7 +1493,6 @@
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>AArmoury_HemovoricRepeater</value>
 					</li>
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -1617,7 +1591,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -1625,7 +1598,6 @@
 			<li>hemovoric</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>AArmoury_Psychic</defName>
 		<label>psychic</label>
@@ -1684,7 +1656,6 @@
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>AArmoury_PsychicRepeater</value>
 					</li>
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -1783,7 +1754,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -1791,7 +1761,6 @@
 			<li>psychic</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_Splitting</defName>
 		<label>bullet splitting</label>
@@ -1803,9 +1772,7 @@
 		</exclusionTags>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				
 				<projectileOverrides>
-					
 					<li>
 						<key>Gun_Revolver_Unique</key>
 						<value>AArmoury_Splitting_Revolver</value>
@@ -1834,12 +1801,10 @@
 						<key>Gun_Minigun_Unique</key>
 						<value>AArmoury_Splitting_Minigun</value>
 					</li>
-					
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
 						<value>AArmoury_Splitting_Sniper</value>
 					</li>
-					
 					<li>
 						<key>Bow_Great_Unique</key>
 						<value>AArmoury_Splitting_Arrow</value>
@@ -1852,8 +1817,6 @@
 						<key>Gun_ChargeLance_Unique</key>
 						<value>AArmoury_Splitting_Lance</value>
 					</li>
-					
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -1936,7 +1899,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Bow_Great_Unique</key>
 						<value>
@@ -1945,7 +1907,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -1953,7 +1914,6 @@
 			<li>splitting</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_HealingMinigun</defName>
 		<label>healing gun</label>
@@ -1965,11 +1925,9 @@
 		</exclusionTags>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				
 				<projectileOverride>AArmoury_HealingMinigun</projectileOverride>
 				<soundOverride>AArmoury_Pew</soundOverride>
 				<graphicOverrides>
-				
 					<li>
 						<key>Gun_Minigun_Unique</key>
 						<value>
@@ -1978,8 +1936,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -1987,7 +1943,6 @@
 			<li>healing</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
 	<WeaponTraitDef>
 		<defName>AArmoury_Lifesteal</defName>
 		<label>lifesteal</label>
@@ -1999,9 +1954,7 @@
 		</exclusionTags>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
-				
 				<projectileOverrides>
-					
 					<li>
 						<key>Gun_Revolver_Unique</key>
 						<value>AArmoury_Lifesteal_Revolver</value>
@@ -2030,12 +1983,10 @@
 						<key>Gun_Minigun_Unique</key>
 						<value>AArmoury_Lifesteal_Minigun</value>
 					</li>
-					
 					<li>
 						<key>Gun_SniperRifle_Unique</key>
 						<value>AArmoury_Lifesteal_Sniper</value>
 					</li>
-					
 					<li>
 						<key>Bow_Great_Unique</key>
 						<value>AArmoury_Lifesteal_Arrow</value>
@@ -2048,8 +1999,6 @@
 						<key>Gun_ChargeLance_Unique</key>
 						<value>AArmoury_Lifesteal_Lance</value>
 					</li>
-					
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -2132,7 +2081,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>Bow_Great_Unique</key>
 						<value>
@@ -2141,7 +2089,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -2149,8 +2096,55 @@
 			<li>lifesteal</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
-	
+	<WeaponTraitDef>
+		<defName>AArmoury_Chemburster</defName>
+		<label>chemburster</label>
+		<description>Bullets fired from this weapon have a microscopic ampoule of concentrated chemfuel. This will be injected into their targets and cause them to explode on death.</description>
+		<commonality>1</commonality>
+		<weaponCategory>AArmoury_SingleBulletFiring</weaponCategory>
+		<extraDamages>
+			<li>
+				<def>AArmoury_Chemburster</def>
+				<amount>1</amount>
+			</li>
+		</extraDamages>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chemburster/AArmoury_Chemburster_Revolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chemburster/AArmoury_Chemburster_Bolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chemburster/AArmoury_Chemburster_Sniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>chemical</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
 	<!--<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_Looping</defName>
 		<label>looping</label>
@@ -2172,5 +2166,4 @@
 			<li>looping</li>
 		</traitAdjectives>
 	</WeaponTraitDef>-->
-	
 </Defs>

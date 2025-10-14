@@ -6,6 +6,7 @@
 			<Mass>0.5</Mass>
 			<Flammability>0</Flammability>
 		</statBases>
+		<thingClass>ThingWithComps</thingClass>
 		<thingCategories>
 			<li>ItemsMisc</li>
 		</thingCategories>
@@ -66,6 +67,95 @@
 			</li>
 			<li Class="AlphaArmoury.CompProperties_UseEffectWeaponKit">
 				
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_WeaponKitBase">
+		<defName>AArmoury_WeaponKit_Remover</defName>
+		<label>weapon trait removing kit</label>
+		<description>A weapon kit to remove traits from a weapon. It can be used on an unique weapon to remove a random trait from it.</description>
+		
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/AArmoury_WeaponTweakingKitRemover</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>AArmoury_WeaponKits</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Targetable">
+				<compClass>AlphaArmoury.CompTargetable_UniqueWeapons</compClass>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>AArmoury_UseWeaponKit_Remover</useJob>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="AlphaArmoury.CompProperties_UseEffectWeaponKit_Remover">
+				<doRandom>true</doRandom>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="AArmoury_WeaponKitBase">
+		<defName>AArmoury_WeaponKit_TabulaRasa</defName>
+		<label>tabula rasa weapon kit</label>
+		<description>A weapon kit that removes all weapon traits from a weapon.</description>
+		
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/AArmoury_WeaponTweakingKitArchotech</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>3000</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>AArmoury_WeaponKits</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Targetable">
+				<compClass>AlphaArmoury.CompTargetable_UniqueWeapons</compClass>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>AArmoury_UseWeaponKit_Remover</useJob>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="AlphaArmoury.CompProperties_UseEffectWeaponKit_Remover">
+				<removeAll>true</removeAll>
 			</li>
 		</comps>
 	</ThingDef>
