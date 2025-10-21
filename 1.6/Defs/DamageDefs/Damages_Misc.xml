@@ -108,4 +108,19 @@
 		<impactSoundType>Toxic</impactSoundType>
 		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_Flux</defName>
+		<label>bullet</label>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_Flux</hediff>
+				<severityPerDamageDealt>0.5</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+	
+		<damageEffecter>AArmoury_Flux</damageEffecter>
+	</DamageDef>
 </Defs>

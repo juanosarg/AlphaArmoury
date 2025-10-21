@@ -308,6 +308,7 @@
   <ItemGroup>
     <Compile Include="Abilities\CompAbilityEffect_LaunchProjectile_Multi.cs" />
     <Compile Include="Abilities\CompAbilityEffect_SelfSkip.cs" />
+    <Compile Include="Abilities\CompAbilityEffect_Skip.cs" />
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityLaunchProjectile_Multi.cs" />
@@ -328,6 +329,8 @@
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Harmony\MentalBreakWorker_TryStart.cs" />
     <Compile Include="Harmony\VerbProperties_GetForceMissFactorFor.cs" />
+    <Compile Include="HediffComps\HediffComp_ProjectileToNearby.cs" />
+    <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Sinusoid.cs" />
     <Compile Include="Projectiles\Projectile_Healing.cs" />

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 	<AArmoury_NeedToTargetCaster>This ability needs to target its caster</AArmoury_NeedToTargetCaster>
+	<AArmoury_NeedToTargetNotCaster>This ability needs to target someone besides its caster</AArmoury_NeedToTargetNotCaster>
 	<AArmoury_Trait>Weapon trait in this kit: "{0}"</AArmoury_Trait>
 	<AArmoury_CantApply>Can't apply "{0}" to {1}. {2}</AArmoury_CantApply>
 	<AArmoury_CantAcceptCategory>Weapon doesn't accept that trait category.</AArmoury_CantAcceptCategory>

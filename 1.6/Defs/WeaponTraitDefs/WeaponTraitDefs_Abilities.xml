@@ -1,9 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<WeaponTraitDef>
+		<defName>AArmoury_SelfSkipField</defName>
+		<label>self-skip field</label>
+		<description>This weapon generates a localized skip field that allows its user to self-skip.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>skip</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>AArmoury_SelfSkipField</abilityToAdd>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
 		<defName>AArmoury_SkipField</defName>
 		<label>skip field</label>
-		<description>This weapon generates a localized skip fields that allows its user to self-skip.</description>
+		<description>This weapon generates a localized skip field that allows its user to skip a target away.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>

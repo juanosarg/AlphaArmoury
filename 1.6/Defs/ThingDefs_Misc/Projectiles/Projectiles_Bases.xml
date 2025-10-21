@@ -35,5 +35,18 @@
 		</projectile>
 		<seam>0.25</seam>
 	</ThingDef>
+	
+	<ThingDef>
+		<defName>AArmoury_BeamGraphic</defName>
+		<thingClass>VEF.Weapons.LaserBeamGraphic</thingClass>
+		<drawOffscreen>true</drawOffscreen>
+		<label>laser beam</label>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+	</ThingDef>
+	
 
 </Defs>

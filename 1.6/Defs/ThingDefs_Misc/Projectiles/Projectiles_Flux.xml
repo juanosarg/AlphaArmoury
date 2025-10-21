@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Revolver</defName>
+		<label>flux revolver bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<seam>0.01</seam>
+		<causefireChance>0</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Bolt</defName>
+		<label>flux bolt-action rifle bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Shotgun</defName>
+		<label>flux shotgun blast</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.14</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_HeavySMG</defName>
+		<label>flux heavy SMG bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_LMG</defName>
+		<label>flux LMG bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Assault</defName>
+		<label>flux assault rifle bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Minigun</defName>
+		<label>flux minigun bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<arcHeightFactor>2</arcHeightFactor>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Sniper</defName>
+		<label>flux sniper rifle bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Arrow</defName>
+		<label>flux arrow</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Charge</defName>
+		<label>flux charge shot</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Lance</defName>
+		<label>flux charge lance shot</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_Flux_Hellcat</defName>
+		<label>flux hellcat rifle bullet</label>
+		<textures>
+			<li>Things/Projectile/AArmoury_Flux</li>
+		</textures>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

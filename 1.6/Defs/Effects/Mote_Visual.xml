@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 	<ThingDef ParentName="MoteBase">
 		<defName>AArmoury_Mote_BloodPuff</defName>
 		<graphicData>
@@ -15,5 +14,16 @@
 			<fadeOutTime>0.1</fadeOutTime>
 		</mote>
 	</ThingDef>
-	
+	<ThingDef ParentName="MoteBase">
+		<defName>AArmoury_FluxMote</defName>
+		<graphicData>
+			<texPath>Things/Mote/AArmoury_FluxMote</texPath>
+		</graphicData>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<mote>
+			<fadeInTime>0.04</fadeInTime>
+			<solidTime>0.03</solidTime>
+			<fadeOutTime>1</fadeOutTime>
+		</mote>
+	</ThingDef>
 </Defs>

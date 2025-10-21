@@ -61,4 +61,18 @@
 		</offsetTowardsTarget>
 		<positionRadius>0.3</positionRadius>
 	</EffecterDef>
+	<EffecterDef>
+		<defName>AArmoury_Flux</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>AArmoury_FluxMote</moteDef>
+				<positionRadius>0.1</positionRadius>
+				<burstCount>3</burstCount>
+				<scale>1~1.4</scale>
+				<color>(1,1,1,1)</color>
+				<spawnLocType>OnSource</spawnLocType>
+			</li>
+		</children>
+	</EffecterDef>
 </Defs>

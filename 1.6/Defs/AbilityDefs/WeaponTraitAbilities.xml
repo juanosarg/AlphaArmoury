@@ -6,7 +6,6 @@
 		<description>Launch a disruptor flare. Can be reloaded using bioferrite.</description>
 		<iconPath>UI/Commands/AArmoury_LaunchFlare</iconPath>
 		<aiCanUse>true</aiCanUse>
-		
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<range>12.9</range>
@@ -269,6 +268,45 @@
 	</AbilityDef>
 	<AbilityDef>
 		<defName>AArmoury_SkipField</defName>
+		<label>skip</label>
+		<description>Teleport a target to a desired position not too far from the starting point.</description>
+		<iconPath>UI/Commands/AArmoury_SkipOther</iconPath>
+		<cooldownTicksRange>4800</cooldownTicksRange>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.25</warmupTime>
+			<range>20.9</range>
+			<drawAimPie>False</drawAimPie>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityTeleport">
+				<compClass>AlphaArmoury.CompAbilityEffect_Skip</compClass>
+				<destination>Selected</destination>
+				<requiresLineOfSight>True</requiresLineOfSight>
+				<range>27.9</range>
+				<clamorType>Ability</clamorType>
+				<clamorRadius>10</clamorRadius>
+				<destClamorType>Ability</destClamorType>
+				<destClamorRadius>10</destClamorRadius>
+				<stunTicks>18~60</stunTicks>
+				<goodwillImpact>-15</goodwillImpact>
+				<applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AArmoury_SelfSkipField</defName>
 		<label>self skip</label>
 		<description>Teleport to a desired position not too far from the starting point.</description>
 		<iconPath>UI/Commands/AArmoury_SelfSkip</iconPath>
@@ -452,7 +490,6 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
 	<AbilityDef ParentName="AArmoury_NoTargetAbilities">
 		<defName>AArmoury_Detonation</defName>
 		<label>detonation</label>
