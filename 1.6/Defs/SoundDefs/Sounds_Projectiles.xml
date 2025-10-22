@@ -24,6 +24,30 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	<!-- ======================== Slash ======================== -->
+	<SoundDef>
+		<defName>AArmoury_Slash</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AArmoury_Slash</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<!-- ======================== Flux ======================== -->
 	<SoundDef>
 		<defName>AArmoury_Flux</defName>
@@ -437,6 +461,26 @@
 					<max>50.40025</max>
 				</distRange>
 				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ======================== Cryo ======================== -->
+	<SoundDef>
+		<defName>AArmoury_Cryo_Sustainer</defName>
+		<context>MapOnly</context>
+		<sustain>True</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AArmoury_Cryo/AArmoury_Cryo</clipPath>
+					</li>
+				</grains>
+				<volumeRange>42</volumeRange>
+				<distRange>20~50</distRange>
 			</li>
 		</subSounds>
 	</SoundDef>

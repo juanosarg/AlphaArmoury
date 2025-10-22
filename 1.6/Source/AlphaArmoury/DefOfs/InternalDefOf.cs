@@ -32,7 +32,9 @@ namespace AlphaArmoury
         [MayRequire("Ludeon.RimWorld.Royalty")]
         public static WeaponCategoryDef BladeLink;
 
-        public static SoundDef Standard_Reload;
+        public static SoundDef Standard_Reload, AArmoury_Cryo_Sustainer;
+
+        public static HediffDef HypothermicSlowdown, VFEP_HypothermicSlowdown;
 
     }
 }

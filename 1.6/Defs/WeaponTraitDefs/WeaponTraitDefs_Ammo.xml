@@ -718,6 +718,70 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
+		<defName>AArmoury_FrostRepeater</defName>
+		<label>cryo cannon</label>
+		<description>Instead of gamma ray laser bursts, this repeater will fire a single frost ray that will damage everything on its path.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_Gun_BeamRepeater_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<burstShotCountMultiplier>0.001</burstShotCountMultiplier>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_FrostRay</projectileOverride>
+				<soundOverride>AArmoury_Vapor</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_CryoCannon/AArmoury_CryoCannonBeam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>cryo</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_Chakram</defName>
+		<label>chakram launcher</label>
+		<description>Instead of bullets, this sniper fires extremely dangerous plasteel chakram that propel themselves via nano-skip fields. These chakram have extremely high armor penetration and deal gruesome cuts.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_Gun_SniperRifle_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<statOffsets>
+			<RangedWeapon_ArmorPenetrationMultiplier>0.3</RangedWeapon_ArmorPenetrationMultiplier>
+			<MarketValue>80</MarketValue>
+		</statOffsets>
+		<damageDefOverride>Cut</damageDefOverride>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_Chakram</projectileOverride>
+				<soundOverride>AArmoury_Slash</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Chakram/AArmoury_ChakramSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>slashing</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
 		<defName>AArmoury_ThermalBlasts</defName>
 		<label>thermal blasts</label>
 		<description>Instead of bullets, this gun fires concentrated thermal blasts that cause instant heatstroke in its targets. Useless against non-flammable enemies such as mechanoids.</description>
@@ -2208,9 +2272,6 @@
 						<key>Gun_ChargeLance_Unique</key>
 						<value>AArmoury_Flux_Lance</value>
 					</li>
-					
-					
-					
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>

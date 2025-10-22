@@ -745,18 +745,41 @@
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Looping</defName>
-		<label>looping hellcat rifle bullet</label>
-		<thingClass>AlphaArmoury.Projectile_Looping</thingClass>
+		<defName>AArmoury_FrostRay</defName>
+		<label>cryo ray</label>
+		<thingClass>AlphaArmoury.Projectile_FrostRay</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData Class="VEF.Graphics.GraphicData_Animated">
+			<texPath>Things/Projectile/AArmoury_Frostbeam</texPath>
+			<graphicClass>VEF.Graphics.Graphic_Animated</graphicClass>
+			<ticksPerFrame>3</ticksPerFrame>
+		</graphicData>
+		<projectile>
+			<speed>75</speed>
+			<damageDef>Frostbite</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+		</projectile>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Chakram</defName>
+		<label>chakram</label>
+		<thingClass>AlphaArmoury.Projectile_Chakram</thingClass>
 		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<texPath>Things/Projectile/AArmoury_Chakram</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>5</damageAmountBase>
+			<damageAmountBase>25</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
 			<speed>20</speed>
 			<arcHeightFactor>2</arcHeightFactor>
 		</projectile>
+		
 	</ThingDef>
+	
+	
 </Defs>

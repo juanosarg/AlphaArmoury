@@ -1,11 +1,14 @@
+﻿
 ﻿using RimWorld;
 using Verse;
 using UnityEngine;
 using System;
 
 namespace AlphaArmoury
+
 {
     public class Projectile_Looping : Bullet
+ 
     {
         private Vector3 originVec;
         private Vector3 destinationVec;
@@ -69,12 +72,12 @@ namespace AlphaArmoury
             Graphics.DrawMesh(
                 MeshPool.plane10,
                 Matrix4x4.TRS(visualPos, ExactRotation, new Vector3(1f, 1f, 1f)),
-                def.graphic.MatSingle,
+            def.graphic.MatSingle,
                 0
             );
 
         }
-       
+
 
     }
 }

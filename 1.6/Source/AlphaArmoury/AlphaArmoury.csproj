@@ -332,9 +332,11 @@
     <Compile Include="HediffComps\HediffComp_ProjectileToNearby.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
-    <Compile Include="Projectiles\Movement types\Projectile_Sinusoid.cs" />
-    <Compile Include="Projectiles\Projectile_Healing.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Looping.cs" />
+    <Compile Include="Projectiles\Movement types\Projectile_Sinusoid.cs" />
+    <Compile Include="Projectiles\Projectile_FrostRay.cs" />
+    <Compile Include="Projectiles\Projectile_Healing.cs" />
+    <Compile Include="Projectiles\Movement types\Projectile_Chakram.cs" />
     <Compile Include="Projectiles\Projectile_Lifesteal.cs" />
     <Compile Include="Projectiles\Projectile_LifestealFeed.cs" />
     <Compile Include="Projectiles\Projectile_PsychicBeam.cs" />
@@ -366,6 +368,7 @@
     <Compile Include="StaticCollections\StaticCollections.cs" />
     <Compile Include="Things\WeaponKit.cs" />
     <Compile Include="Unused\Unused.cs" />
+    <Compile Include="Utils\Util.cs" />
     <Compile Include="WeaponTraitWorkers\WeaponTraitWorker_NoForcedMiss.cs" />
   </ItemGroup>
   <ItemGroup />
