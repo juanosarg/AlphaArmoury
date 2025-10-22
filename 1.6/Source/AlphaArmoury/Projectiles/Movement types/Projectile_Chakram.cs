@@ -27,7 +27,7 @@ namespace AlphaArmoury
         {
             base.Launch(launcher, origin, usedTarget, intendedTarget, hitFlags, preventFriendlyFire, equipment, targetCoverDef);
 
-            // --- Static setup ---
+            //  Static setup 
             originVec = origin.Yto0();
             destinationVec = usedTarget.Cell.ToVector3Shifted().Yto0();
             startingTicksToImpact = ticksToImpact;
@@ -42,7 +42,7 @@ namespace AlphaArmoury
             // Total distance
             totalDist = (destinationVec - originVec).magnitude;
 
-            // --- Flight parameters (static) ---
+            // Flight parameters 
             float baseLoops = 2.5f; // Base loops for 10-cell range
             loops = baseLoops * (totalDist / 10f);
             loopRadius = 3f;
@@ -53,7 +53,7 @@ namespace AlphaArmoury
         {
             float flightFrac = 1f - (float)ticksToImpact / (float)startingTicksToImpact;
 
-            // --- Dynamic motion ---
+            //  Dynamic motion 
             float dynamicRadius = loopRadius * flightFrac; // grows over time
             float baseForward = flightFrac * totalDist * forwardCompression;
             float angle = flightFrac * loops * Mathf.PI * 2f;
@@ -68,16 +68,14 @@ namespace AlphaArmoury
             Vector3 forwardPos = originVec + direction * (baseForward + forwardOffset);
             Vector3 visualPos = forwardPos + circularOffset + Vector3.up * def.Altitude;
 
-            // --- Chakram spin --- // Rotates around its own local up axis (like a frisbee)
-            float spinRate = 1440f; // degrees per second (fast)
-            float spinAngle = flightFrac * spinRate; // continuous spin over flight
+            //  Chakram spin
+            float spinRate = 1440f; // degrees per second 
+            float spinAngle = flightFrac * spinRate;
             Quaternion selfSpin = Quaternion.AngleAxis(spinAngle, Vector3.up); 
             
             // Combine with trajectory rotation
             
-            Quaternion finalRot = ExactRotation * selfSpin;
-
-           
+            Quaternion finalRot = ExactRotation * selfSpin;       
 
             // --- Draw ---
             Graphics.DrawMesh(
