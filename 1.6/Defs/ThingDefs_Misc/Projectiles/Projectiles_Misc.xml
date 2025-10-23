@@ -81,68 +81,6 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
-		<defName>AArmoury_AcidGrenade</defName>
-		<label>acid grenade</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_AcidGrenade</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<projectile>
-			<flyOverhead>false</flyOverhead>
-			<damageDef>AArmoury_AcidSpit</damageDef>
-			<damageAmountBase>8</damageAmountBase>
-			<explosionRadius>2.5</explosionRadius>
-			<speed>50</speed>
-			<soundExplode>AArmoury_Acid</soundExplode>
-			<preExplosionSpawnThingDef>AArmoury_GreenGas</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
-		<defName>AArmoury_FirefoamGrenade</defName>
-		<label>firefoam grenade</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_FirefoamGrenade</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<projectile>
-			<flyOverhead>false</flyOverhead>
-			<damageDef>Extinguish</damageDef>
-			<soundExplode>Explosion_EMP</soundExplode>
-			<explosionRadius>4.9</explosionRadius>
-			<speed>30</speed>
-			<explosionEffect>ExtinguisherExplosion</explosionEffect>
-			<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
-			<postExplosionSpawnChance>1</postExplosionSpawnChance>
-			<postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_ShrapnelGrenade</defName>
-		<label>shrapnel grenade</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_ShrapnelGrenade</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1</drawSize>
-		</graphicData>
-		<thingClass>VEF.Weapons.Projectile_Shrapnel</thingClass>
-		<projectile Class="VEF.Weapons.ProjectileProperties_Shrapnel">
-			<damageDef>Bomb</damageDef>
-			<speed>41</speed>
-			<damageAmountBase>10</damageAmountBase>
-			<explosionRadius>7.9</explosionRadius>
-			<flyOverhead>false</flyOverhead>
-			<soundExplode>MortarBomb_Explode</soundExplode>
-			<shrapnelProjectile>AArmoury_Bullet_Shrapnel</shrapnelProjectile>
-			<shrapnelCount>25</shrapnelCount>
-			<shrapnelRange>7</shrapnelRange>
-			<angleVariance>360</angleVariance>
-		</projectile>
-	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Bullet_Shrapnel</defName>
 		<label>shrapnel</label>
@@ -161,84 +99,6 @@
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
 		</modExtensions>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet" MayRequire="VanillaExpanded.VPlantsE">
-		<defName>AArmoury_FertilizerShot</defName>
-		<label>fertilizer canister</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_FertilizerShot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_FertilizerShot</thingClass>
-		<projectile>
-			<speed>40</speed>
-			<damageDef>Blunt</damageDef>
-			<damageAmountBase>1</damageAmountBase>
-			<explosionRadius>1.9</explosionRadius>
-			<arcHeightFactor>0.2</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-			<soundExplode>Explosion_Smoke</soundExplode>
-			<screenShakeFactor>0.5</screenShakeFactor>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_SwarmRocket</defName>
-		<label>swarm rocket</label>
-		<graphicData>
-			<texPath>Things/Projectile/Rocket_Swarm</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<tickerType>Normal</tickerType>
-		<thingClass>Projectile_Explosive</thingClass>
-		<projectile>
-			<damageDef>Bomb</damageDef>
-			<damageAmountBase>12</damageAmountBase>
-			<explosionRadius>2.9</explosionRadius>
-			<speed>15</speed>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_PotatoShot</defName>
-		<label>potato</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Potato</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_PotatoShot</thingClass>
-		<projectile>
-			<speed>20</speed>
-			<damageDef>Blunt</damageDef>
-			<damageAmountBase>1</damageAmountBase>
-			<explosionRadius>1.9</explosionRadius>
-			<arcHeightFactor>0.1</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-			<soundExplode>Explosion_Smoke</soundExplode>
-			<screenShakeFactor>0.5</screenShakeFactor>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_MagmaGrenade</defName>
-		<label>magma grenade</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_MagmaGrenade</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
-		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_MagmaShot</thingClass>
-		<projectile>
-			<speed>20</speed>
-			<damageDef>Blunt</damageDef>
-			<damageAmountBase>1</damageAmountBase>
-			<explosionRadius>1.5</explosionRadius>
-			<arcHeightFactor>0.3</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-			<soundExplode>Explosion_Smoke</soundExplode>
-			<screenShakeFactor>0.5</screenShakeFactor>
-		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
 		<defName>AArmoury_Bullet_LaserRifle</defName>
@@ -288,22 +148,6 @@
 			<speed>40</speed>
 		</projectile>
 	</VEF.Weapons.ExpandableProjectileDef>
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AArmoury_RotstinkGrenade</defName>
-		<label>rotstink grenade</label>
-		<thingClass>Projectile_Explosive</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_RotstinkGrenadeThrown</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>AArmoury_RotstinkDust</damageDef>
-			<explosionRadius>3.9</explosionRadius>
-			<explosionRadiusDisplayPadding>2</explosionRadiusDisplayPadding>
-			<postExplosionGasType>RotStink</postExplosionGasType>
-			<screenShakeFactor>0.5</screenShakeFactor>
-		</projectile>
-	</ThingDef>
 	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>AAArmoury_CoilLance_Projectile</defName>
 		<label>coil lance shard</label>
@@ -502,90 +346,6 @@
 				<impactSound>AArmoury_Zap</impactSound>
 			</li>
 		</modExtensions>
-	</ThingDef>
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AArmoury_Egg</defName>
-		<label>egg</label>
-		<thingClass>Projectile_SpawnsThing</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_Egg</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<speed>21</speed>
-			<damageAmountBase>0</damageAmountBase>
-			<spawnsThingDef>AArmoury_Egg_Releaser</spawnsThingDef>
-			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AArmoury_MineProjectile</defName>
-		<label>mine</label>
-		<thingClass>Projectile_SpawnsThing</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_MineProjectile</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<speed>21</speed>
-			<damageAmountBase>0</damageAmountBase>
-			<spawnsThingDef>AArmoury_Mine</spawnsThingDef>
-			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AArmoury_CaltropProjectile</defName>
-		<label>caltrops</label>
-		<thingClass>Projectile_SpawnsThing</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_CaltropProjectile</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<speed>10</speed>
-			<damageAmountBase>0</damageAmountBase>
-			<spawnsThingDef>AArmoury_Caltrops</spawnsThingDef>
-			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>AArmoury_BarricadeProjectile</defName>
-		<label>barricade</label>
-		<thingClass>AlphaArmoury.Projectile_SpawnsSteelThing</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_BarricadeProjectile</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<speed>10</speed>
-			<damageAmountBase>0</damageAmountBase>
-			<spawnsThingDef>Barricade</spawnsThingDef>
-			<tryAdjacentFreeSpaces>true</tryAdjacentFreeSpaces>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_PesticideCanistersProjectile</defName>
-		<label>pesticide canister</label>
-		<graphicData>
-			<texPath>Things/Projectile/AArmoury_PesticideCanistersProjectile</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_PesticideShot</thingClass>
-		<projectile>
-			<speed>40</speed>
-			<damageDef>Blunt</damageDef>
-			<damageAmountBase>1</damageAmountBase>
-			<explosionRadius>5.9</explosionRadius>
-			<arcHeightFactor>0.2</arcHeightFactor>
-			<shadowSize>0.6</shadowSize>
-			<soundExplode>Explosion_Smoke</soundExplode>
-			<screenShakeFactor>0.5</screenShakeFactor>
-		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Net</defName>

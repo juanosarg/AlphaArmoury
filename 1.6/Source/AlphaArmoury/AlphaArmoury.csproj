@@ -332,6 +332,7 @@
     <Compile Include="HediffComps\HediffComp_ProjectileToNearby.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_DehydratorShot.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Looping.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Sinusoid.cs" />
     <Compile Include="Projectiles\Projectile_FrostRay.cs" />
@@ -346,11 +347,11 @@
     <Compile Include="Projectiles\Projectile_Electric.cs" />
     <Compile Include="Projectiles\Projectile_Heatwave.cs" />
     <Compile Include="Projectiles\Projectile_Distortion.cs" />
-    <Compile Include="Projectiles\Projectile_FertilizerShot.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_FertilizerShot.cs" />
     <Compile Include="Projectiles\Projectile_HemovoricFeedback.cs" />
-    <Compile Include="Projectiles\Projectile_MagmaShot.cs" />
-    <Compile Include="Projectiles\Projectile_PesticideShot.cs" />
-    <Compile Include="Projectiles\Projectile_PotatoShot.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_MagmaShot.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_PesticideShot.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_PotatoShot.cs" />
     <Compile Include="Projectiles\Projectile_PsychicFeedback.cs" />
     <Compile Include="Projectiles\Projectile_ShatterRounds.cs" />
     <Compile Include="Projectiles\Projectile_ShatterRounds_lesser.cs" />

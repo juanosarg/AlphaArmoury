@@ -92,7 +92,7 @@
 		<defName>AArmoury_HellsphereLauncher</defName>
 		<label>hellsphere shot</label>
 		<description>Launch a hellsphere shot. Can be reloaded using advanced components.</description>
-		<iconPath>UI/Commands/AArmoury_Hellspehere</iconPath>
+		<iconPath>UI/Commands/AArmoury_Hellsphere</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
@@ -507,6 +507,28 @@
 				<thingCreatedChance>50</thingCreatedChance>
 				<damageUser>false</damageUser>
 				<damageAmount>50</damageAmount>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AArmoury_DehydratorGrenades</defName>
+		<label>dehydrator grenade</label>
+		<description>This weapon has an attachment to fire dehydrator grenades. They will dry terrain, similar to a moisture pump. Can be reloaded using 10 components. Very expensive, but beats having to wait ages for a moisture pump!</description>
+		<iconPath>UI/Commands/AArmoury_DehydratorGrenades</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>20.9</range>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>Shot_IncendiaryLauncher</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>AArmoury_DehydratorGrenade</projectileDef>
 			</li>
 		</comps>
 	</AbilityDef>
