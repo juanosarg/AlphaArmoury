@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingSetMakerDef>
+		<defName>AArmoury_Reward_UniqueWeaponExpanded</defName>
+		<root Class="ThingSetMaker_Sum">
+			<resolveInOrder>true</resolveInOrder>
+			<options>
+				<li>
+					<thingSetMaker Class="AlphaArmoury.ThingSetMaker_UniqueWeaponExpanded"/>
+				</li>
+			</options>
+		</root>
+	</ThingSetMakerDef>
+</Defs>

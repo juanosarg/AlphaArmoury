@@ -14,4 +14,11 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	
+	<JobDef>
+		<defName>AArmoury_UseWeaponKit_Converter</defName>
+		<driverClass>AlphaArmoury.JobDriver_UseWeaponKit_Converter</driverClass>
+		<reportString>using weapon kit.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
 </Defs>

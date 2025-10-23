@@ -36,5 +36,9 @@ namespace AlphaArmoury
 
         public static HediffDef HypothermicSlowdown, VFEP_HypothermicSlowdown;
 
+        public static ThingCategoryDef AArmoury_WeaponKits;
+
+        public static ThingSetMakerDef AArmoury_Reward_UniqueWeaponExpanded;
+
     }
 }

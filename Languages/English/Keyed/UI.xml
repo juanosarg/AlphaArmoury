@@ -3,6 +3,7 @@
 	<AArmoury_NeedToTargetCaster>This ability needs to target its caster</AArmoury_NeedToTargetCaster>
 	<AArmoury_NeedToTargetNotCaster>This ability needs to target someone besides its caster</AArmoury_NeedToTargetNotCaster>
 	<AArmoury_Trait>Weapon trait in this kit: "{0}"</AArmoury_Trait>
+	<AArmoury_Weapon>Weapon conversion for: "{0}"</AArmoury_Weapon>
 	<AArmoury_CantApply>Can't apply "{0}" to {1}. {2}</AArmoury_CantApply>
 	<AArmoury_CantAcceptCategory>Weapon doesn't accept that trait category.</AArmoury_CantAcceptCategory>
 	<AArmoury_CantGenerateAlone>That trait can't be generated alone.</AArmoury_CantGenerateAlone>
@@ -10,12 +11,28 @@
 	<AArmoury_NoTraits>{0} doesn't have any traits to remove.</AArmoury_NoTraits>
 	<AArmoury_RemovedTrait>Weapon trait "{0}" has been removed from {1}. It's gone, Jim.</AArmoury_RemovedTrait>
 	<AArmoury_GunsSupportingTrait>Guns that can use this trait:</AArmoury_GunsSupportingTrait>
+	<AArmoury_NoUniqueEquivalent>{0} doesn't seem to have an unique weapon equivalent.</AArmoury_NoUniqueEquivalent>
+	<AArmoury_NotForThisGun>This is a conversion kit for {0}. It won't work on other weapons.</AArmoury_NotForThisGun>
 	
 	<AArmoury_MinWeaponTraits>Minimum weapon traits</AArmoury_MinWeaponTraits>
 	<AArmoury_MinWeaponTraitsDesc>By default, unique weapons have a minimum of 1 weapon trait. Changes to this will only affect newly spawned weapons, not existing ones.</AArmoury_MinWeaponTraitsDesc>
 	
 	<AArmoury_MaxWeaponTraits>Maximum weapon traits</AArmoury_MaxWeaponTraits>
 	<AArmoury_MaxWeaponTraitsDesc>By default, unique weapons have a maximum of 3 weapon traits. Changes to this will only affect newly spawned weapons, not existing ones.</AArmoury_MaxWeaponTraitsDesc>
+	
+	<AArmoury_SendWeaponPods>Send unique weapon pods every quadrum! (weapon FIESTA!)</AArmoury_SendWeaponPods>
+	<AArmoury_SendWeaponPodsDesc>With this option, which is disabled by default, you can choose to get 1-3 drop pods loaded with random unique weapons every 15 days. Note that this can be very OP... or very underwhelming. If you have a caravan spot the weapons will be delivered there.</AArmoury_SendWeaponPodsDesc>
+	<AArmoury_FiestaDeliveredLabel>Weapon FIESTA!</AArmoury_FiestaDeliveredLabel>
+	<AArmoury_FiestaDelivered>Drop pods loaded with unique weapons have been delivered to the colony!</AArmoury_FiestaDelivered>
+	
+	<AArmoury_AddWeaponsToMoreMercs>Add unique weapons to more Ancient Mercenaries</AArmoury_AddWeaponsToMoreMercs>
+	<AArmoury_AddWeaponsToMoreMercsDesc>By default, only the leader in a band of mercenaries will have a unique weapon. With this setting you can make it so ALL of the mercenaries in the quest carry a unique!</AArmoury_AddWeaponsToMoreMercsDesc>
+	
+	<AArmoury_AddWeaponsToAllRaids>Add unique weapons to all raids</AArmoury_AddWeaponsToAllRaids>
+	<AArmoury_AddWeaponsToAllRaidsDesc>Raids usually don't spawn with unique weapons, but you can change that with this mod option. Enjoy the absolute chaos!</AArmoury_AddWeaponsToAllRaidsDesc>
+	
+	<AArmoury_MakeRaidWeaponsBiocoded>...but make them all biocoded</AArmoury_MakeRaidWeaponsBiocoded>
+	<AArmoury_MakeRaidWeaponsBiocodedDesc>Weapons appearing in raids will be biocoded, so the player will have to fight against MUCH tougher raid, and have no unique weapons as rewards!</AArmoury_MakeRaidWeaponsBiocodedDesc>
 	
 	<AArmoury_Reset>Reset</AArmoury_Reset>
 	

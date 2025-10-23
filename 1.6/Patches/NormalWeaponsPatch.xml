@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_Revolver"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_Revolver_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_BoltActionRifle"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_BoltActionRifle_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_ChainShotgun"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_ChainShotgun_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_HeavySMG"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_HeavySMG_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_LMG"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_LMG_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_AssaultRifle"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_AssaultRifle_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_SniperRifle"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_SniperRifle_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_Minigun"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_Minigun_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Bow_Great"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Bow_Great_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_ChargeRifle"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_ChargeRifle_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_ChargeLance"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_ChargeLance_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_BeamRepeater"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>Gun_BeamRepeater_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_IncendiaryLauncher"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>AArmoury_Gun_Launcher_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_SmokeLauncher"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>AArmoury_Gun_Launcher_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName = "Gun_EmpLauncher"]</xpath>
+		<value>
+			<li Class="AlphaArmoury.UniqueConversionExtension">
+				<uniqueWeaponEquivalent>AArmoury_Gun_Launcher_Unique</uniqueWeaponEquivalent>
+			</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Anomaly</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "Gun_HellcatRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>Gun_HellcatRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "Gun_ToxbombLauncher"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+						<uniqueWeaponEquivalent>AArmoury_Gun_Launcher_Unique</uniqueWeaponEquivalent>
+					</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -7,9 +7,7 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<thingClass>ThingWithComps</thingClass>
-		<thingCategories>
-			<li>ItemsMisc</li>
-		</thingCategories>
+		
 		<stackLimit>1</stackLimit>
 		<preventSpawningInResourcePod>true</preventSpawningInResourcePod>
 		<tradeNeverGenerateStacked>true</tradeNeverGenerateStacked>
@@ -45,9 +43,7 @@
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
 		<techLevel>Ultra</techLevel>
-		<tradeTags>
-			<li>ExoticMisc</li>
-		</tradeTags>
+		
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
 			<li>RewardStandardLowFreq</li>
@@ -69,6 +65,58 @@
 				
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AlphaArmoury.WeaponKitExtension">
+				<commonality>1</commonality>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="AArmoury_WeaponKitBase">
+		<defName>AArmoury_WeaponKit_Converter</defName>
+		<label>weapon conversion kit</label>
+		<description>A weapon conversion kit for a specific weapon. It can be used on a weapon of that type to convert it to the equivalent unique weapon.</description>
+		<thingClass>AlphaArmoury.WeaponConversionKit</thingClass>
+		<tickerType>Rare</tickerType>
+		<useHitPoints>true</useHitPoints>
+		<stackLimit>1</stackLimit>
+		<canDeteriorateUnspawned>true</canDeteriorateUnspawned>
+		<deteriorateFromEnvironmentalEffects>false</deteriorateFromEnvironmentalEffects>
+		<graphicData>
+			<texPath>Things/Item/AArmoury_WeaponTweakingKit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<thingCategories>
+			<li>AArmoury_WeaponKits</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Targetable">
+				<compClass>AlphaArmoury.CompTargetable_Weapons</compClass>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useLabel>Use {0_label}</useLabel>
+				<useJob>AArmoury_UseWeaponKit_Converter</useJob>
+				<showUseGizmo>true</showUseGizmo>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="AlphaArmoury.CompProperties_UseEffectWeaponKit_Converter">
+				
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="AlphaArmoury.WeaponKitExtension">
+				<commonality>0.5</commonality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_WeaponKitBase">
 		<defName>AArmoury_WeaponKit_Remover</defName>
@@ -89,9 +137,7 @@
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
 		<techLevel>Ultra</techLevel>
-		<tradeTags>
-			<li>ExoticMisc</li>
-		</tradeTags>
+		
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
 			<li>RewardStandardLowFreq</li>
@@ -113,6 +159,11 @@
 				<doRandom>true</doRandom>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AlphaArmoury.WeaponKitExtension">
+				<commonality>0.25</commonality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="AArmoury_WeaponKitBase">
@@ -134,9 +185,7 @@
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
 		<techLevel>Ultra</techLevel>
-		<tradeTags>
-			<li>ExoticMisc</li>
-		</tradeTags>
+		
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
 			<li>RewardStandardLowFreq</li>
@@ -158,5 +207,10 @@
 				<removeAll>true</removeAll>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="AlphaArmoury.WeaponKitExtension">
+				<commonality>0.25</commonality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

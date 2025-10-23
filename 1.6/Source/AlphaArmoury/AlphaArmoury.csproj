@@ -315,19 +315,27 @@
     <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Converter.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Remover.cs" />
     <Compile Include="Comps\CompSpawnChicken.cs" />
     <Compile Include="Comps\CompTargetable_UniqueWeapons.cs" />
+    <Compile Include="Comps\CompTargetable_Weapons.cs" />
     <Compile Include="Comps\CompUseEffect_WeaponKit.cs" />
+    <Compile Include="Comps\CompUseEffect_WeaponKit_Converter.cs" />
     <Compile Include="Comps\CompUseEffect_WeaponKit_Remover.cs" />
     <Compile Include="Comps\Properties\CompProperties_SpawnChickenOnDestroyed.cs" />
     <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit.cs" />
+    <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit_Converter.cs" />
     <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit_Remover.cs" />
+    <Compile Include="DefExtensions\UniqueConversionExtension.cs" />
+    <Compile Include="DefExtensions\WeaponKitExtension.cs" />
     <Compile Include="Dev Mode\AllUniqueWeaponCombinationsSpawner.cs" />
     <Compile Include="Harmony\CompUniqueWeapon_InitializeTraits.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Harmony\IncidentWorker_RaidEnemy_GenerateRaidLoot.cs" />
     <Compile Include="Harmony\MentalBreakWorker_TryStart.cs" />
+    <Compile Include="Harmony\QuestNode_Root_AncientMercenaries_RunInt.cs" />
     <Compile Include="Harmony\VerbProperties_GetForceMissFactorFor.cs" />
     <Compile Include="HediffComps\HediffComp_ProjectileToNearby.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
@@ -367,10 +375,13 @@
     <Compile Include="Settings\AlphaArmoury_Settings.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="StaticCollections\StaticCollections.cs" />
+    <Compile Include="ThingSetMakers\ThingSetMaker_UniqueWeaponExpanded.cs" />
+    <Compile Include="Things\WeaponConversionKit.cs" />
     <Compile Include="Things\WeaponKit.cs" />
     <Compile Include="Unused\Unused.cs" />
     <Compile Include="Utils\Util.cs" />
     <Compile Include="WeaponTraitWorkers\WeaponTraitWorker_NoForcedMiss.cs" />
+    <Compile Include="WorldComponents\WorldComponent_WeaponFiesta.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
