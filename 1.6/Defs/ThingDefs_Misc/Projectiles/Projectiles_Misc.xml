@@ -528,6 +528,7 @@
 		<projectile>
 			<damageDef>Blunt</damageDef>
 			<damageAmountBase>1</damageAmountBase>
+			<arcHeightFactor>2</arcHeightFactor>
 			<speed>30</speed>
 		</projectile>
 	</ThingDef>

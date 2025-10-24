@@ -1,9 +1,12 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace AlphaArmoury
 {
@@ -13,17 +16,26 @@ namespace AlphaArmoury
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
             Map map = base.Map;
-           // base.Impact(hitThing, blockedByShield);
+          
             Building building = hitThing as Building;
             if (building != null)
             {
-                Thing feedbackProjectile = ThingMaker.MakeThing(InternalDefOf.AArmoury_LifestealFeedback);
-
-                Thing feedbackProjectileLaunched = GenSpawn.Spawn(feedbackProjectile, ExactPosition.ToIntVec3().RandomAdjacentCell8Way(), map);
-                if (feedbackProjectileLaunched is Projectile piece) piece.Launch(pawn, launcher, launcher, ProjectileHitFlags.All);
-
+                building.HitPoints+=10;
+                building.HitPoints = Mathf.Min(building.HitPoints, building.MaxHitPoints);
+                base.Map.listerBuildingsRepairable.Notify_BuildingRepaired(building);
+                if (building.HitPoints == building.MaxHitPoints)
+                {
+                    Pawn launcherPawn = launcher as Pawn;
+                    if (launcherPawn != null) {
+                        launcherPawn.records.Increment(RecordDefOf.ThingsRepaired);
+                        
+                    }
+                    
+                }
+               
 
             }
+            Destroy();
         }
     }
 }

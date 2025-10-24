@@ -2547,7 +2547,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_RepairGun</defName>
 		<label>repair gun</label>
-		<description>This weapon will do close to no damage, and will instead repair buildings it is fired at.</description>
+		<description>This weapon will do no damage, and will instead repair buildings it is fired at.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
 		<statOffsets>
@@ -2560,7 +2560,7 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>AArmoury_RepairGun</projectileOverride>
-				
+				<soundOverride>AArmoury_Droning</soundOverride>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
