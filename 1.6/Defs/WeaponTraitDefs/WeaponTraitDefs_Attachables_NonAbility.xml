@@ -91,6 +91,7 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<meleeSoundOverride>AArmoury_Bayonet</meleeSoundOverride>
 				<meleeDamageOverride>Stab</meleeDamageOverride>
+				<graphicOverridePriority>90</graphicOverridePriority>
 				<graphicOverrides>
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
@@ -145,6 +146,148 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>close combat</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_ToxicSprayer</defName>
+		<label>toxic sprayer</label>
+		<description>This weapon has a close quarters sprayer that will create a toxic mist when used in melee range.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>AArmoury_NonAbilityAttachment</li>
+		</exclusionTags>
+		
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<meleeSoundOverride>AArmoury_Spray</meleeSoundOverride>
+				<meleeDamageOverride>Bullet_TraitTox</meleeDamageOverride>
+				<graphicOverridePriority>90</graphicOverridePriority>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>toxic spraying</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_AcidSprayer</defName>
+		<label>acid sprayer</label>
+		<description>This weapon has a close quarters sprayer that will create an acid mist when used in melee range.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>Attachable</weaponCategory>
+		<exclusionTags>
+			<li>AArmoury_NonAbilityAttachment</li>
+		</exclusionTags>
+		
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<meleeSoundOverride>AArmoury_Spray</meleeSoundOverride>
+				<meleeDamageOverride>AcidBurn</meleeDamageOverride>
+				<graphicOverridePriority>90</graphicOverridePriority>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_AcidSprayer/AArmoury_AcidSprayer_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>acid spraying</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 </Defs>

@@ -120,7 +120,32 @@
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>
-	
 		<damageEffecter>AArmoury_Flux</damageEffecter>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_MeleeTox</defName>
+		<label>toxic spray</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.035</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_TargetLocator</defName>
+		<label>target locator</label>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_TargetLocator</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+							</li>
+		</additionalHediffs>
+		
 	</DamageDef>
 </Defs>

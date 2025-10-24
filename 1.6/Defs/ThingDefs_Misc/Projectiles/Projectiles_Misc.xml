@@ -380,60 +380,6 @@
 		</projectile>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_ShatterRounds</defName>
-		<label>shatter round</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_ShatterRounds</thingClass>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>6</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
-			<speed>55</speed>
-		</projectile>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_ShatterRounds_Lesser</defName>
-		<label>shatter round</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_ShatterRounds_lesser</thingClass>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>6</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
-			<speed>55</speed>
-		</projectile>
-		<modExtensions>
-			<li Class="VEF.Weapons.ProjectileExtension">
-				<excludeFromStaticCollection>true</excludeFromStaticCollection>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
-		<defName>AArmoury_Bullet_Shrapnel_Lesser</defName>
-		<label>shrapnel</label>
-		<thingClass>VEF.Weapons.Projectile_ShrapnelPiece</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>Bullet</damageDef>
-			<damageAmountBase>5</damageAmountBase>
-			<speed>55</speed>
-		</projectile>
-		<modExtensions>
-			<li Class="VEF.Weapons.ProjectileExtension">
-				<excludeFromStaticCollection>true</excludeFromStaticCollection>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Electric</defName>
 		<label>electric potential</label>
 		<graphicData>
@@ -520,9 +466,24 @@
 			<damageDef>Frostbite</damageDef>
 			<damageAmountBase>2</damageAmountBase>
 		</projectile>
-		
 	</ThingDef>
-	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_PlasmaRay</defName>
+		<label>plasma ray</label>
+		<thingClass>AlphaArmoury.Projectile_FrostRay</thingClass>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<drawOffscreen>true</drawOffscreen>
+		<graphicData Class="VEF.Graphics.GraphicData_Animated">
+			<texPath>Things/Projectile/AArmoury_Plasma</texPath>
+			<graphicClass>VEF.Graphics.Graphic_Animated</graphicClass>
+			<ticksPerFrame>3</ticksPerFrame>
+		</graphicData>
+		<projectile>
+			<speed>75</speed>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+		</projectile>
+	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Chakram</defName>
 		<label>chakram</label>
@@ -538,8 +499,36 @@
 			<speed>20</speed>
 			<arcHeightFactor>2</arcHeightFactor>
 		</projectile>
-		
 	</ThingDef>
-	
-	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_TargetLocator</defName>
+		<label>target locator</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>AArmoury_TargetLocator</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_RepairGun</defName>
+		<label>repair projectile</label>
+		<thingClass>AlphaArmoury.Projectile_Repair</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_RepairProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<speed>30</speed>
+		</projectile>
+	</ThingDef>
 </Defs>

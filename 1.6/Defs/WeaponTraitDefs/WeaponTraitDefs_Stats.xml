@@ -34,6 +34,42 @@
 		</modExtensions>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
+		<defName>AArmoury_DoubleTap</defName>
+		<label>double-tap cylinder</label>
+		<description>Turns the revolver’s single-shot action into a short burst, trading some accuracy for faster suppression.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
+		<statOffsets>
+			<MarketValue>150</MarketValue>
+		</statOffsets>
+		<burstShotCountMultiplier>2</burstShotCountMultiplier>
+		<statFactors>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.8</AccuracyShort>
+			<AccuracyMedium>0.8</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
+		</statFactors>
+		<traitAdjectives>
+			<li>double-tap</li>
+			<li>burst</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverridePriority>20</graphicOverridePriority>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_DoubleTap/AArmoury_DoubleTapRevolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
 		<defName>AArmoury_ReinforcedFrame</defName>
 		<label>reinforced frame</label>
 		<description>This weapon has been reinforced with a plasteel carapace increasing its resilience.</description>
@@ -41,7 +77,6 @@
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<statOffsets>
 			<MarketValue>50</MarketValue>
-			
 		</statOffsets>
 		<workerClass>VEF.Weapons.WeaponTraitWorker_Extended</workerClass>
 		<statFactors>

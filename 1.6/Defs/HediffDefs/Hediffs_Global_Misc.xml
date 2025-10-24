@@ -316,5 +316,32 @@
 			</li>
 		</comps>
 	</HediffDef>
+	<HediffDef>
+		<defName>AArmoury_TargetLocator</defName>
+		<label>marked by a target locator</label>
+		<description>This person or animal has been marked with a target locator and will receive increased damage.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			
+		</comps>
+		<stages>
+			<li>
+				<label>taking increased damage</label>
+				<statFactors>
+					<IncomingDamageFactor>1.3</IncomingDamageFactor>
+				</statFactors>
+			</li>
+			
+		</stages>
+	</HediffDef>
 	
 </Defs>

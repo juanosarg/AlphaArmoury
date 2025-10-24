@@ -748,6 +748,37 @@
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
+		<defName>AArmoury_PlasmaCannon</defName>
+		<label>plasma cannon</label>
+		<description>Instead of gamma ray laser bursts, this repeater will fire a single plasma ray that will damage everything on its path.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_Gun_BeamRepeater_Unique</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<burstShotCountMultiplier>0.001</burstShotCountMultiplier>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_PlasmaRay</projectileOverride>
+				<soundOverride>AArmoury_Plasma</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Plasma/AArmoury_PlasmaBeam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>plasma</li>
+			<li>superheated</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
 		<defName>AArmoury_Chakram</defName>
 		<label>chakram launcher</label>
 		<description>Instead of bullets, this sniper fires extremely dangerous plasteel chakram that propel themselves via nano-skip fields. These chakram have extremely high armor penetration and deal gruesome cuts.</description>
@@ -1003,6 +1034,14 @@
 						<key>AArmoury_Gun_Launcher_Unique</key>
 						<value>
 							<texPath>Things/Weapon/AArmoury_RandomProjectiles/AArmoury_RandomProjectilesLauncher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_RandomProjectiles/AArmoury_RandomProjectilesBeam</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -1345,7 +1384,35 @@
 			</li>
 		</modExtensions>
 		<traitAdjectives>
-			<li>shaterring</li>
+			<li>shattering</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_ShatterPellets</defName>
+		<label>shatter pellets</label>
+		<description>Instead of regular pellets, this shotgun fires shatter pellets that will create shrapnel upon impact.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>PelletFiring</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_ShatterPellets</projectileOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Shatter/AArmoury_ShatterShotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>shattering</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
@@ -2441,6 +2508,74 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>flux-charged</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_TargetLocator</defName>
+		<label>target locator</label>
+		<description>This weapon will do almost no damage, but will inject its target with a nano-beacon that will make other guns impact much harder.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
+		<statOffsets>
+			<RangedWeapon_RangeMultiplier>2</RangedWeapon_RangeMultiplier>
+			<MarketValue>100</MarketValue>
+		</statOffsets>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_TargetLocator</projectileOverride>
+				<soundOverride>AArmoury_Dart</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_TargetLocator</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>target marking</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_RepairGun</defName>
+		<label>repair gun</label>
+		<description>This weapon will do close to no damage, and will instead repair buildings it is fired at.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
+		<statOffsets>
+			
+			<MarketValue>100</MarketValue>
+		</statOffsets>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_RepairGun</projectileOverride>
+				
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_RepairGun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>repairing</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<!--<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">

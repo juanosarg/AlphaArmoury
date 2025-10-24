@@ -24,6 +24,54 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	<!-- ======================== Plasma ======================== -->
+	<SoundDef>
+		<defName>AArmoury_Plasma</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AArmoury_Plasma</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<!-- ======================== Spray ======================== -->
+	<SoundDef>
+		<defName>AArmoury_Spray</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AArmoury_Spray</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<!-- ======================== Slash ======================== -->
 	<SoundDef>
 		<defName>AArmoury_Slash</defName>
@@ -340,7 +388,7 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-			<!-- ======================== Low volume Zap ======================== -->
+	<!-- ======================== Low volume Zap ======================== -->
 	<SoundDef>
 		<defName>AArmoury_ZapLow</defName>
 		<context>MapOnly</context>

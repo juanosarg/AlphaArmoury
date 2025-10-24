@@ -361,6 +361,7 @@
     <Compile Include="Projectiles\Grenades\Projectile_PesticideShot.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_PotatoShot.cs" />
     <Compile Include="Projectiles\Projectile_PsychicFeedback.cs" />
+    <Compile Include="Projectiles\Projectile_Repair.cs" />
     <Compile Include="Projectiles\Projectile_ShatterRounds.cs" />
     <Compile Include="Projectiles\Projectile_ShatterRounds_lesser.cs" />
     <Compile Include="Projectiles\Projectile_SpawnsSteelThing.cs" />

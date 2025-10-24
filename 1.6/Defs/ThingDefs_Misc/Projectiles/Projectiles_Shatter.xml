@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_ShatterRounds</defName>
+		<label>shatter round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_ShatterRounds</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_ShatterRounds_Lesser</defName>
+		<label>shatter round</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_ShatterRounds_lesser</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>55</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_ShatterPellets</defName>
+		<label>shatter pellets</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_ShatterRounds</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.14</armorPenetrationBase>
+			<speed>55</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Bullet_Shrapnel_Lesser</defName>
+		<label>shrapnel</label>
+		<thingClass>VEF.Weapons.Projectile_ShrapnelPiece</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<speed>55</speed>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
