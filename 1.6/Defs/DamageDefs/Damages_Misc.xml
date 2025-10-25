@@ -137,6 +137,29 @@
 		<impactSoundType>Toxic</impactSoundType>
 		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
+	
+	<DamageDef>
+		<defName>AArmoury_BeeVenom</defName>
+		<label>bioengineered bee venom</label>
+		<workerClass>DamageWorker_Stab</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been stung to death.</deathMessage>
+		<hediff>Stab</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.1</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+				<inverseStatScaling>true</inverseStatScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
 	<DamageDef ParentName="Bullet">
 		<defName>AArmoury_TargetLocator</defName>
 		<label>target locator</label>
@@ -147,5 +170,30 @@
 							</li>
 		</additionalHediffs>
 		
+	</DamageDef>
+	<DamageDef>
+		<defName>AArmoury_Corrosive</defName>
+		<label>corrosive fluid</label>
+		<workerClass>AlphaArmoury.DamageWorker_Corrosive</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>AcidBurn</hediff>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_Voltaic</defName>
+		<label>electric shock</label>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_Electric</hediff>
+				<severityPerDamageDealt>0.07</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<impactSoundType>Electric</impactSoundType>
+		<damageEffecter>DisabledByEMP</damageEffecter>
 	</DamageDef>
 </Defs>

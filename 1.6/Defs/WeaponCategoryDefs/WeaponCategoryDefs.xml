@@ -60,4 +60,7 @@
 	<WeaponCategoryDef>
 		<defName>AArmoury_All</defName>
 	</WeaponCategoryDef>
+	<WeaponCategoryDef>
+		<defName>AArmoury_AllButBows</defName>
+	</WeaponCategoryDef>
 </Defs>

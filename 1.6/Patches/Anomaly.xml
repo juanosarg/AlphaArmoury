@@ -173,6 +173,19 @@
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_Voltaic"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_Voltaic/AArmoury_Voltaic_Hellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_ReinforcedFrame"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
 					<value>
 						<li>

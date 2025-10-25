@@ -532,4 +532,49 @@
 			<speed>30</speed>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_BeeBeeGun</defName>
+		<label>bee</label>
+		<thingClass>AlphaArmoury.Projectile_SinusoidWithPerlin</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_BeeProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<arcHeightFactor>2</arcHeightFactor>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>AArmoury_Corrosive</defName>
+		<label>corrosive fluid</label>
+		<thingClass>VEF.Weapons.ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Proj_BoilingBlood</texPath>
+			<texPathFadeOut>Things/Projectile/Proj_BoilingBloodFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>50</lifeTimeDuration>
+		<widthScaleFactor>1</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>0</minDistanceToAffect>
+		<reachMaxRangeAlways>false</reachMaxRangeAlways>
+		<projectile>
+			<damageDef>AArmoury_Corrosive</damageDef>
+			<flyOverhead>false</flyOverhead>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>40</speed>
+		</projectile>
+	</VEF.Weapons.ExpandableProjectileDef>
 </Defs>

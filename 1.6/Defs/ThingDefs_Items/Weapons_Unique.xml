@@ -82,6 +82,7 @@
 					<li>Attachable</li>
 					<li>AArmoury_Gun_Launcher_Unique</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</weaponCategories>
 				<namerLabels>
 					<li>launcher</li>

@@ -9,6 +9,7 @@
 					<li>AArmoury_SingleBulletFiring</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -19,6 +20,7 @@
 					<li>AArmoury_BoltAndSnipers</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -27,6 +29,7 @@
 					<li>AArmoury_Gun_ChainShotGun_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -36,6 +39,7 @@
 					<li>AArmoury_Machineguns</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -45,6 +49,7 @@
 					<li>AArmoury_Machineguns</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -53,6 +58,7 @@
 					<li>AArmoury_Gun_AssaultRifle_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -64,6 +70,7 @@
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_BoltAndSnipers</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -73,6 +80,7 @@
 					<li>AArmoury_Machineguns</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -89,6 +97,7 @@
 					<li>AArmoury_Gun_ChargeRifle_Unique</li>
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
@@ -99,6 +108,7 @@
 					<li>AArmoury_AllButBeamAndLauncher</li>
 					<li>AArmoury_BoltAndSnipers</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 			
@@ -107,6 +117,7 @@
 				<value>
 					<li>AArmoury_Gun_BeamRepeater_Unique</li>
 					<li>AArmoury_All</li>
+					<li>AArmoury_AllButBows</li>
 				</value>
 			</li>
 		</operations>
@@ -123,6 +134,7 @@
 						<li>AArmoury_Gun_HellcatRifle_Unique</li>
 						<li>AArmoury_AllButBeamAndLauncher</li>
 						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
 					</value>
 				</li>
 			</operations>

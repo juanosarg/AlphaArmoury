@@ -23,6 +23,28 @@
 		</comps>
 	</AbilityDef>
 	<AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_HolyLauncher</defName>
+		<label>launch "holy hand" grenade</label>
+		<description>Launch a "holy hand" grenades, filled with nanite inhibitors that will destabilize reanimated shamblers. Can be reloaded using bioferrite.</description>
+		<iconPath>UI/Commands/AArmoury_HolyLauncher</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>12.9</range>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>FlareLaunch</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>AArmoury_HolyGrenade</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_DeadlifeLauncher</defName>
 		<label>launch deadlife canister</label>
 		<description>Launch a deadlife canister. Can be reloaded using a shard.</description>
