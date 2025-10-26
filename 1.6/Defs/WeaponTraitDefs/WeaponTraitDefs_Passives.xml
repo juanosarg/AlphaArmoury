@@ -53,4 +53,23 @@
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_RadiantCore</defName>
+		<label>radiant core</label>
+		<description>This weapon is powered by a faulty vanometric power source that will occasionally produce bursts of dirty radiation, affecting its wielder with toxic buildup.</description>
+		<commonality>0.25</commonality>
+		
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>radiant</li>
+			<li>faulty</li>
+			<li>radioactive</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<killHediff>ToxicBuildup</killHediff>
+				<killHediffSeverity>0.1</killHediffSeverity>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>
