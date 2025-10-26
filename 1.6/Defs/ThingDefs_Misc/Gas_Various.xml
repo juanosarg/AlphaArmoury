@@ -16,4 +16,21 @@
 			<rotationSpeed>10</rotationSpeed>
 		</gas>
 	</ThingDef>
+	<ThingDef ParentName="AArmoury_BaseGas">
+		<defName>AArmoury_Holy</defName>
+		<label>decoherence nanites</label>
+		<graphicData>
+			<texPath>Things/Mote/AArmoury_Holy/AArmoury_HolyA</texPath>
+		
+			<drawSize>1</drawSize>
+			
+		</graphicData>
+		<gas>
+			<expireSeconds>
+				<min>10</min>
+				<max>50</max>
+			</expireSeconds>
+			<rotationSpeed>30</rotationSpeed>
+		</gas>
+	</ThingDef>
 </Defs>

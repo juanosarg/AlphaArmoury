@@ -83,8 +83,8 @@
 	</WeaponTraitDef>
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_HolyLauncher</defName>
-		<label>"holy hand" launcher</label>
-		<description>This weapon has an attached grenade launcher that fires "holy hand" grenades, filled with nanite inhibitors that will destabilize reanimated shamblers. Once fired, it must be reloaded using bioferrite.</description>
+		<label>"Holy hand" launcher</label>
+		<description>This weapon has an attached grenade launcher that fires "holy hand" grenades, filled with nanite inhibitors that will destabilize reanimated shamblers. It seems to have been intentionally adorned with religious motifs, though whether this was meant as a joke or taken seriously is unclear. Once fired, it must be reloaded using bioferrite.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>

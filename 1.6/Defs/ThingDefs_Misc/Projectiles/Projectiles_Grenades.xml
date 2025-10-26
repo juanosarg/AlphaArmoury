@@ -19,6 +19,25 @@
 			<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
 		</projectile>
 	</ThingDef>
+	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile" MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>AArmoury_HolyGrenade</defName>
+		<label>"Holy hand" grenade</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_HolyProjectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AArmoury_Holy</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionRadius>3.5</explosionRadius>
+			<speed>50</speed>
+			<soundExplode>AArmoury_Holy</soundExplode>
+			<preExplosionSpawnThingDef>AArmoury_Holy</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+		</projectile>
+	</ThingDef>
 	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
 		<defName>AArmoury_FirefoamGrenade</defName>
 		<label>firefoam grenade</label>

@@ -29,6 +29,17 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
+	<DamageDef>
+		<defName>AArmoury_Holy</defName>
+		<label>decoherence nanites</label>
+		<workerClass>AlphaArmoury.DamageWorker_Holy</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been burned to death.</deathMessage>
+		<hediff>Burn</hediff>
+	
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
 	<DamageDef ParentName="Bullet">
 		<defName>AArmoury_ThermalBlasts</defName>
 		<label>thermal damage</label>
