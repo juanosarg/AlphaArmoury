@@ -207,4 +207,16 @@
 		<impactSoundType>Electric</impactSoundType>
 		<damageEffecter>DisabledByEMP</damageEffecter>
 	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_Orgasmatron</defName>
+		<label>orgasmic</label>
+		<additionalHediffs>
+			<li>
+				<hediff>AArmoury_Orgasmatron</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	
+		<damageEffecter>AArmoury_Lovin</damageEffecter>
+	</DamageDef>
 </Defs>

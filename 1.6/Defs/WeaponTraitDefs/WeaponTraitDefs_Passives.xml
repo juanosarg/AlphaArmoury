@@ -42,7 +42,6 @@
 		<label>adrenal rush</label>
 		<description>This weapon floods the wielder with a surge of combat stimulants upon landing a kill, briefly heightening reflexes and movement speed.</description>
 		<commonality>0.25</commonality>
-		
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
 			<li>adrenal</li>
@@ -58,7 +57,6 @@
 		<label>radiant core</label>
 		<description>This weapon is powered by a faulty vanometric power source that will occasionally produce bursts of dirty radiation, affecting its wielder with toxic buildup.</description>
 		<commonality>0.25</commonality>
-		
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
 			<li>radiant</li>
@@ -69,6 +67,60 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<killHediff>ToxicBuildup</killHediff>
 				<killHediffSeverity>0.1</killHediffSeverity>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_Orgasmatron</defName>
+		<label>orgasmatron core</label>
+		<description>This weapon infuses projectiles with blissful bio-feedback, leaving targets dazed, flushed, and oddly satisfied, but also sluggy.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_Gun_AssaultRifle_Unique</weaponCategory>
+		<traitAdjectives>
+			<li>loving</li>
+			<li>orgasmic</li>
+		</traitAdjectives>
+		<extraDamages>
+			<li>
+				<def>AArmoury_Orgasmatron</def>
+				<amount>1</amount>
+			</li>
+		</extraDamages>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<graphicOverrides>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Orgasmatron</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_SunburstCore</defName>
+		<label>sunburst core</label>
+		<description>This weapon is powered by a faulty vanometric power source that will occasionally produce bursts of dirty radiation, affecting its wielder with toxic buildup.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>radiant</li>
+			<li>faulty</li>
+			<li>radioactive</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<conditionalStatAffecters>
+					<li Class="ConditionalStatAffecter_InSunlight">
+						<statOffsets>
+							<RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+						</statOffsets>
+					</li>
+				</conditionalStatAffecters>
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>

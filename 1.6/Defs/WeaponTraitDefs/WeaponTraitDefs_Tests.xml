@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<WeaponTraitDef>
+		<defName>AArmoury_test</defName>
+		<label>test</label>
+		<description>This weapon will fire bees instead of bullets. Ok...</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>AArmoury_Gun_LMG_Unique</weaponCategory>
+		
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_test</projectileOverride>
+				
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>test</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	
+	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
+		<defName>AArmoury_test</defName>
+		<label>test</label>
+		<graphicData>
+			<texPath>UI/AArmoury_Transparent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<thingClass>VEF.Weapons.Projectile_Attachments</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<explosionRadius>1.1</explosionRadius>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<speed>20</speed>
+			<soundExplode>Interact_Ignite</soundExplode>
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<attachedEffecter>Shield_Break</attachedEffecter>
+				
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

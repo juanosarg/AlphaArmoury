@@ -75,4 +75,41 @@
 			</li>
 		</children>
 	</EffecterDef>
+	<EffecterDef>
+		<defName>AArmoury_Shield_Break</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>AArmoury_FlashShieldBreak</moteDef>
+				<scale>1.5</scale>
+				<burstCount>1</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<moteDef>AArmoury_CracksShieldBreak</moteDef>
+				<scale>1.5</scale>
+				<burstCount>1</burstCount>
+				<spawnLocType>OnSource</spawnLocType>
+				<attachToSpawnThing>true</attachToSpawnThing>
+			</li>
+		</children>
+	</EffecterDef>
+	<EffecterDef>
+		<defName>AArmoury_Lovin</defName>
+		<children>
+		
+		
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<burstCount>1~4</burstCount>
+				<positionRadius>0.5</positionRadius>
+				<scale>0.25~0.345</scale>
+				  <spawnLocType>OnSource</spawnLocType>
+				 <positionRadius>1.3</positionRadius>
+				<fleckDef>Heart</fleckDef>
+			</li>
+		</children>
+	</EffecterDef>
 </Defs>

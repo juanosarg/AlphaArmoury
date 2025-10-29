@@ -8,7 +8,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_Distortion</thingClass>
+		<thingClass>VEF.Weapons.Projectile_Attachments_Explosive</thingClass>
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Blunt</damageDef>
@@ -19,6 +19,12 @@
 			<speed>20</speed>
 			<soundExplode>Interact_Ignite</soundExplode>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<attachedFleck>PsycastAreaEffect</attachedFleck>
+				<fleckScale>2</fleckScale>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="AArmoury_BaseExplosiveProjectile">
 		<defName>AArmoury_MiniRocket</defName>
@@ -291,7 +297,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>2</drawSize>
 		</graphicData>
-		<thingClass>AlphaArmoury.Projectile_Heatwave</thingClass>
+		<thingClass>VEF.Weapons.Projectile_Attachments_Explosive</thingClass>
 		<projectile>
 			<speed>40</speed>
 			<damageDef>AArmoury_ThermalBlasts</damageDef>
@@ -302,6 +308,12 @@
 			<screenShakeFactor>0</screenShakeFactor>
 			<soundExplode>Interact_Ignite</soundExplode>
 		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<attachedFleck>Fleck_HeatDiffusion</attachedFleck>
+				<fleckScale>0.25</fleckScale>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_NeedleProjectiles_LMG</defName>
@@ -577,4 +589,29 @@
 			<speed>40</speed>
 		</projectile>
 	</VEF.Weapons.ExpandableProjectileDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_BubbleBurster</defName>
+		<label>acid bubble</label>
+		<graphicData>
+			<texPath>UI/AArmoury_Transparent</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<thingClass>VEF.Weapons.Projectile_Attachments</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AArmoury_AcidSpit</damageDef>
+			<damageAmountBase>5</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<speed>20</speed>		
+		</projectile>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<attachedEffecter>AArmoury_Shield_Break</attachedEffecter>
+				
+			</li>
+		</modExtensions>
+	</ThingDef>
 </Defs>

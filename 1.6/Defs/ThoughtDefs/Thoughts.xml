@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>AArmoury_GotSomeLovin</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AArmoury_Orgasmatron</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>got some... lovin?</label>
+				<description>There's nothing like a tumble between the sheets to lift the mood... though I can't quite recall who, or what, was involved.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

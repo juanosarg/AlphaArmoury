@@ -344,4 +344,36 @@
 		</stages>
 	</HediffDef>
 	
+	<HediffDef>
+		<defName>AArmoury_Orgasmatron</defName>
+		<label>euphoric energy</label>
+		<description>This person or animal has been targeted by an orgasmatron core, leaving them dazed, flushed, and oddly satisfied.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<maxSeverity>1.0</maxSeverity>
+		 <initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			
+		</comps>
+		<stages>
+			<li>
+				<label>woozy</label>
+				<statFactors>
+					<JoyFallRateFactor>0.75</JoyFallRateFactor>
+					<MoveSpeed>0.8</MoveSpeed>
+					<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+					<ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
+				</statFactors>
+			</li>
+			
+		</stages>
+	</HediffDef>
+	
 </Defs>

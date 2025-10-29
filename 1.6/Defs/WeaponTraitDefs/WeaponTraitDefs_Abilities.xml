@@ -116,4 +116,19 @@
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_MimicCore</defName>
+		<label>mimic core</label>
+		<description>This weapon can acquire the weapon traits of another unique weapon, destroying it in the process. Note that only traits that are compatible with the weapon will be acquired (no rocket launching bows).</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>AArmoury_All</weaponCategory>
+		<traitAdjectives>
+			<li>mimetic</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<abilityToAdd>AArmoury_MimicCore</abilityToAdd>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
 </Defs>

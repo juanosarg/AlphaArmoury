@@ -427,9 +427,7 @@
 		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
-		
 		</exclusionTags>
-		
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<projectileOverride>AArmoury_Corrosive</projectileOverride>
@@ -2562,7 +2560,6 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<soundOverride>AArmoury_Zap</soundOverride>
-				
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -2644,7 +2641,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li>
 						<key>AArmoury_Gun_Launcher_Unique</key>
 						<value>
@@ -2694,7 +2690,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -2709,7 +2704,6 @@
 		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
 		<statOffsets>
-			
 			<MarketValue>100</MarketValue>
 		</statOffsets>
 		<exclusionTags>
@@ -2728,7 +2722,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -2744,7 +2737,6 @@
 		<weaponCategory>AArmoury_Gun_LMG_Unique</weaponCategory>
 		<damageDefOverride>AArmoury_BeeVenom</damageDefOverride>
 		<statOffsets>
-			
 			<MarketValue>100</MarketValue>
 		</statOffsets>
 		<exclusionTags>
@@ -2763,7 +2755,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -2771,5 +2762,37 @@
 			<li>repairing</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
-	
+	<WeaponTraitDef>
+		<defName>AArmoury_BubbleBurster</defName>
+		<label>bubble burster</label>
+		<description>This weapon will fire a burst of short range acidic bubbles.</description>
+		<commonality>0.5</commonality>
+		<weaponCategory>AArmoury_Gun_HeavySMG_Unique</weaponCategory>
+		
+		<statOffsets>
+			<RangedWeapon_RangeMultiplier>-0.5</RangedWeapon_RangeMultiplier>
+		</statOffsets>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<projectileOverride>AArmoury_BubbleBurster</projectileOverride>
+				<soundOverride>AArmoury_Pop</soundOverride>
+				<graphicOverrides>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_BubbleBurster</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>bubbly</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
 </Defs>

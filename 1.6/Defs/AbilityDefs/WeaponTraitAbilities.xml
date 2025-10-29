@@ -554,4 +554,26 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	<AbilityDef>
+		<defName>AArmoury_MimicCore</defName>
+		<label>mimic core</label>
+		<description>This weapon can acquire the weapon traits of another unique weapon, destroying it in the process. Note that only traits that are compatible with the weapon will be acquired (no rocket launching bows).</description>
+		<cooldownTicksRange>30000</cooldownTicksRange>
+		<iconPath>UI/Commands/AArmoury_MimicCore</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>5.9</range>
+			<warmupTime>1.5</warmupTime>			
+			<targetParams>
+				<canTargetItems>true</canTargetItems>
+				<mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>	
+		</verbProperties>
+		<comps>
+			<li Class="AlphaArmoury.CompProperties_MimicCore">
+				
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>

@@ -311,9 +311,11 @@
     <Compile Include="Abilities\CompAbilityEffect_Skip.cs" />
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />
+    <Compile Include="Abilities\CompMimicCore.cs" />
     <Compile Include="Abilities\Properties\CompProperties_AbilityLaunchProjectile_Multi.cs" />
     <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_MimicCore.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Converter.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Remover.cs" />
@@ -355,8 +357,6 @@
     <Compile Include="Projectiles\Projectile_HemovoricBeam.cs" />
     <Compile Include="Projectiles\Projectile_Hemovoric.cs" />
     <Compile Include="Projectiles\Projectile_Electric.cs" />
-    <Compile Include="Projectiles\Projectile_Heatwave.cs" />
-    <Compile Include="Projectiles\Projectile_Distortion.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_FertilizerShot.cs" />
     <Compile Include="Projectiles\Projectile_HemovoricFeedback.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_MagmaShot.cs" />
