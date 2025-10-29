@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<WeaponTraitDef>
+	<!--<WeaponTraitDef>
 		<defName>AArmoury_test</defName>
 		<label>test</label>
 		<description>This weapon will fire bees instead of bullets. Ok...</description>
@@ -46,5 +46,5 @@
 				
 			</li>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef>-->
 </Defs>

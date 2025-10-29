@@ -211,6 +211,19 @@
 						</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "AArmoury_SunburstCore"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>Gun_HellcatRifle_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Hellcat</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Biotech</li>

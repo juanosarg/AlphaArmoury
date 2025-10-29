@@ -103,14 +103,14 @@
 	</WeaponTraitDef>
 	<WeaponTraitDef>
 		<defName>AArmoury_SunburstCore</defName>
-		<label>sunburst core</label>
-		<description>This weapon is powered by a faulty vanometric power source that will occasionally produce bursts of dirty radiation, affecting its wielder with toxic buildup.</description>
+		<label>sunbursts core</label>
+		<description>This weapon blazes brighter under sunlight, dealing increased damage. Its power fades in shadow or darkness.</description>
 		<commonality>0.25</commonality>
-		<weaponCategory>Ranged</weaponCategory>
+		<weaponCategory>AArmoury_All</weaponCategory>
 		<traitAdjectives>
-			<li>radiant</li>
-			<li>faulty</li>
-			<li>radioactive</li>
+			<li>solar-charged</li>
+			<li>sunforged</li>
+			<li>photosensitive</li>
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
@@ -120,7 +120,245 @@
 							<RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
 						</statOffsets>
 					</li>
+					<li Class="VEF.Genes.ConditionalStatAffecter_NoSunlight">
+						<statOffsets>
+							<RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
+						</statOffsets>
+					</li>
 				</conditionalStatAffecters>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Revolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Bolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Sniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Minigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Lance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Bow</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Beam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_VacuumSealed</defName>
+		<label>vacuum sealed</label>
+		<description>This weapon is optimized for vacuum and deals greater damage in space or airless environments.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_AllButBows</weaponCategory>
+		<traitAdjectives>
+			<li>airtight</li>
+			<li>void-hardened</li>
+			<li>pressurized</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<conditionalStatAffecters>
+					<li Class="VEF.Genes.ConditionalStatAffecter_InSpace">
+						<statOffsets>
+							<RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+						</statOffsets>
+					</li>
+					<li Class="VEF.Genes.ConditionalStatAffecter_NotInSpace">
+						<statOffsets>
+							<RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
+						</statOffsets>
+					</li>
+				</conditionalStatAffecters>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Revolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Bolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Sniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Minigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Lance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Beam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
