@@ -106,7 +106,7 @@
 		<label>sunbursts core</label>
 		<description>This weapon blazes brighter under sunlight, dealing increased damage. Its power fades in shadow or darkness.</description>
 		<commonality>0.25</commonality>
-		<weaponCategory>AArmoury_All</weaponCategory>
+		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
 			<li>solar-charged</li>
 			<li>sunforged</li>
@@ -115,12 +115,12 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<conditionalStatAffecters>
-					<li Class="ConditionalStatAffecter_InSunlight">
+					<li Class="AlphaArmoury.ConditionalStatAffecter_WeaponInSunlight">
 						<statOffsets>
 							<RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
 						</statOffsets>
 					</li>
-					<li Class="VEF.Genes.ConditionalStatAffecter_NoSunlight">
+					<li Class="AlphaArmoury.ConditionalStatAffecter_WeaponNotInSunlight">
 						<statOffsets>
 							<RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
 						</statOffsets>
@@ -216,14 +216,6 @@
 						</value>
 					</li>
 					<li>
-						<key>AArmoury_Gun_Launcher_Unique</key>
-						<value>
-							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Launcher</texPath>
-							<graphicClass>Graphic_Random</graphicClass>
-							<shaderType>CutoutComplex</shaderType>
-						</value>
-					</li>
-					<li>
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>
 							<texPath>Things/Weapon/AArmoury_SunBurst/AArmoury_SunBurst_Beam</texPath>
@@ -240,7 +232,7 @@
 		<label>vacuum sealed</label>
 		<description>This weapon is optimized for vacuum and deals greater damage in space or airless environments.</description>
 		<commonality>0.25</commonality>
-		<weaponCategory>AArmoury_AllButBows</weaponCategory>
+		<weaponCategory>Gun</weaponCategory>
 		<traitAdjectives>
 			<li>airtight</li>
 			<li>void-hardened</li>
@@ -249,12 +241,12 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<conditionalStatAffecters>
-					<li Class="VEF.Genes.ConditionalStatAffecter_InSpace">
+					<li Class="AlphaArmoury.ConditionalStatAffecter_WeaponInSpace">
 						<statOffsets>
 							<RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
 						</statOffsets>
 					</li>
-					<li Class="VEF.Genes.ConditionalStatAffecter_NotInSpace">
+					<li Class="AlphaArmoury.ConditionalStatAffecter_WeaponNotInSpace">
 						<statOffsets>
 							<RangedWeapon_DamageMultiplier>-0.2</RangedWeapon_DamageMultiplier>
 						</statOffsets>
@@ -343,17 +335,123 @@
 					</li>
 					
 					<li>
-						<key>AArmoury_Gun_Launcher_Unique</key>
+						<key>Gun_BeamRepeater_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Launcher</texPath>
+							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Beam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_ToxinTuned</defName>
+		<label>toxin-tuned</label>
+		<description>This weapon is fed by pollution, doing more damage in polluted terrains.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>Ranged</weaponCategory>
+		<traitAdjectives>
+			<li>corroded</li>
+			<li>tainted</li>
+			<li>pestilent</li>
+		</traitAdjectives>
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<conditionalStatAffecters>
+					<li Class="AlphaArmoury.ConditionalStatAffecter_WeaponInPollution">
+						<statOffsets>
+							<RangedWeapon_DamageMultiplier>0.2</RangedWeapon_DamageMultiplier>
+						</statOffsets>
+					</li>
+				</conditionalStatAffecters>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Revolver</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
 					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Bolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Sniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Minigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Lance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					
+					<li>
 						<key>Gun_BeamRepeater_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_VacuumSealed/AArmoury_VacuumSealed_Beam</texPath>
+							<texPath>Things/Weapon/AArmoury_ToxinTuned/AArmoury_ToxinTuned_Beam</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>

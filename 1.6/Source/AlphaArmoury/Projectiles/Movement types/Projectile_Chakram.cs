@@ -21,13 +21,18 @@ namespace AlphaArmoury
         private float loopRadius;
         private float forwardCompression;
 
+        private const float LoopBack = 1f; 
+
+        // Precomputed position cache
+        private Vector3 currentOffset;
+
         public override void Launch(Thing launcher, Vector3 origin, LocalTargetInfo usedTarget,
             LocalTargetInfo intendedTarget, ProjectileHitFlags hitFlags, bool preventFriendlyFire = false,
             Thing equipment = null, ThingDef targetCoverDef = null)
         {
             base.Launch(launcher, origin, usedTarget, intendedTarget, hitFlags, preventFriendlyFire, equipment, targetCoverDef);
 
-            //  Static setup 
+            // --- Static setup ---
             originVec = origin.Yto0();
             destinationVec = usedTarget.Cell.ToVector3Shifted().Yto0();
             startingTicksToImpact = ticksToImpact;
@@ -42,45 +47,51 @@ namespace AlphaArmoury
             // Total distance
             totalDist = (destinationVec - originVec).magnitude;
 
-            // Flight parameters 
+            // Flight parameters
             float baseLoops = 2.5f; // Base loops for 10-cell range
             loops = baseLoops * (totalDist / 10f);
             loopRadius = 3f;
             forwardCompression = 1f;
         }
 
+        public override Vector3 ExactPosition
+        {
+            get
+            {
+                float flightFrac = 1f - (float)ticksToImpact / (float)startingTicksToImpact;
+
+                // --- Dynamic motion ---
+                float dynamicRadius = loopRadius * flightFrac; // grows over time
+                float baseForward = flightFrac * totalDist * forwardCompression;
+                float angle = flightFrac * loops * Mathf.PI * 2f;
+
+                // Slight forward/back wobble to close loops
+                float forwardOffset = Mathf.Sin(angle) * dynamicRadius * LoopBack;
+
+                // Circular offset
+                Vector3 circularOffset = (Mathf.Cos(angle) * perp1 + Mathf.Sin(angle) * perp2) * dynamicRadius;
+
+                // Combine base + offset
+                Vector3 forwardPos = originVec + direction * (baseForward + forwardOffset);
+                currentOffset = circularOffset;
+
+                return forwardPos + circularOffset + Vector3.up * def.Altitude;
+            }
+        }
+
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
+            // --- Chakram spin only ---
             float flightFrac = 1f - (float)ticksToImpact / (float)startingTicksToImpact;
-
-            //  Dynamic motion 
-            float dynamicRadius = loopRadius * flightFrac; // grows over time
-            float baseForward = flightFrac * totalDist * forwardCompression;
-            float angle = flightFrac * loops * Mathf.PI * 2f;
-
-            // Slight forward/back wobble to close loops
-            float forwardOffset = Mathf.Sin(angle) * dynamicRadius * 0.4f;
-
-            // Circular offset
-            Vector3 circularOffset = (Mathf.Cos(angle) * perp1 + Mathf.Sin(angle) * perp2) * dynamicRadius;
-
-            // Combine base + offset
-            Vector3 forwardPos = originVec + direction * (baseForward + forwardOffset);
-            Vector3 visualPos = forwardPos + circularOffset + Vector3.up * def.Altitude;
-
-            //  Chakram spin
-            float spinRate = 1440f; // degrees per second 
+            float spinRate = 1440f; // degrees per second
             float spinAngle = flightFrac * spinRate;
-            Quaternion selfSpin = Quaternion.AngleAxis(spinAngle, Vector3.up); 
-            
-            // Combine with trajectory rotation
-            
-            Quaternion finalRot = ExactRotation * selfSpin;       
 
-            // --- Draw ---
+            Quaternion selfSpin = Quaternion.AngleAxis(spinAngle, Vector3.up);
+            Quaternion finalRot = ExactRotation * selfSpin;
+
             Graphics.DrawMesh(
                 MeshPool.plane10,
-                Matrix4x4.TRS(visualPos, finalRot, Vector3.one),
+                Matrix4x4.TRS(ExactPosition, finalRot, Vector3.one),
                 def.graphic.MatSingle,
                 0
             );

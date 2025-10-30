@@ -505,9 +505,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>
-			<damageDef>Bullet</damageDef>
+			<damageDef>Cut</damageDef>
 			<damageAmountBase>25</damageAmountBase>
-			<stoppingPower>1.5</stoppingPower>
+			<stoppingPower>2</stoppingPower>
 			<speed>20</speed>
 			<arcHeightFactor>2</arcHeightFactor>
 		</projectile>

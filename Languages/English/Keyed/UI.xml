@@ -36,5 +36,10 @@
 	
 	<AArmoury_Reset>Reset</AArmoury_Reset>
 	
+	<AArmoury_StatsReport_InSpace>Weapon in space</AArmoury_StatsReport_InSpace>
+	<AArmoury_StatsReport_NotInSpace>Weapon planetside</AArmoury_StatsReport_NotInSpace>
+	<AArmoury_StatsReport_InSunlight>Weapon in sunlight</AArmoury_StatsReport_InSunlight>
+	<AArmoury_StatsReport_NotInSunlight>Weapon not in sunlight</AArmoury_StatsReport_NotInSunlight>
+	<AArmoury_StatsReport_InPollution>Weapon in polluted terrain</AArmoury_StatsReport_InPollution>
 	
 </LanguageData>
