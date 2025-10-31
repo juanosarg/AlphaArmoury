@@ -390,7 +390,7 @@
 		<defName>AArmoury_FertilizerCanisters</defName>
 		<label>fertilizer canisters</label>
 		<description>This weapon fires fertilizer canisters that will turn soil into tilled soil.</description>
-		<commonality>1</commonality>
+		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
@@ -416,14 +416,14 @@
 			<MarketValue>90</MarketValue>
 		</statOffsets>
 		<traitAdjectives>
-			<li>fertilizer</li>
+			<li>fertilizing</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
 		<defName>AArmoury_Corrosive</defName>
 		<label>corrosive burst</label>
 		<description>This weapon fires a pressurized blast of corrosive acid that deals increased damage to armor.</description>
-		<commonality>0.75</commonality>
+		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
@@ -454,8 +454,8 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_PotatoCannon</defName>
 		<label>potato cannon</label>
-		<description>This weapon fires... potatoes... Not very useful offenssively, but it is a great way to, well, plant potatoes. Note that potatoes need terrain with more than 70% fertility.</description>
-		<commonality>1</commonality>
+		<description>This weapon fires... potatoes... Not very useful offensively, but it is a great way to, well, plant potatoes. Note that potatoes need terrain with more than 70% fertility.</description>
+		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_Gun_Launcher_Unique</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
@@ -964,12 +964,15 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_RandomProjectiles</defName>
 		<label>vanometric 3D printer</label>
-		<description>A very rare archotech device that allows the weapon to work without the need for either ammunation or any power source. It seem to be very ancient tech and is malfunctioning, causing the weapon to produce random results every time it is fired.\n\nThis will either annihilate its target, or cause unbound chaos.</description>
+		<description>A very rare archotech device that allows the weapon to work without the need for either ammunition or any power source. It seems to be very ancient tech and is malfunctioning, causing the weapon to produce random results every time it is fired.\n\nThis will either annihilate its target, or cause unbound chaos.</description>
 		<commonality>0.05</commonality>
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<exclusionTags>
 			<li>AmmoType</li>
 		</exclusionTags>
+		<statOffsets>
+			<MarketValue>2000</MarketValue>
+		</statOffsets>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<randomprojectiles>true</randomprojectiles>
