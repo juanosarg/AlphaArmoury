@@ -17,30 +17,33 @@ namespace AlphaArmoury
             {
                 foreach (Pawn pawn in pawns)
                 {
-
-                    ThingSetMakerParams thingSetMakerParams = default(ThingSetMakerParams);
-                    thingSetMakerParams.makingFaction = Faction.OfAncientsHostile;
-                    thingSetMakerParams.countRange = new IntRange(1, 1);
-                    thingSetMakerParams.techLevel = parms.faction.def.techLevel;
-                    ThingSetMakerParams parms2 = thingSetMakerParams;
-                    List<Thing> list = InternalDefOf.AArmoury_Reward_UniqueWeaponExpanded.root.Generate(parms2);
-                    if (list.Count != 1)
+                    if (pawn.equipment != null)
                     {
-                        Log.Error("Expected 1 unique weapon, got " + list.Count);
-                    }
-                    ThingWithComps thingWithComps = list.First() as ThingWithComps;
-
-                    if (AlphaArmoury_Settings.makeRaidWeaponsBiocoded)
-                    {
-                        CompBiocodable compBiocodable = thingWithComps.TryGetComp<CompBiocodable>();
-                        if (compBiocodable != null && !compBiocodable.Biocoded)
+                        ThingSetMakerParams thingSetMakerParams = default(ThingSetMakerParams);
+                        thingSetMakerParams.makingFaction = Faction.OfAncientsHostile;
+                        thingSetMakerParams.countRange = new IntRange(1, 1);
+                        thingSetMakerParams.techLevel = parms.faction.def.techLevel;
+                        ThingSetMakerParams parms2 = thingSetMakerParams;
+                        List<Thing> list = InternalDefOf.AArmoury_Reward_UniqueWeaponExpanded.root.Generate(parms2);
+                        if (list.Count != 1)
                         {
-                            compBiocodable.CodeFor(pawn);
+                            Log.Error("Expected 1 unique weapon, got " + list.Count);
                         }
-                    }
+                        ThingWithComps thingWithComps = list.First() as ThingWithComps;
 
-                    pawn.equipment.DestroyAllEquipment();
-                    pawn.equipment.AddEquipment(thingWithComps);
+                        if (AlphaArmoury_Settings.makeRaidWeaponsBiocoded)
+                        {
+                            CompBiocodable compBiocodable = thingWithComps.TryGetComp<CompBiocodable>();
+                            if (compBiocodable != null && !compBiocodable.Biocoded)
+                            {
+                                compBiocodable.CodeFor(pawn);
+                            }
+                        }
+
+                        pawn.equipment.DestroyAllEquipment();
+                        pawn.equipment.AddEquipment(thingWithComps);
+                    }
+                    
 
                 }
             }

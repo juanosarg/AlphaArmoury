@@ -15,7 +15,9 @@ namespace AlphaArmoury
 
         private float totalDist;
         private float zigCount;
-        private float amplitude;
+        public float amplitude;
+
+        public virtual float Amplitude => 1.2f;
 
         public override void Launch(Thing launcher, Vector3 origin, LocalTargetInfo usedTarget,
             LocalTargetInfo intendedTarget, ProjectileHitFlags hitFlags, bool preventFriendlyFire = false,
@@ -38,7 +40,7 @@ namespace AlphaArmoury
 
             // Parameters — constant across distance
             zigCount = Mathf.Max(3f, totalDist * 0.6f); // how many turns
-            amplitude = 1.2f; // constant width of zigzag in cells
+            amplitude = Amplitude; // constant width of zigzag in cells
         }
 
         public override Vector3 ExactPosition

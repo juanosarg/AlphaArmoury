@@ -2429,6 +2429,10 @@
 						<key>Gun_ChargeLance_Unique</key>
 						<value>AArmoury_Flux_Lance</value>
 					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>AArmoury_Flux_Launcher</value>
+					</li>
 				</projectileOverrides>
 				<graphicOverrides>
 					<li>
@@ -2560,6 +2564,13 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<soundOverride>AArmoury_Zap</soundOverride>
+				<projectileOverrides>
+					
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>AArmoury_Voltaic_Launcher</value>
+					</li>
+				</projectileOverrides>
 				<graphicOverrides>
 					<li>
 						<key>Gun_Revolver_Unique</key>
@@ -2768,7 +2779,6 @@
 		<description>This weapon will fire a burst of short range acidic bubbles.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_Gun_HeavySMG_Unique</weaponCategory>
-		
 		<statOffsets>
 			<RangedWeapon_RangeMultiplier>-0.5</RangedWeapon_RangeMultiplier>
 		</statOffsets>
@@ -2793,6 +2803,181 @@
 		</modExtensions>
 		<traitAdjectives>
 			<li>bubbly</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_EntropyRounds</defName>
+		<label>entropy rounds</label>
+		<description>Projectiles fired by this weapon will convert their wielder's neural heat into extra psychic damage.</description>
+		<commonality>0.25</commonality>
+		<weaponCategory>AArmoury_All</weaponCategory>
+		<exclusionTags>
+			<li>AmmoType</li>
+		</exclusionTags>
+		
+		<modExtensions>
+			<li Class="VEF.Weapons.WeaponTraitDefExtension">
+				<soundOverride>AArmoury_Clash</soundOverride>
+				<projectileOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>AArmoury_EntropyRounds_Revolver</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>AArmoury_EntropyRounds_Bolt</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>AArmoury_EntropyRounds_Shotgun</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>AArmoury_EntropyRounds_HeavySMG</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>AArmoury_EntropyRounds_LMG</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>AArmoury_EntropyRounds_Assault</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>AArmoury_EntropyRounds_Minigun</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>AArmoury_EntropyRounds_Sniper</value>
+					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>AArmoury_EntropyRounds_Arrow</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>AArmoury_EntropyRounds_Charge</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>AArmoury_EntropyRounds_Launcher</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>AArmoury_EntropyRounds_Lance</value>
+					</li>
+				</projectileOverrides>
+				<graphicOverrides>
+					<li>
+						<key>Gun_Revolver_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Revolver</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BoltActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Bolt</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChainShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Shotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_HeavySMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_HMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_LMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_LMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_AssaultRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Assault</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_SniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Sniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_Minigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Minigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Charge</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_ChargeLance_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Lance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Bow_Great_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Bow</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>AArmoury_Gun_Launcher_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Launcher</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li>
+						<key>Gun_BeamRepeater_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_EntropyRounds/AArmoury_EntropyRounds_Beam</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+				</graphicOverrides>
+			</li>
+		</modExtensions>
+		<traitAdjectives>
+			<li>entropic</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 </Defs>

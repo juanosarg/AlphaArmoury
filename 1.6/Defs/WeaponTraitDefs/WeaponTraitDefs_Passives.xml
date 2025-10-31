@@ -346,7 +346,7 @@
 			</li>
 		</modExtensions>
 	</WeaponTraitDef>
-	<WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_ToxinTuned</defName>
 		<label>toxin-tuned</label>
 		<description>This weapon is fed by pollution, doing more damage in polluted terrains.</description>

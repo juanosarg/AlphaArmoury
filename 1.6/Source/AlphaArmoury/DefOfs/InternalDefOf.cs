@@ -34,11 +34,13 @@ namespace AlphaArmoury
 
         public static SoundDef Standard_Reload, AArmoury_Cryo_Sustainer;
 
-        public static HediffDef HypothermicSlowdown, VFEP_HypothermicSlowdown;
+        public static HediffDef HypothermicSlowdown, VFEP_HypothermicSlowdown, AArmoury_Flux, AArmoury_Electric;
 
         public static ThingCategoryDef AArmoury_WeaponKits;
 
         public static ThingSetMakerDef AArmoury_Reward_UniqueWeaponExpanded;
+
+        public static DamageDef AArmoury_PsychicDamage;
 
     }
 }

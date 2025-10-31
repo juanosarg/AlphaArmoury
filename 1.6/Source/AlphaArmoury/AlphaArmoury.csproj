@@ -334,8 +334,10 @@
     <Compile Include="ConditionalStatAffecters\ConditionalStatAffecter_WeaponInSunlight.cs" />
     <Compile Include="ConditionalStatAffecters\ConditionalStatAffecter_WeaponNotInSpace.cs" />
     <Compile Include="ConditionalStatAffecters\ConditionalStatAffecter_WeaponNotInSunlight.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_AnomalyKiller.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Corrosive.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Holy.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_InsectKiller.cs" />
     <Compile Include="DefExtensions\UniqueConversionExtension.cs" />
     <Compile Include="DefExtensions\WeaponKitExtension.cs" />
     <Compile Include="Dev Mode\AllUniqueWeaponCombinationsSpawner.cs" />
@@ -350,9 +352,13 @@
     <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_DehydratorShot.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_EntropyExplosion.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_VoltaicExplosion.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Looping.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Sinusoid.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_ZigZag.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_FluxExplosion.cs" />
+    <Compile Include="Projectiles\Projectile_Entropy.cs" />
     <Compile Include="Projectiles\Projectile_FrostRay.cs" />
     <Compile Include="Projectiles\Projectile_Healing.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Chakram.cs" />

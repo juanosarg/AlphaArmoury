@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_EntropyRounds_Revolver</defName>
+		<label>entropy revolver bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>20</speed>
+		</projectile>
+		
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Bolt</defName>
+		<label>entropy bolt-action rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Shotgun</defName>
+		<label>entropy shotgun blast</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<stoppingPower>3</stoppingPower>
+			<armorPenetrationBase>0.14</armorPenetrationBase>
+				<speed>55</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_HeavySMG</defName>
+		<label>entropy heavy SMG bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+			
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>48</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_LMG</defName>
+		<label>entropy LMG bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>46</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Assault</defName>
+		<label>entropy assault rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Minigun</defName>
+		<label>entropy minigun bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			
+			<speed>70</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Sniper</defName>
+		<label>entropy sniper rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+				<speed>100</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Arrow</defName>
+		<label>entropy arrow</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Arrow</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>49</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Charge</defName>
+		<label>entropy charge shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>12</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Lance</defName>
+		<label>entropy charge lance shot</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>23</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet" >
+		<defName>AArmoury_EntropyRounds_Hellcat</defName>
+		<label>entropy hellcat rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/AArmoury_Psychic/AArmoury_Psychic_b</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<speed>70</speed>
+		</projectile>
+		<thingClass>AlphaArmoury.Projectile_Entropy</thingClass>
+		<modExtensions>
+			<li Class="VEF.Weapons.ProjectileExtension">
+				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_EntropyRounds_Launcher</defName>
+		<label>entropy smoke launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(140,135,156)</color>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_EntropyExplosion</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionRadius>2.4</explosionRadius>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0.5</screenShakeFactor>
+			
+			
+		</projectile>
+		<modExtensions>
+				<li Class="VEF.Weapons.ProjectileExtension">
+					<excludeFromStaticCollection>true</excludeFromStaticCollection>
+				</li>
+			</modExtensions>
+	</ThingDef>
+</Defs>

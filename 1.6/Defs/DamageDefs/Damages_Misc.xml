@@ -36,7 +36,6 @@
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been burned to death.</deathMessage>
 		<hediff>Burn</hediff>
-	
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<armorCategory>Heat</armorCategory>
 	</DamageDef>
@@ -148,7 +147,6 @@
 		<impactSoundType>Toxic</impactSoundType>
 		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
-	
 	<DamageDef>
 		<defName>AArmoury_BeeVenom</defName>
 		<label>bioengineered bee venom</label>
@@ -178,9 +176,8 @@
 			<li>
 				<hediff>AArmoury_TargetLocator</hediff>
 				<severityPerDamageDealt>1</severityPerDamageDealt>
-							</li>
+			</li>
 		</additionalHediffs>
-		
 	</DamageDef>
 	<DamageDef>
 		<defName>AArmoury_Corrosive</defName>
@@ -216,7 +213,47 @@
 				<severityPerDamageDealt>1</severityPerDamageDealt>
 			</li>
 		</additionalHediffs>
-	
 		<damageEffecter>AArmoury_Lovin</damageEffecter>
+	</DamageDef>
+	<DamageDef ParentName="Bullet">
+		<defName>AArmoury_PsychicDamage</defName>
+		<label>psychic</label>
+		<deathMessage>{0} has suffered irreparable nerve damage.</deathMessage>
+		<hediff>AArmoury_PsychicDamage</hediff>
+		<damageEffecter>AArmoury_Impact_EMP</damageEffecter>
+	</DamageDef>
+	<DamageDef>
+		<defName>AArmoury_InsectKiller</defName>
+		<label>insectkilling acid</label>
+		<workerClass>AlphaArmoury.DamageWorker_InsectKiller</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>VEF_AcidBurn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+	<DamageDef>
+		<defName>AArmoury_AnomalyKiller</defName>
+		<label>entitykilling acid</label>
+		<workerClass>AlphaArmoury.DamageWorker_AnomalyKiller</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been corroded to death.</deathMessage>
+		<hediff>VEF_AcidBurn</hediff>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+		<isRanged>true</isRanged>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
 	</DamageDef>
 </Defs>

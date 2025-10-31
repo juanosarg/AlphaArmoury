@@ -199,4 +199,46 @@
 			<li>reinforced</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
+	<WeaponTraitDef>
+		<defName>AArmoury_InsectKiller</defName>
+		<label>insectoid slayer</label>
+		<description>This gun is specially damaging to insectoids, ripping them apart with a dangerous acid.</description>
+		<commonality>0.4</commonality>
+		<weaponCategory>AArmoury_All</weaponCategory>
+		<exclusionTags>
+			<li>AArmoury_ExtraDamageAgainst</li>
+		</exclusionTags>
+		<extraDamages>
+			<li>
+				<def>AArmoury_InsectKiller</def>
+				<amount>8</amount>
+			</li>
+		</extraDamages>
+		<traitAdjectives>
+			<li>bugbane</li>
+			<li>hivecleaving</li>
+			<li>insectbreaking</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
+	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>AArmoury_AnomalyKiller</defName>
+		<label>entity slayer</label>
+		<description>This gun is specially damaging to anomalous entities, ripping them apart with a dangerous acid.</description>
+		<commonality>0.4</commonality>
+		<weaponCategory>AArmoury_All</weaponCategory>
+		<exclusionTags>
+			<li>AArmoury_ExtraDamageAgainst</li>
+		</exclusionTags>
+		<extraDamages>
+			<li>
+				<def>AArmoury_AnomalyKiller</def>
+				<amount>8</amount>
+			</li>
+		</extraDamages>
+		<traitAdjectives>
+			<li>eldritchbreaking</li>
+			<li>voidtouched</li>
+			<li>abominationhungry</li>
+		</traitAdjectives>
+	</WeaponTraitDef>
 </Defs>

@@ -614,4 +614,32 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AArmoury_Voltaic_Launcher</defName>
+		<label>voltaic smoke launcher shell</label>
+		<graphicData>
+			<texPath>Things/Projectile/LauncherShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<color>(140,135,156)</color>
+		</graphicData>
+		<thingClass>AlphaArmoury.Projectile_VoltaicExplosion</thingClass>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Smoke</damageDef>
+			<!-- Use default damage from explosion def -->
+			<explosionRadius>2.4</explosionRadius>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<arcHeightFactor>0.2</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0.5</screenShakeFactor>
+			
+			
+		</projectile>
+		<modExtensions>
+				<li Class="VEF.Weapons.ProjectileExtension">
+					<excludeFromStaticCollection>true</excludeFromStaticCollection>
+				</li>
+			</modExtensions>
+	</ThingDef>
 </Defs>
