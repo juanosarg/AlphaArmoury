@@ -37,7 +37,7 @@
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
-			<li>skip</li>
+			<li>concealing</li>
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
@@ -89,7 +89,7 @@
 					<soundReload>Standard_Reload</soundReload>
 					<chargeNoun>sludge</chargeNoun>
 					<ammoDef>Chemfuel</ammoDef>
-					<ammoCountPerCharge>20</ammoCountPerCharge>
+					<ammoCountPerCharge>10</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
 				</abilityWithCharges>
 			</li>
@@ -108,7 +108,7 @@
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
-			<li>skip</li>
+			<li>detonating</li>
 		</traitAdjectives>
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">

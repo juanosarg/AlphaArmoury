@@ -245,7 +245,7 @@
 		<defName>AArmoury_FleshMelter</defName>
 		<label>fleshmelter launcher</label>
 		<description>This weapon has an attached fleshmelter launcher. Once fired, it must be reloaded using a shard.</description>
-		<commonality>0.5</commonality>
+		<commonality>0.25</commonality>
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
 			<li>Attachment</li>
@@ -726,7 +726,7 @@
 			<li>Attachment</li>
 		</exclusionTags>
 		<traitAdjectives>
-			<li>corrossive</li>
+			<li>corrosive</li>
 			<li>acidic</li>
 		</traitAdjectives>
 		<modExtensions>

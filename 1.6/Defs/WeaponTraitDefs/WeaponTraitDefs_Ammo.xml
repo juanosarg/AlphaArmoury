@@ -2773,7 +2773,7 @@
 			</li>
 		</modExtensions>
 		<traitAdjectives>
-			<li>repairing</li>
+			<li>buzzing</li>
 		</traitAdjectives>
 	</WeaponTraitDef>
 	<WeaponTraitDef>
@@ -2811,7 +2811,7 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>AArmoury_EntropyRounds</defName>
 		<label>entropy rounds</label>
-		<description>Projectiles fired by this weapon will convert their wielder's neural heat into extra psychic damage.</description>
+		<description>Projectiles fired by this weapon will convert their wielder's neural heat into extra psychic damage. Every shot that hits will reduce this heat by 1.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<exclusionTags>

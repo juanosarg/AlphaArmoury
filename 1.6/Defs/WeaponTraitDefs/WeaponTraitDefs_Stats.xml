@@ -3,7 +3,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_RevolverScope</defName>
 		<label>revolver scope</label>
-		<description>This revolver is outfitted with a scope, allowing it to fire further.</description>
+		<description>This revolver is outfitted with a scope, allowing it to fire farther.</description>
 		<commonality>0.4</commonality>
 		<weaponCategory>AArmoury_Gun_Revolver_Unique</weaponCategory>
 		<exclusionTags>
@@ -202,7 +202,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_InsectKiller</defName>
 		<label>insectoid slayer</label>
-		<description>This gun is specially damaging to insectoids, ripping them apart with a dangerous acid.</description>
+		<description>This gun is especially damaging to insectoids, ripping them apart with a dangerous acid.</description>
 		<commonality>0.4</commonality>
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<exclusionTags>
@@ -223,7 +223,7 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_AnomalyKiller</defName>
 		<label>entity slayer</label>
-		<description>This gun is specially damaging to anomalous entities, ripping them apart with a dangerous acid.</description>
+		<description>This gun is especially damaging to anomalous entities, ripping them apart with a dangerous acid.</description>
 		<commonality>0.4</commonality>
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<exclusionTags>

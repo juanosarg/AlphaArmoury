@@ -302,7 +302,7 @@
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>0.25</warmupTime>
-			<range>20.9</range>
+			<range>27.9</range>
 			<drawAimPie>False</drawAimPie>
 			<targetParams>
 				<canTargetLocations>false</canTargetLocations>

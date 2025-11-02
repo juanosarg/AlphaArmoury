@@ -27,7 +27,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_SharpshootersFocus</defName>
 		<label>sharpshooter’s focus</label>
-		<description>This weapon is so easy to handle and wield that it will increase the wielders shooting skill just by having it equipped.</description>
+		<description>This weapon is so easy to handle and wield that it will increase the wielder's shooting skill just by having it equipped.</description>
 		<commonality>0.25</commonality>
 		<equippedHediffs>
 			<li>AArmoury_SharpshootersFocus</li>
@@ -103,7 +103,7 @@
 	</WeaponTraitDef>
 	<WeaponTraitDef>
 		<defName>AArmoury_SunburstCore</defName>
-		<label>sunbursts core</label>
+		<label>sunburst core</label>
 		<description>This weapon blazes brighter under sunlight, dealing increased damage. Its power fades in shadow or darkness.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Ranged</weaponCategory>
