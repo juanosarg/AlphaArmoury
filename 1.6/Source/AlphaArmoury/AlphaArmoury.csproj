@@ -319,12 +319,14 @@
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Converter.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseWeaponKit_Remover.cs" />
+    <Compile Include="Comps\CompDeleteOnDrop.cs" />
     <Compile Include="Comps\CompSpawnChicken.cs" />
     <Compile Include="Comps\CompTargetable_UniqueWeapons.cs" />
     <Compile Include="Comps\CompTargetable_Weapons.cs" />
     <Compile Include="Comps\CompUseEffect_WeaponKit.cs" />
     <Compile Include="Comps\CompUseEffect_WeaponKit_Converter.cs" />
     <Compile Include="Comps\CompUseEffect_WeaponKit_Remover.cs" />
+    <Compile Include="Comps\Properties\CompProperties_DeleteOnDrop.cs" />
     <Compile Include="Comps\Properties\CompProperties_SpawnChickenOnDestroyed.cs" />
     <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit.cs" />
     <Compile Include="Comps\Properties\CompProperties_UseEffectWeaponKit_Converter.cs" />
@@ -351,6 +353,7 @@
     <Compile Include="HediffComps\HediffComp_ProjectileToNearby.cs" />
     <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
+    <Compile Include="PatchOperations\PatchOperation_ChargeQuestRewardCommonality.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_DehydratorShot.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_EntropyExplosion.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_VoltaicExplosion.cs" />

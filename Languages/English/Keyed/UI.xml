@@ -32,7 +32,13 @@
 	<AArmoury_AddWeaponsToAllRaidsDesc>Raids usually don't spawn with unique weapons, but you can change that with this mod option. Enjoy the absolute chaos!</AArmoury_AddWeaponsToAllRaidsDesc>
 	
 	<AArmoury_MakeRaidWeaponsBiocoded>...but make them all biocoded</AArmoury_MakeRaidWeaponsBiocoded>
-	<AArmoury_MakeRaidWeaponsBiocodedDesc>Weapons appearing in raids will be biocoded, so the player will have to fight against MUCH tougher raid, and have no unique weapons as rewards!</AArmoury_MakeRaidWeaponsBiocodedDesc>
+	<AArmoury_MakeRaidWeaponsBiocodedDesc>Weapons appearing in raids will be biocoded, so the player will have to fight against MUCH tougher raids, and have no unique weapons as rewards!</AArmoury_MakeRaidWeaponsBiocodedDesc>
+	
+	<AArmoury_MakeRaidWeaponsDestroyedOnDrop>...but make them all be destroyed when dropped</AArmoury_MakeRaidWeaponsDestroyedOnDrop>
+	<AArmoury_MakeRaidWeaponsDestroyedOnDropDesc>By default, even if the weapons are biocoded they can still be used by the raider if you capture them. With this mod options, weapons will autodestroy once dropped, making raids only just more difficult.</AArmoury_MakeRaidWeaponsDestroyedOnDropDesc>
+	
+	<AArmoury_MakeMoreCommonAsQuestRewards>Make unique weapons more common as quest rewards (requires game reload)</AArmoury_MakeMoreCommonAsQuestRewards>
+	<AArmoury_MakeMoreCommonAsQuestRewardsDesc>By default, unique weapons are classified as RewardStandardLowFreq. With this mod option they will be classified instead as RewardStandardHighFreq, so they will appear more frequently as quest rewards. Requires game to be reloaded to take effect.</AArmoury_MakeMoreCommonAsQuestRewardsDesc>
 	
 	<AArmoury_Reset>Reset</AArmoury_Reset>
 	
@@ -41,5 +47,6 @@
 	<AArmoury_StatsReport_InSunlight>Weapon in sunlight</AArmoury_StatsReport_InSunlight>
 	<AArmoury_StatsReport_NotInSunlight>Weapon not in sunlight</AArmoury_StatsReport_NotInSunlight>
 	<AArmoury_StatsReport_InPollution>Weapon in polluted terrain</AArmoury_StatsReport_InPollution>
+	
 	
 </LanguageData>

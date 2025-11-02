@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using VEF;
 using Verse;
+using static RimWorld.PsychicRitualRoleDef;
 
 namespace AlphaArmoury
 {
@@ -38,6 +39,23 @@ namespace AlphaArmoury
                             {
                                 compBiocodable.CodeFor(pawn);
                             }
+                        }
+                        if (AlphaArmoury_Settings.makeRaidWeaponsDestroyedOnDrop)
+                        {
+                            ThingComp thingComp = null;
+                            try
+                            {
+                                thingComp = (ThingComp)Activator.CreateInstance(typeof(CompDeleteOnDrop));
+                                thingComp.parent = (ThingWithComps)thingWithComps;
+                                ReflectionCache.comps((ThingWithComps)thingWithComps).Add(thingComp);
+                     
+                            }
+                            catch (Exception ex)
+                            {
+                                Log.Error("Could not instantiate or initialize a ThingComp: " + ex);
+
+                            }
+                            
                         }
 
                         pawn.equipment.DestroyAllEquipment();

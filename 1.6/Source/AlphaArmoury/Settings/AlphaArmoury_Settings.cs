@@ -24,6 +24,8 @@ namespace AlphaArmoury
         public static bool addWeaponsToMoreMercs = false;
         public static bool addWeaponsToAllRaids = false;
         public static bool makeRaidWeaponsBiocoded = true;
+        public static bool makeRaidWeaponsDestroyedOnDrop = false;
+        public static bool makeMoreCommonAsQuestRewards = true;
 
 
         public override void ExposeData()
@@ -36,6 +38,9 @@ namespace AlphaArmoury
             Scribe_Values.Look(ref addWeaponsToMoreMercs, "addWeaponsToMoreMercs", false, true);
             Scribe_Values.Look(ref addWeaponsToAllRaids, "addWeaponsToAllRaids", false, true);
             Scribe_Values.Look(ref makeRaidWeaponsBiocoded, "makeRaidWeaponsBiocoded", true, true);
+            Scribe_Values.Look(ref makeRaidWeaponsDestroyedOnDrop, "makeRaidWeaponsDestroyedOnDrop", false, true);
+
+            Scribe_Values.Look(ref makeMoreCommonAsQuestRewards, "makeMoreCommonAsQuestRewards", false, true);
 
 
         }
@@ -68,8 +73,11 @@ namespace AlphaArmoury
             if (addWeaponsToAllRaids)
             {
                 ls.CheckboxLabeled("AArmoury_MakeRaidWeaponsBiocoded".Translate(), ref makeRaidWeaponsBiocoded, "AArmoury_MakeRaidWeaponsBiocodedDesc".Translate());
+                ls.CheckboxLabeled("AArmoury_MakeRaidWeaponsDestroyedOnDrop".Translate(), ref makeRaidWeaponsDestroyedOnDrop, "AArmoury_MakeRaidWeaponsDestroyedOnDropDesc".Translate());
 
             }
+            ls.CheckboxLabeled("AArmoury_MakeMoreCommonAsQuestRewards".Translate(), ref makeMoreCommonAsQuestRewards, "AArmoury_MakeMoreCommonAsQuestRewardsDesc".Translate());
+
 
             ls.End();
           
