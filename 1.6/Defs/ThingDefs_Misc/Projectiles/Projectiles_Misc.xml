@@ -642,4 +642,19 @@
 				</li>
 			</modExtensions>
 	</ThingDef>
+	<ThingDef ParentName="AArmoury_Bullet_LaserGeneric" Class="VEF.Weapons.LaserBeamDef">
+		<defName>AArmoury_GrappleGun</defName>
+		<label>grapple chain</label>
+		<thingClass>AlphaArmoury.Projectile_Grapple</thingClass>
+		<textures>
+			<li>Things/Projectile/AArmoury_Grapple</li>
+		</textures>
+		<seam>0.1</seam>
+		<causefireChance>0</causefireChance>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<stoppingPower>1</stoppingPower>
+		</projectile>
+	</ThingDef>
 </Defs>

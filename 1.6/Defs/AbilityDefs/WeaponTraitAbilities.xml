@@ -110,6 +110,28 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	<AbilityDef>
+		<defName>AArmoury_AntiToxLauncher</defName>
+		<label>launch anti-tox grenade</label>
+		<description>Launch an anti-tox grenade. Can be reloaded using steel. Grenades reduce toxic buildup by 20%.</description>
+		<iconPath>UI/Commands/AArmoury_AntiToxLauncher</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>23.9</range>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>Shot_IncendiaryLauncher</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>AArmoury_AntiToxGrenade</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
 	<AbilityDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_HellsphereLauncher</defName>
 		<label>hellsphere shot</label>
@@ -573,6 +595,50 @@
 		<comps>
 			<li Class="AlphaArmoury.CompProperties_MimicCore">
 				
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>AArmoury_ShieldLauncher</defName>
+		<label>broadshield launcher</label>
+		<description>This weapon has an attached broadshield launcher. Once fired, it must be reloaded using advanced components.</description>
+		<iconPath>UI/Commands/AArmoury_ShieldLauncher</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>20.9</range>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>Shot_IncendiaryLauncher</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>AArmoury_Shield</projectileDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef>
+		<defName>AArmoury_GrappleGun</defName>
+		<label>grapple gun</label>
+		<description>This weapon has a grapple launcher. It can be fired at an enemy target, pulling them toward the wielder, or at an empty tile, propelling the wielder toward that tile. Once fired, it must be reloaded using steel.</description>
+		<iconPath>UI/Commands/AArmoury_GrappleGun</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>10.9</range>
+			<warmupTime>1.5</warmupTime>
+			<soundCast>AArmoury_Chain</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityLaunchProjectile">
+				<projectileDef>AArmoury_GrappleGun</projectileDef>
 			</li>
 		</comps>
 	</AbilityDef>

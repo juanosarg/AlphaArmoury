@@ -354,6 +354,7 @@
     <Compile Include="HediffComps\Properties\HediffCompProperties_ProjectileToNearby.cs" />
     <Compile Include="MentalStates\MentalState_FriendlyManhunter.cs" />
     <Compile Include="PatchOperations\PatchOperation_ChargeQuestRewardCommonality.cs" />
+    <Compile Include="Projectiles\Grenades\Projectile_AntiTox.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_DehydratorShot.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_EntropyExplosion.cs" />
     <Compile Include="Projectiles\Grenades\Projectile_VoltaicExplosion.cs" />
@@ -363,6 +364,7 @@
     <Compile Include="Projectiles\Grenades\Projectile_FluxExplosion.cs" />
     <Compile Include="Projectiles\Projectile_Entropy.cs" />
     <Compile Include="Projectiles\Projectile_FrostRay.cs" />
+    <Compile Include="Projectiles\Projectile_Grapple.cs" />
     <Compile Include="Projectiles\Projectile_Healing.cs" />
     <Compile Include="Projectiles\Movement types\Projectile_Chakram.cs" />
     <Compile Include="Projectiles\Projectile_Lifesteal.cs" />
