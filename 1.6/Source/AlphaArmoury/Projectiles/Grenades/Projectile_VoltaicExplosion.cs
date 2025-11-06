@@ -30,21 +30,20 @@ namespace AlphaArmoury
                 {
                     Pawn pawn = victim as Pawn;
 
-                    if (pawn != null) {
-                        if (pawn.health.hediffSet.HasHediff(InternalDefOf.AArmoury_Electric))
-                        {
-                            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.AArmoury_Electric);
-                            hediff.Severity += 0.2f;
-                        }
-                        else
+                    if (pawn != null)
+                    {
+                        if (!pawn.health.hediffSet.HasHediff(InternalDefOf.AArmoury_Electric))
                         {
                             pawn.health.AddHediff(InternalDefOf.AArmoury_Electric);
                         }
 
+                        Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.AArmoury_Electric);
+                        hediff.Severity += 0.2f;
 
                     }
 
-                    
+
+
 
                 }
 

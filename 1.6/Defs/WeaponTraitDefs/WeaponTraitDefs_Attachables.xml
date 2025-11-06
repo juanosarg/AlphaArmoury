@@ -182,7 +182,7 @@
 					<abilityDef>AArmoury_DeadlifeLauncher</abilityDef>
 					<maxCharges>1</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>deadlife</chargeNoun>
+					<chargeNoun>deadlife shell</chargeNoun>
 					<ammoDef>Shard</ammoDef>
 					<ammoCountPerCharge>1</ammoCountPerCharge>
 					<baseReloadTicks>400</baseReloadTicks>
@@ -262,7 +262,7 @@
 					<abilityDef>AArmoury_FleshMelter</abilityDef>
 					<maxCharges>1</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>fleshmelter</chargeNoun>
+					<chargeNoun>fleshmelter shell</chargeNoun>
 					<ammoDef>Shard</ammoDef>
 					<ammoCountPerCharge>1</ammoCountPerCharge>
 					<baseReloadTicks>400</baseReloadTicks>
@@ -343,7 +343,7 @@
 					<abilityDef>AArmoury_ToxLauncher</abilityDef>
 					<maxCharges>3</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>tox canisters</chargeNoun>
+					<chargeNoun>tox canister</chargeNoun>
 					<ammoDef>Steel</ammoDef>
 					<ammoCountPerCharge>15</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -500,7 +500,7 @@
 					<abilityDef>AArmoury_RotstinkLauncher</abilityDef>
 					<maxCharges>6</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>rotstink canisters</chargeNoun>
+					<chargeNoun>rotstink canister</chargeNoun>
 					<ammoDef>Steel</ammoDef>
 					<ammoCountPerCharge>2</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -577,7 +577,7 @@
 					<abilityDef>AArmoury_MagmaLauncher</abilityDef>
 					<maxCharges>2</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>magma grenades</chargeNoun>
+					<chargeNoun>magma grenade</chargeNoun>
 					<ammoDef>Steel</ammoDef>
 					<ammoCountPerCharge>50</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -735,7 +735,7 @@
 					<abilityDef>AArmoury_AcidLauncher</abilityDef>
 					<maxCharges>2</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>acid grenades</chargeNoun>
+					<chargeNoun>acid grenade</chargeNoun>
 					<ammoDef>ComponentIndustrial</ammoDef>
 					<ammoCountPerCharge>2</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -813,7 +813,7 @@
 					<abilityDef>AArmoury_ShrapnelLauncher</abilityDef>
 					<maxCharges>3</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>shrapnel grenades</chargeNoun>
+					<chargeNoun>shrapnel grenade</chargeNoun>
 					<ammoDef>Steel</ammoDef>
 					<ammoCountPerCharge>20</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -890,7 +890,7 @@
 					<abilityDef>AArmoury_SwarmLauncher</abilityDef>
 					<maxCharges>2</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>rocket swarm</chargeNoun>
+					<chargeNoun>rocket swarm shell</chargeNoun>
 					<ammoDef>ComponentSpacer</ammoDef>
 					<ammoCountPerCharge>2</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -967,7 +967,7 @@
 					<abilityDef>AArmoury_FirefoamLauncher</abilityDef>
 					<maxCharges>3</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>firefoam</chargeNoun>
+					<chargeNoun>firefoam shell</chargeNoun>
 					<ammoDef>Chemfuel</ammoDef>
 					<ammoCountPerCharge>15</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -1045,7 +1045,7 @@
 					<abilityDef>AArmoury_MineDeployer</abilityDef>
 					<maxCharges>3</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>mines</chargeNoun>
+					<chargeNoun>mine</chargeNoun>
 					<ammoDef>Steel</ammoDef>
 					<ammoCountPerCharge>20</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -1276,7 +1276,7 @@
 					<abilityDef>AArmoury_PesticideCanisters</abilityDef>
 					<maxCharges>2</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>pesticide</chargeNoun>
+					<chargeNoun>pesticide canister</chargeNoun>
 					<ammoDef>Chemfuel</ammoDef>
 					<ammoCountPerCharge>50</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -1314,7 +1314,7 @@
 					<abilityDef>AArmoury_DehydratorGrenades</abilityDef>
 					<maxCharges>1</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>grenades</chargeNoun>
+					<chargeNoun>dehydrator grenade</chargeNoun>
 					<ammoDef>ComponentIndustrial</ammoDef>
 					<ammoCountPerCharge>10</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -1394,7 +1394,7 @@
 					<abilityDef>AArmoury_ShieldLauncher</abilityDef>
 					<maxCharges>1</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>shield</chargeNoun>
+					<chargeNoun>shield generator</chargeNoun>
 					<ammoDef>ComponentSpacer</ammoDef>
 					<ammoCountPerCharge>1</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>
@@ -1472,7 +1472,7 @@
 					<abilityDef>AArmoury_AntiToxLauncher</abilityDef>
 					<maxCharges>3</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
-					<chargeNoun>anti-tox canisters</chargeNoun>
+					<chargeNoun>anti-tox canister</chargeNoun>
 					<ammoDef>Steel</ammoDef>
 					<ammoCountPerCharge>15</ammoCountPerCharge>
 					<baseReloadTicks>60</baseReloadTicks>

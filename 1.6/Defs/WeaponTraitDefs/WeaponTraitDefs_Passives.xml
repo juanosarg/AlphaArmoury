@@ -27,7 +27,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_SharpshootersFocus</defName>
 		<label>sharpshooter’s focus</label>
-		<description>This weapon is so easy to handle and wield that it will increase the wielder's shooting skill just by having it equipped.</description>
+		<description>This weapon is so easy to handle and wield that it will increase the wielder's shooting skill just by having it equipped.\n\n- Shooting skill +5.</description>
 		<commonality>0.25</commonality>
 		<equippedHediffs>
 			<li>AArmoury_SharpshootersFocus</li>
@@ -40,7 +40,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_AdrenalRush</defName>
 		<label>adrenal rush</label>
-		<description>This weapon floods the wielder with a surge of combat stimulants upon landing a kill, briefly heightening reflexes and movement speed.</description>
+		<description>This weapon floods the wielder with a surge of combat stimulants upon landing a kill, briefly heightening reflexes and movement speed.\n\n- Move Speed x1.25 for 4 hours after a kill.\n\n- Melee Dodge Chance x1.25 for 4 hours after a kill.\n\n- Ranged Dodge Chance +25% for 4 hours after a kill.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -55,7 +55,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_RadiantCore</defName>
 		<label>radiant core</label>
-		<description>This weapon is powered by a faulty vanometric power source that will occasionally produce bursts of dirty radiation, affecting its wielder with toxic buildup.</description>
+		<description>This weapon is powered by a faulty vanometric power source that will occasionally produce bursts of dirty radiation, affecting its wielder with toxic buildup.\n\n- Toxic Buildup +10% Severity after a kill.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -104,7 +104,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_SunburstCore</defName>
 		<label>sunburst core</label>
-		<description>This weapon blazes brighter under sunlight, dealing increased damage. Its power fades in shadow or darkness.</description>
+		<description>This weapon blazes brighter under sunlight, dealing increased damage. Its power fades in shadow or darkness.\n\n- Damage while in sunlight +20%.\n\n- Damage while not in sunlight -20%.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -230,7 +230,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_VacuumSealed</defName>
 		<label>vacuum sealed</label>
-		<description>This weapon is optimized for vacuum and deals greater damage in space or airless environments.</description>
+		<description>This weapon is optimized for vacuum and deals greater damage in space or airless environments.\n\n- Damage while in space +20%.\n\n- Damage while planetside -20%.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Gun</weaponCategory>
 		<traitAdjectives>
@@ -349,7 +349,7 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_ToxinTuned</defName>
 		<label>toxin-tuned</label>
-		<description>This weapon is fed by pollution, doing more damage in polluted terrains.</description>
+		<description>This weapon is fed by pollution, doing more damage in polluted terrains.\n\n- Damage while on top of polluted terrain +20%.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>

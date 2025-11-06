@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+//\n\n&lt;color=#E5E54C&gt;Ability details:&lt;/color&gt;\n
 	<WeaponTraitDef>
 		<defName>AArmoury_SelfSkipField</defName>
 		<label>self-skip field</label>
-		<description>This weapon generates a localized skip field that allows its user to self-skip.</description>
+		<description>This weapon generates a localized skip field that allows its user to self-skip.\n\nAbility details: No charges, 4800 ticks cooldown (around 2 hours). 21 tiles range in line of sight.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -18,7 +19,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_SkipField</defName>
 		<label>skip field</label>
-		<description>This weapon generates a localized skip field that allows its user to skip a target away.</description>
+		<description>This weapon generates a localized skip field that allows its user to skip a target away.\n\nAbility details: No charges, 4800 ticks cooldown (around 2 hours). 21 tiles range in line of sight.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -33,7 +34,7 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>AArmoury_InvisibilityField</defName>
 		<label>invisibility field</label>
-		<description>This weapon generates a field of psychic invisibility that will conceal its user for a time.</description>
+		<description>This weapon generates a field of psychic invisibility that will conceal its user for a time.\n\nAbility details: No charges, 30000 ticks cooldown (half a day). Lasta 4 hours.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -104,7 +105,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_Detonation</defName>
 		<label>detonation</label>
-		<description>This weapon generates ultra heated gasses that can be released in the form of a powerful explosion. It will not harm the wielder.</description>
+		<description>This weapon generates ultra heated gasses that can be released in the form of a powerful explosion. It will not harm the wielder.\n\nAbility details: No charges, 30000 ticks cooldown (half a day). Affects 2 tiles around the wielder with 50 Bomb damage.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
@@ -119,7 +120,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_MimicCore</defName>
 		<label>mimic core</label>
-		<description>This weapon can acquire the weapon traits of another unique weapon, destroying it in the process. Note that only traits that are compatible with the weapon will be acquired (no rocket launching bows).</description>
+		<description>This weapon can acquire the weapon traits of another unique weapon, destroying it in the process. Note that only traits that are compatible with the weapon will be acquired (no rocket launching bows).\n\nAbility details: No charges, 30000 ticks cooldown (half a day). 6 tiles range.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>AArmoury_All</weaponCategory>
 		<traitAdjectives>

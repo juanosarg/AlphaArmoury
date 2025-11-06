@@ -7,10 +7,13 @@
 			<Flammability>0</Flammability>
 		</statBases>
 		<thingClass>ThingWithComps</thingClass>
-		
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
 		<stackLimit>1</stackLimit>
 		<preventSpawningInResourcePod>true</preventSpawningInResourcePod>
 		<tradeNeverGenerateStacked>true</tradeNeverGenerateStacked>
+		<tradeNeverStack>true</tradeNeverStack>
 		<category>Item</category>
 		<drawerType>MapMeshOnly</drawerType>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -19,6 +22,7 @@
 		<alwaysHaulable>true</alwaysHaulable>
 		<rotatable>false</rotatable>
 		<healthAffectsPrice>false</healthAffectsPrice>
+		<tradeability>All</tradeability>
 		<pathCost>14</pathCost>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
@@ -39,14 +43,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>100</MarketValue>
+			<MarketValue>850</MarketValue>
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
-		<techLevel>Ultra</techLevel>
-		
+		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
-			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<thingCategories>
 			<li>AArmoury_WeaponKits</li>
@@ -86,14 +89,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>100</MarketValue>
+			<MarketValue>850</MarketValue>
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
-		<techLevel>Ultra</techLevel>
-		
+		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
-			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<thingCategories>
 			<li>AArmoury_WeaponKits</li>
@@ -122,7 +124,6 @@
 		<defName>AArmoury_WeaponKit_Remover</defName>
 		<label>weapon trait removing kit</label>
 		<description>A weapon kit to remove traits from a weapon. It can be used on an unique weapon to remove a random trait from it.</description>
-		
 		<tickerType>Rare</tickerType>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -133,14 +134,13 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>100</MarketValue>
+			<MarketValue>850</MarketValue>
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
-		<techLevel>Ultra</techLevel>
-		
+		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
-			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<thingCategories>
 			<li>AArmoury_WeaponKits</li>
@@ -165,12 +165,10 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
 	<ThingDef ParentName="AArmoury_WeaponKitBase">
 		<defName>AArmoury_WeaponKit_TabulaRasa</defName>
 		<label>tabula rasa weapon kit</label>
 		<description>A weapon kit that removes all weapon traits from a weapon.</description>
-		
 		<tickerType>Rare</tickerType>
 		<useHitPoints>true</useHitPoints>
 		<stackLimit>1</stackLimit>
@@ -185,10 +183,9 @@
 			<DeteriorationRate>5</DeteriorationRate>
 		</statBases>
 		<techLevel>Ultra</techLevel>
-		
 		<thingSetMakerTags>
 			<li>NotForGuests</li>
-			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardHighFreq</li>
 		</thingSetMakerTags>
 		<thingCategories>
 			<li>AArmoury_WeaponKits</li>
