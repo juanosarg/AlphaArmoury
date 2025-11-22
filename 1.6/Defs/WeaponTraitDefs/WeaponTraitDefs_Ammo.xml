@@ -2141,7 +2141,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_HealingMinigun</defName>
 		<label>healing gun</label>
-		<description>This minigun fires mechanite needles filled with a powerful healin serum. They will heal their targets instead of harming them.</description>
+		<description>This minigun fires mechanite needles filled with a powerful healing serum. They will heal their targets instead of harming them.</description>
 		<commonality>0.25</commonality>
 		<weaponCategory>AArmoury_Gun_MiniGun_Unique</weaponCategory>
 		<exclusionTags>
