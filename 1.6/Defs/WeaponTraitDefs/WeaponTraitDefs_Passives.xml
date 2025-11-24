@@ -27,7 +27,7 @@
 	<WeaponTraitDef>
 		<defName>AArmoury_SharpshootersFocus</defName>
 		<label>sharpshooter’s focus</label>
-		<description>This weapon is so easy to handle and wield that it will increase the wielder's shooting skill just by having it equipped.\n\n- Shooting skill +5.</description>
+		<description>This weapon is so easy to handle and wield that it will increase the wielder's shooting skill just by having it equipped.\n\n- Shooting skill +4.</description>
 		<commonality>0.25</commonality>
 		<equippedHediffs>
 			<li>AArmoury_SharpshootersFocus</li>
