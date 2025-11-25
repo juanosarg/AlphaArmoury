@@ -44,7 +44,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>850</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -90,7 +90,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>850</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -135,7 +135,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>850</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<thingSetMakerTags>
@@ -180,7 +180,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>3000</MarketValue>
-			<DeteriorationRate>5</DeteriorationRate>
+			<DeteriorationRate>0</DeteriorationRate>
 		</statBases>
 		<techLevel>Ultra</techLevel>
 		<thingSetMakerTags>
