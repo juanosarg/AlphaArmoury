@@ -3,13 +3,16 @@
 	<name>Alpha Armoury</name>
 	<author>Sarg Bjornson</author>
 	<supportedVersions>
-	
 		<li>1.6</li>
 	</supportedVersions>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaArmouryLogo</modIconPath>
 	<packageId>sarg.alphaarmoury</packageId>
-	<description>
-</description>
+	<description>Alpha Armoury expands upon the Unique Weapons system that was introduced in Odyssey:
+
+- Adds around 100 new weapon traits, from the normal to the absolutely bizarre
+- Adds the possibility of weapon traits modifying the graphic of the unique weapon. Now a rifle with a grenade launcher will look like it has one!
+- Adds weapon tweaking kits that allow you to modify and change unique weapons
+- Adds a LOT of mod options to tweak your unique weapon experience.</description>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -28,7 +31,9 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
+	<incompatibleWith>
+		<li>Ogre.OgreStack</li>
+	</incompatibleWith>
 </ModMetaData>
