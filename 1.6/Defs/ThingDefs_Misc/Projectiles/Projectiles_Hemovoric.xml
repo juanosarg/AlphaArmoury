@@ -57,6 +57,9 @@
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic" MayRequire="Ludeon.RimWorld.Biotech">
@@ -76,6 +79,9 @@
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
@@ -92,6 +98,7 @@
 			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<speed>70</speed>
 		</projectile>
+		
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>AArmoury_Hemovoric_Charge_Greater</defName>
@@ -112,6 +119,9 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
 			</li>
 		</modExtensions>
 	</ThingDef>

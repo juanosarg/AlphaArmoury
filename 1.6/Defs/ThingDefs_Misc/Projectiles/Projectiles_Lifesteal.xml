@@ -35,7 +35,10 @@
 			<damageAmountBase>12</damageAmountBase>
 			<stoppingPower>1</stoppingPower>
 			<speed>20</speed>
-		</projectile>
+		</projectile><modExtensions>
+		<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
+			</li></modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseBullet">
 		<defName>AArmoury_Lifesteal_Bolt</defName>
@@ -54,6 +57,9 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -75,6 +81,9 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>2</feedbackAmount>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -174,6 +183,9 @@
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
 			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="BaseProjectileNeolithic">
@@ -194,6 +206,9 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -231,6 +246,9 @@
 		<modExtensions>
 			<li Class="VEF.Weapons.ProjectileExtension">
 				<excludeFromStaticCollection>true</excludeFromStaticCollection>
+			</li>
+			<li Class="AlphaArmoury.FeedbackExtension">
+				<feedbackAmount>3</feedbackAmount>
 			</li>
 		</modExtensions>
 		

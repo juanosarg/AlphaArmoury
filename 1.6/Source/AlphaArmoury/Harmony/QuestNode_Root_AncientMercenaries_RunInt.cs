@@ -68,25 +68,41 @@ namespace AlphaArmoury
         }
         public static IEnumerable<Pawn> AddMoreEquipmentToAll(IEnumerable<Pawn> collection, float num)
         {
-            if (AlphaArmoury_Settings.addWeaponsToMoreMercs)
+            if (AlphaArmoury_Settings.addWeaponsToMoreMercs || AlphaArmoury_Settings.addKitsToMoreMercs)
             {
                 List<Pawn> originalList = collection.ToList();
                 List<Pawn> modifiedList = new List<Pawn>();
                 for (int i = 0; i < originalList.Count(); i++)
                 {
-                    ThingSetMakerParams thingSetMakerParams = default(ThingSetMakerParams);
-                    thingSetMakerParams.makingFaction = Faction.OfAncientsHostile;
-                    thingSetMakerParams.countRange = new IntRange(1, 1);
-                    thingSetMakerParams.totalMarketValueRange = new FloatRange(0.7f, 1.3f) * QuestTuning.PointsToRewardMarketValueCurve.Evaluate(num);
-                    ThingSetMakerParams parms = thingSetMakerParams;
-                    List<Thing> list = ThingSetMakerDefOf.Reward_UniqueWeapon.root.Generate(parms);
-                    if (list.Count != 1)
+                    ThingWithComps weaponToAdd = null;
+                    ThingWithComps kitToAdd = null;
+
+                    if (AlphaArmoury_Settings.addWeaponsToMoreMercs)
                     {
-                        Log.Error("Expected 1 unique weapon, got " + list.Count);
+                        ThingSetMakerParams thingSetMakerParams = default(ThingSetMakerParams);
+                        thingSetMakerParams.makingFaction = Faction.OfAncientsHostile;
+                        thingSetMakerParams.countRange = new IntRange(1, 1);
+                        thingSetMakerParams.totalMarketValueRange = new FloatRange(0.7f, 1.3f) * QuestTuning.PointsToRewardMarketValueCurve.Evaluate(num);
+                        ThingSetMakerParams parms = thingSetMakerParams;
+                        List<Thing> list = ThingSetMakerDefOf.Reward_UniqueWeapon.root.Generate(parms);
+                        if (list.Count != 1)
+                        {
+                            Log.Error("Expected 1 unique weapon, got " + list.Count);
+                        }
+                        weaponToAdd = list.First() as ThingWithComps;
                     }
-                    ThingWithComps thingWithComps = list.First() as ThingWithComps;
+                    if (AlphaArmoury_Settings.addKitsToMoreMercs)
+                    {
+
+                        kitToAdd = (ThingWithComps)ThingMaker.MakeThing(DefDatabase<ThingDef>.AllDefs.Where(x => x.thingCategories?.Contains(InternalDefOf.AArmoury_WeaponKits) == true).RandomElementByWeight(x => x.GetModExtension<WeaponKitExtension>().commonality));
+                        
+
+                    }
+                                     
                     originalList[i].equipment.DestroyAllEquipment();
-                    originalList[i].equipment.AddEquipment(thingWithComps);
+                    if (weaponToAdd != null) { originalList[i].equipment.AddEquipment(weaponToAdd); }
+                    if (kitToAdd != null) { originalList[i].inventory.innerContainer.TryAdd(kitToAdd); }
+                    
                     modifiedList.Add(originalList[i]);
                 }
                 return modifiedList;

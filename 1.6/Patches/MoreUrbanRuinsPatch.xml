@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ancient urban ruins</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="AlphaArmoury.PatchOperation_AddUniqueWeaponsToUrbanRuins">
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingSetMakerDef[defName="AM_AdvancedWeapons"]/root/options</xpath>
+						<value>
+							<li>
+								<weight>0.2</weight>
+								<thingSetMaker Class="ThingSetMaker_Count">
+									<fixedParams>
+										<filter>
+											<categories>
+												<li>WeaponsUnique</li>
+											</categories>
+										</filter>
+										<countRange>1</countRange>
+									</fixedParams>
+								</thingSetMaker>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

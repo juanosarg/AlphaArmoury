@@ -28,6 +28,9 @@
 	<AArmoury_AddWeaponsToMoreMercs>Add unique weapons to more Ancient Mercenaries</AArmoury_AddWeaponsToMoreMercs>
 	<AArmoury_AddWeaponsToMoreMercsDesc>By default, only the leader in a band of mercenaries will have a unique weapon. With this setting you can make it so ALL of the mercenaries in the quest carry a unique!</AArmoury_AddWeaponsToMoreMercsDesc>
 	
+	<AArmoury_AddKitsToMoreMercs>Add weapon kits to more Ancient Mercenaries</AArmoury_AddKitsToMoreMercs>
+	<AArmoury_AddKitsToMoreMercsDesc>By default, the leader in a band of mercenaries will drop 2-4 weapon tweaking kits. With this setting you can make it so ALL of the mercenaries in the quest will drop an additional kit!</AArmoury_AddKitsToMoreMercsDesc>
+	
 	<AArmoury_AddWeaponsToAllRaids>Add unique weapons to all raids</AArmoury_AddWeaponsToAllRaids>
 	<AArmoury_AddWeaponsToAllRaidsDesc>Raids usually don't spawn with unique weapons, but you can change that with this mod option. Enjoy the absolute chaos!</AArmoury_AddWeaponsToAllRaidsDesc>
 	
@@ -39,6 +42,9 @@
 	
 	<AArmoury_MakeMoreCommonAsQuestRewards>Make unique weapons more common as quest rewards (requires game reload)</AArmoury_MakeMoreCommonAsQuestRewards>
 	<AArmoury_MakeMoreCommonAsQuestRewardsDesc>By default, unique weapons are classified as RewardStandardLowFreq. With this mod option they will be classified instead as RewardStandardHighFreq, so they will appear more frequently as quest rewards. Requires game to be reloaded to take effect.</AArmoury_MakeMoreCommonAsQuestRewardsDesc>
+	
+	<AArmoury_AddUniquesToMUR>Add unique weapons as drops for Ancient Urban Ruins (requires game reload)</AArmoury_AddUniquesToMUR>
+	<AArmoury_AddUniquesToMURDesc>If you have the Ancient Urban Ruins mod, this mod option will add all unique weapons as possible drops for the weapon crates there. Requires game to be reloaded to take effect.</AArmoury_AddUniquesToMURDesc>
 	
 	<AArmoury_Reset>Reset</AArmoury_Reset>
 	

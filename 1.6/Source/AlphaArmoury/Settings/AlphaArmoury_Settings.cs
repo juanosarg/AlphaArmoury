@@ -22,10 +22,12 @@ namespace AlphaArmoury
         public static int maxWeaponTraits = maxWeaponTraitsBase;
         public static bool sendWeaponPods = false;
         public static bool addWeaponsToMoreMercs = false;
+        public static bool addKitsToMoreMercs = false;
         public static bool addWeaponsToAllRaids = false;
         public static bool makeRaidWeaponsBiocoded = true;
         public static bool makeRaidWeaponsDestroyedOnDrop = false;
         public static bool makeMoreCommonAsQuestRewards = true;
+        public static bool addUniquesToAUR = false;
 
 
         public override void ExposeData()
@@ -36,10 +38,11 @@ namespace AlphaArmoury
             Scribe_Values.Look(ref maxWeaponTraits, "maxWeaponTraits", maxWeaponTraitsBase, true);
             Scribe_Values.Look(ref sendWeaponPods, "sendWeaponPods", false, true);
             Scribe_Values.Look(ref addWeaponsToMoreMercs, "addWeaponsToMoreMercs", false, true);
+            Scribe_Values.Look(ref addKitsToMoreMercs, "addKitsToMoreMercs", false, true);
             Scribe_Values.Look(ref addWeaponsToAllRaids, "addWeaponsToAllRaids", false, true);
             Scribe_Values.Look(ref makeRaidWeaponsBiocoded, "makeRaidWeaponsBiocoded", true, true);
             Scribe_Values.Look(ref makeRaidWeaponsDestroyedOnDrop, "makeRaidWeaponsDestroyedOnDrop", false, true);
-
+            Scribe_Values.Look(ref addUniquesToAUR, "addUniquesToMUR", false, true);
             Scribe_Values.Look(ref makeMoreCommonAsQuestRewards, "makeMoreCommonAsQuestRewards", false, true);
 
 
@@ -69,6 +72,7 @@ namespace AlphaArmoury
 
             ls.CheckboxLabeled("AArmoury_SendWeaponPods".Translate(), ref sendWeaponPods, "AArmoury_SendWeaponPodsDesc".Translate());
             ls.CheckboxLabeled("AArmoury_AddWeaponsToMoreMercs".Translate(), ref addWeaponsToMoreMercs, "AArmoury_AddWeaponsToMoreMercsDesc".Translate());
+            ls.CheckboxLabeled("AArmoury_AddKitsToMoreMercs".Translate(), ref addKitsToMoreMercs, "AArmoury_AddKitsToMoreMercsDesc".Translate());
             ls.CheckboxLabeled("AArmoury_AddWeaponsToAllRaids".Translate(), ref addWeaponsToAllRaids, "AArmoury_AddWeaponsToAllRaidsDesc".Translate());
             if (addWeaponsToAllRaids)
             {
@@ -77,7 +81,11 @@ namespace AlphaArmoury
 
             }
             ls.CheckboxLabeled("AArmoury_MakeMoreCommonAsQuestRewards".Translate(), ref makeMoreCommonAsQuestRewards, "AArmoury_MakeMoreCommonAsQuestRewardsDesc".Translate());
+            if (ModLister.HasActiveModWithName("Ancient urban ruins"))
+            {
+                ls.CheckboxLabeled("AArmoury_AddUniquesToMUR".Translate(), ref addUniquesToAUR, "AArmoury_AddUniquesToMURDesc".Translate());
 
+            }
 
             ls.End();
           
