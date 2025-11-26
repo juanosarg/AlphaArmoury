@@ -25,7 +25,13 @@ namespace AlphaArmoury
         public static MentalStateDef AArmoury_Manhunter;
 
         public static ThingDef AArmoury_SwarmRocket, AArmoury_Bullet_Shrapnel, AArmoury_Bullet_Shrapnel_Lesser, 
-            AArmoury_Hemovoric_Feedback, AArmoury_Psychic_Feedback, AArmoury_LifestealFeedback;
+             AArmoury_LifestealFeedback;
+
+        [MayRequire("Ludeon.RimWorld.Royalty")]
+        public static ThingDef AArmoury_Psychic_Feedback;
+
+        [MayRequire("Ludeon.RimWorld.Biotech")]
+        public static ThingDef AArmoury_Hemovoric_Feedback;
 
         public static WeaponTraitDef AArmoury_PsychicResilience, AArmoury_MimicCore;
 
