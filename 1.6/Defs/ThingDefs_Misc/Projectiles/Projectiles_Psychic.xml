@@ -159,7 +159,7 @@
 		<projectile>
 			<damageDef>Stun</damageDef>
 			<damageAmountBase>0</damageAmountBase>
-			<stoppingPower>1</stoppingPower>
+			<stoppingPower>0</stoppingPower>
 			<speed>100</speed>
 		</projectile>
 		<modExtensions>
