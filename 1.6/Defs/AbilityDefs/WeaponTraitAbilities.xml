@@ -47,7 +47,7 @@
 	<AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_DeadlifeLauncher</defName>
 		<label>launch deadlife canister</label>
-		<description>Launch a deadlife canister. Can be reloaded using a shard.</description>
+		<description>Launch a deadlife canister. Can be reloaded using a deadlife shell.</description>
 		<iconPath>UI/Commands/AArmoury_DeadlifeLauncher</iconPath>
 		<aiCanUse>true</aiCanUse>
 		<verbProperties>

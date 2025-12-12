@@ -164,7 +164,7 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Anomaly">
 		<defName>AArmoury_DeadlifeLauncher</defName>
 		<label>deadlife launcher</label>
-		<description>This weapon has an attached deadlife launcher. Once fired, it must be reloaded using a shard.</description>
+		<description>This weapon has an attached deadlife launcher. Once fired, it must be reloaded using a deadlife shell.</description>
 		<commonality>0.1</commonality>
 		<weaponCategory>Attachable</weaponCategory>
 		<exclusionTags>
@@ -183,7 +183,7 @@
 					<maxCharges>1</maxCharges>
 					<soundReload>Standard_Reload</soundReload>
 					<chargeNoun>deadlife shell</chargeNoun>
-					<ammoDef>Shard</ammoDef>
+					<ammoDef>Shell_Deadlife</ammoDef>
 					<ammoCountPerCharge>1</ammoCountPerCharge>
 					<baseReloadTicks>400</baseReloadTicks>
 				</abilityWithCharges>
