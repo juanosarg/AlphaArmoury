@@ -33,7 +33,5 @@
 	<loadAfter>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-	<incompatibleWith>
-		<li>Ogre.OgreStack</li>
-	</incompatibleWith>
+	
 </ModMetaData>

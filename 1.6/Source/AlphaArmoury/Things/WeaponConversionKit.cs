@@ -14,6 +14,10 @@ namespace AlphaArmoury
     {
         public ThingDef weapon;
 
+        public override bool CanStackWith(Thing other)
+        {
+            return false;
+        }
 
         public override void PostMake()
         {
