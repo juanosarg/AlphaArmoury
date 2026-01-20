@@ -41,10 +41,8 @@
 				<statFactors>
 					<MoveSpeed>1.25</MoveSpeed>
 					<MeleeDodgeChance>1.25</MeleeDodgeChance>
-					
 				</statFactors>
 				<statOffsets>
-					
 					<VEF_RangedDodgeChance>0.25</VEF_RangedDodgeChance>
 				</statOffsets>
 			</li>
@@ -57,6 +55,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<duplicationAllowed>false</duplicationAllowed>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<stages>
@@ -72,6 +71,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<duplicationAllowed>false</duplicationAllowed>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<aptitudes>
@@ -331,7 +331,6 @@
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-			
 		</comps>
 		<stages>
 			<li>
@@ -340,10 +339,8 @@
 					<IncomingDamageFactor>1.3</IncomingDamageFactor>
 				</statFactors>
 			</li>
-			
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>AArmoury_Orgasmatron</defName>
 		<label>euphoric energy</label>
@@ -352,7 +349,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
 		<maxSeverity>1.0</maxSeverity>
-		 <initialSeverity>1</initialSeverity>
+		<initialSeverity>1</initialSeverity>
 		<isBad>false</isBad>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
@@ -360,7 +357,6 @@
 				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-			
 		</comps>
 		<stages>
 			<li>
@@ -372,37 +368,33 @@
 					<ShootingAccuracyPawn>0.8</ShootingAccuracyPawn>
 				</statFactors>
 			</li>
-			
 		</stages>
 	</HediffDef>
-	
-	  <HediffDef ParentName="InjuryBase">
-    <defName>AArmoury_PsychicDamage</defName>
-    <label>psychic damage</label>
-	
-    <description>Psychic damage caused by neural heat transfer.</description>
-    <comps>
-      <li Class="HediffCompProperties_TendDuration">
-        <labelTendedWell>bandaged</labelTendedWell>
-        <labelTendedWellInner>sutured</labelTendedWellInner>
-        <labelSolidTendedWell>set</labelSolidTendedWell>
-      </li>
-      <li Class="HediffCompProperties_Infecter">
-        <infectionChance>0.15</infectionChance>
-      </li>
-      <li Class="HediffCompProperties_GetsPermanent">
-        <permanentLabel>old psychic damage</permanentLabel>
-        <instantlyPermanentLabel>permanent psychic damage</instantlyPermanentLabel>
-      </li>
-    </comps>
-    <injuryProps>
-      <painPerSeverity>0.0125</painPerSeverity>
-      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
-      <bleedRate>0.06</bleedRate>
-      <canMerge>false</canMerge>
-      <destroyedLabel>Irreparable nerve damage</destroyedLabel>
-      <destroyedOutLabel>Irreparable nerve damage</destroyedOutLabel>
-    </injuryProps>
-  </HediffDef>
-	
+	<HediffDef ParentName="InjuryBase">
+		<defName>AArmoury_PsychicDamage</defName>
+		<label>psychic damage</label>
+		<description>Psychic damage caused by neural heat transfer.</description>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>old psychic damage</permanentLabel>
+				<instantlyPermanentLabel>permanent psychic damage</instantlyPermanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0125</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+			<bleedRate>0.06</bleedRate>
+			<canMerge>false</canMerge>
+			<destroyedLabel>Irreparable nerve damage</destroyedLabel>
+			<destroyedOutLabel>Irreparable nerve damage</destroyedOutLabel>
+		</injuryProps>
+	</HediffDef>
 </Defs>

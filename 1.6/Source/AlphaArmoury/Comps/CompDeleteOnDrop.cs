@@ -14,7 +14,8 @@ namespace AlphaArmoury
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
-            if (parent.ParentHolder as Pawn_EquipmentTracker == null)
+            if (parent.ParentHolder as Pawn_EquipmentTracker == null && AlphaArmoury_Settings.makeRaidWeaponsDestroyedOnDrop)
+                
             {
                 parent.Destroy();
             }

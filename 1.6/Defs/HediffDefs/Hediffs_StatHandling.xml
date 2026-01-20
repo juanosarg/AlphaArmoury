@@ -6,6 +6,7 @@
         <label>melee cooldown</label>
         <description>The weapon held by this person has a much faster melee attack than usual.</description>    
         <isBad>false</isBad>
+		<duplicationAllowed>false</duplicationAllowed>
         <stages>
             <li>
                 <statFactors>
