@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+				<!-- Weapon kits -->
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Bow_Crossbow"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+						<uniqueWeaponEquivalent>VWE_Bow_Crossbow_Unique</uniqueWeaponEquivalent>
+					</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Bow_Long"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+						<uniqueWeaponEquivalent>VWE_Bow_Long_Unique</uniqueWeaponEquivalent>
+					</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Bow_Compound"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+						<uniqueWeaponEquivalent>VWE_Bow_Compound_Unique</uniqueWeaponEquivalent>
+					</li>
+					</value>
+				</li>
+				
+				<!-- Weapon trait categories -->	
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Bow_Crossbow_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+					
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Bow_Long_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+					
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Bow_Compound_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+					
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+					</value>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+
+	
+</Patch>

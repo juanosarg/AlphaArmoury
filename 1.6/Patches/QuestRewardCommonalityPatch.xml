@@ -2,6 +2,7 @@
 <Patch>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_Revolver_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -10,6 +11,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_BoltActionRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -18,6 +20,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_ChainShotgun_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -26,6 +29,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_HeavySMG_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -34,6 +38,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_LMG_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -42,6 +47,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_AssaultRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -50,6 +56,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_SniperRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -58,6 +65,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_Minigun_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -66,6 +74,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Bow_Great_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -74,6 +83,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_ChargeRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -82,6 +92,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_ChargeLance_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -90,6 +101,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "Gun_BeamRepeater_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -98,6 +110,7 @@
 	</Operation>
 	<Operation Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName= "AArmoury_Gun_Launcher_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 			<value>
 				<li>RewardStandardHighFreq</li>
@@ -111,6 +124,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 				<li Class="AlphaArmoury.PatchOperation_ChargeQuestRewardCommonality">
+					<success>Always</success>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName= "Gun_HellcatRifle_Unique"]/thingSetMakerTags/li[text() = "RewardStandardLowFreq"]</xpath>
 						<value>
