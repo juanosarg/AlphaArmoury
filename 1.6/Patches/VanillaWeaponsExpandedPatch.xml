@@ -1,46 +1,184 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Weapons Expanded</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-			
 				<!-- Weapon kits -->
-				
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Crossbow"]</xpath>
 					<value>
 						<li Class="AlphaArmoury.UniqueConversionExtension">
-						<uniqueWeaponEquivalent>VWE_Bow_Crossbow_Unique</uniqueWeaponEquivalent>
-					</li>
+							<uniqueWeaponEquivalent>VWE_Bow_Crossbow_Unique</uniqueWeaponEquivalent>
+						</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Long"]</xpath>
 					<value>
 						<li Class="AlphaArmoury.UniqueConversionExtension">
-						<uniqueWeaponEquivalent>VWE_Bow_Long_Unique</uniqueWeaponEquivalent>
-					</li>
+							<uniqueWeaponEquivalent>VWE_Bow_Long_Unique</uniqueWeaponEquivalent>
+						</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Compound"]</xpath>
 					<value>
 						<li Class="AlphaArmoury.UniqueConversionExtension">
-						<uniqueWeaponEquivalent>VWE_Bow_Compound_Unique</uniqueWeaponEquivalent>
-					</li>
+							<uniqueWeaponEquivalent>VWE_Bow_Compound_Unique</uniqueWeaponEquivalent>
+						</li>
 					</value>
 				</li>
-				
-				<!-- Weapon trait categories -->	
-				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_HandCannon"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_HandCannon_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_CombatHandgun"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_CombatHandgun_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_SawedOffShotgun"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_SawedOffShotgun_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_SemiAutomaticRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_SemiAutomaticRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_LeverActionRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_LeverActionRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_TrenchGun"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_TrenchGun_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_LightSMG"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_LightSMG_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_SMG"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_SMG_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ServiceRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ServiceRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_BattleRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_BattleRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_Carbine"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_Carbine_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_MarksmanRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_MarksmanRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_AntiMaterialRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_AntiMaterialRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargePistol"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ChargePistol_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeShotgun"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ChargeShotgun_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeSMG"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ChargeSMG_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeLMG"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ChargeLMG_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeMinigun"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ChargeMinigun_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
+				<!-- Weapon trait categories -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Crossbow_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 					<value>
-					
 						<li>AArmoury_AllButBeamAndLauncher</li>
 						<li>AArmoury_All</li>
 					</value>
@@ -48,7 +186,6 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Long_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 					<value>
-					
 						<li>AArmoury_AllButBeamAndLauncher</li>
 						<li>AArmoury_All</li>
 					</value>
@@ -56,16 +193,178 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Compound_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 					<value>
-					
 						<li>AArmoury_AllButBeamAndLauncher</li>
 						<li>AArmoury_All</li>
 					</value>
 				</li>
-				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_HandCannon_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_CombatHandgun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_SawedOffShotgun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_SemiAutomaticRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_BoltAndSnipers</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_LeverActionRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_BoltAndSnipers</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_TrenchGun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_LightSMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_Machineguns</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_SMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_Machineguns</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_HMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_Machineguns</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ServiceRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_BattleRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_Carbine_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_MarksmanRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_LongRangeSnipers</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_BoltAndSnipers</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_AntiMaterialRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_LongRangeSnipers</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_BoltAndSnipers</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargePistol_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeShotgun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeSMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeLMG_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeMinigun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
-
-
-	
 </Patch>

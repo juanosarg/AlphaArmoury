@@ -79,6 +79,10 @@
 			<MarketValue>50</MarketValue>
 		</statOffsets>
 		<workerClass>VEF.Weapons.WeaponTraitWorker_Extended</workerClass>
+		
+		<exclusionTags>
+			<li>VWE_HitPoints</li>
+		</exclusionTags>
 		<statFactors>
 			<DeteriorationRate>0.5</DeteriorationRate>
 			<MaxHitPoints>1.5</MaxHitPoints>
