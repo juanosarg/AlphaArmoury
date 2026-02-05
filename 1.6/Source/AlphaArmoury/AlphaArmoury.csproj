@@ -343,6 +343,7 @@
     <Compile Include="DefExtensions\FeedbackExtension.cs" />
     <Compile Include="DefExtensions\UniqueConversionExtension.cs" />
     <Compile Include="DefExtensions\WeaponKitExtension.cs" />
+    <Compile Include="DefExtensions\WeaponTraitExtension.cs" />
     <Compile Include="Dev Mode\AllUniqueWeaponCombinationsSpawner.cs" />
     <Compile Include="Harmony\CompUniqueWeapon_InitializeTraits.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />

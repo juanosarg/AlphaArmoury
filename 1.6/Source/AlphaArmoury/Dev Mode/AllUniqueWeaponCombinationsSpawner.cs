@@ -41,7 +41,7 @@ namespace AlphaArmoury
             {
                 usedCells.ClearAndResizeTo(Map);
             }
-            overRect = new CellRect(Map.Center.x - (Map.Size.x / 2) + 100, Map.Center.z - (Map.Size.z / 2) + 100, Map.Size.x - 200, Map.Size.z - 200);
+            overRect = new CellRect(Map.Center.x - (Map.Size.x / 2) + 100, Map.Center.z - (Map.Size.z / 2) + 100, Map.Size.x - 180, Map.Size.z - 180);
 
             GenDebug.ClearArea(overRect, Find.CurrentMap);
 

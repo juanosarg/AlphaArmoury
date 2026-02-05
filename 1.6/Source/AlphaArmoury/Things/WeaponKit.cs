@@ -36,7 +36,10 @@ namespace AlphaArmoury
         {
             if (trait is null)
             {
-                List<WeaponTraitDef> allTraits = DefDatabase<WeaponTraitDef>.AllDefsListForReading.Where(x => x.weaponCategory != InternalDefOf.BladeLink && x.abilityProps is null).ToList();
+                List<WeaponTraitDef> allTraits = DefDatabase<WeaponTraitDef>.AllDefsListForReading.Where(x => x.weaponCategory != InternalDefOf.BladeLink 
+                && x.abilityProps is null
+                && x.GetModExtension<WeaponTraitExtension>()?.createTraitKit !=false
+                ).ToList();
 
                 return allTraits.RandomElement();
             }
