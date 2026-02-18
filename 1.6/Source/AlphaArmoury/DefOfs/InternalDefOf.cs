@@ -32,6 +32,8 @@ namespace AlphaArmoury
 
         [MayRequire("Ludeon.RimWorld.Biotech")]
         public static ThingDef AArmoury_Hemovoric_Feedback;
+        public static ThingDef AArmoury_WeaponKit;
+
 
         public static WeaponTraitDef AArmoury_PsychicResilience, AArmoury_MimicCore;
 
