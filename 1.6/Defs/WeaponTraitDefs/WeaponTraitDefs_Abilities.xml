@@ -34,7 +34,7 @@
 	<WeaponTraitDef MayRequire="Ludeon.RimWorld.Royalty">
 		<defName>AArmoury_InvisibilityField</defName>
 		<label>invisibility field</label>
-		<description>This weapon generates a field of psychic invisibility that will conceal its user for a time.\n\nAbility details: No charges, 30000 ticks cooldown (half a day). Lasta 4 hours.</description>
+		<description>This weapon generates a field of psychic invisibility that will conceal its user for a time.\n\nAbility details: No charges, 30000 ticks cooldown (half a day). Lasts 4 hours.</description>
 		<commonality>0.5</commonality>
 		<weaponCategory>Ranged</weaponCategory>
 		<traitAdjectives>
