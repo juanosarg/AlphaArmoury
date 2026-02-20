@@ -175,6 +175,14 @@
 						</li>
 					</value>
 				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeSniperRifle"]</xpath>
+					<value>
+						<li Class="AlphaArmoury.UniqueConversionExtension">
+							<uniqueWeaponEquivalent>VWE_Gun_ChargeSniperRifle_Unique</uniqueWeaponEquivalent>
+						</li>
+					</value>
+				</li>
 				<!-- Weapon trait categories -->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "VWE_Bow_Crossbow_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
@@ -360,6 +368,17 @@
 					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeMinigun_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
 					<value>
 						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_All</li>
+						<li>AArmoury_AllButBows</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "VWE_Gun_ChargeSniperRifle_Unique"]/comps/li[@Class="CompProperties_UniqueWeapon"]/weaponCategories</xpath>
+					<value>
+						<li>AArmoury_SingleBulletFiring</li>
+						<li>AArmoury_LongRangeSnipers</li>
+						<li>AArmoury_AllButBeamAndLauncher</li>
+						<li>AArmoury_BoltAndSnipers</li>
 						<li>AArmoury_All</li>
 						<li>AArmoury_AllButBows</li>
 					</value>
