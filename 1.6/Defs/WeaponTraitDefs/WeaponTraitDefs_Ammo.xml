@@ -246,6 +246,62 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_HandCannon_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_HandCannon</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_CombatHandgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_CombatPistol</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_SemiAutomaticRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_Semiautomatic</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_LeverActionRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_LeverActionRifle</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_MarksmanRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_Marksman</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_AntiMaterialRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_Antimateriel</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargeSniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Sonic/AArmoury_Sonic_ChargeSniper</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
 				</graphicOverrides>
 			</li>
 		</modExtensions>
@@ -764,7 +820,6 @@
 							<shaderType>CutoutComplex</shaderType>
 						</value>
 					</li>
-					
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_AntiMaterialRifle_Unique</key>
 						<value>
@@ -1274,6 +1329,54 @@
 						<key>Gun_ChargeLance_Unique</key>
 						<value>
 							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_TeslaLance</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargePistol_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_Tesla_ChargePistol</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargeShotgun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_Tesla_ChargeShotgun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargeSMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_Tesla_ChargeSMG</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargeLMG_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_Tesla_ChargeBlaster</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargeMinigun_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_Tesla_ChargeMinigun</texPath>
+							<graphicClass>Graphic_Random</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</value>
+					</li>
+					<li MayRequire="VanillaExpanded.VWE">
+						<key>VWE_Gun_ChargeSniperRifle_Unique</key>
+						<value>
+							<texPath>Things/Weapon/AArmoury_Tesla/AArmoury_Tesla_ChargeSniper</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -2681,7 +2784,6 @@
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<soundOverride>AArmoury_Zap</soundOverride>
 				<projectileOverrides>
-					
 					<li>
 						<key>AArmoury_Gun_Launcher_Unique</key>
 						<value>AArmoury_Voltaic_Launcher</value>
@@ -2930,7 +3032,6 @@
 		<exclusionTags>
 			<li>AmmoType</li>
 		</exclusionTags>
-		
 		<modExtensions>
 			<li Class="VEF.Weapons.WeaponTraitDefExtension">
 				<soundOverride>AArmoury_Clash</soundOverride>

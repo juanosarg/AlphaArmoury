@@ -285,7 +285,7 @@
 					<li>
 						<key>Gun_ChainShotgun_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_ShortenedBarrelShotgun/AArmoury_ShortenedBarrel</texPath>
+							<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrelShotgun</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -293,7 +293,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_SawedOffShotgun_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_ShortenedBarrel_SawedOffShotgun/AArmoury_ShortenedBarrel_SawedOffShotgun</texPath>
+							<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrel_SawedOffShotgun</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -301,7 +301,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_ChargeShotgun_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_ShortenedBarrel_ChargeShotgun/AArmoury_ShortenedBarrel_ChargeShotgun</texPath>
+							<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrel_ChargeShotgun</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -309,7 +309,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_TrenchGun_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_ShortenedBarrel_TrenchGun/AArmoury_ShortenedBarrel_TrenchGun</texPath>
+							<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrel_TrenchGun</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>

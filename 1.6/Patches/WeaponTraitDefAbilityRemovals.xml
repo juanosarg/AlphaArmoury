@@ -83,7 +83,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_ServiceRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_ServiceRifle/AArmoury_Attachable_ServiceRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_ServiceRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -91,7 +91,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_BattleRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_BattleRifle/AArmoury_Attachable_BattleRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_BattleRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -99,7 +99,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_Carbine_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_Carbine/AArmoury_Attachable_Carbine</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Carbine</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -177,7 +177,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_ServiceRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_ServiceRifle/AArmoury_Attachable_ServiceRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_ServiceRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -185,7 +185,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_BattleRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_BattleRifle/AArmoury_Attachable_BattleRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_BattleRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -193,7 +193,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_Carbine_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_Carbine/AArmoury_Attachable_Carbine</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Carbine</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -271,7 +271,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_ServiceRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_ServiceRifle/AArmoury_Attachable_ServiceRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_ServiceRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -279,7 +279,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_BattleRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_BattleRifle/AArmoury_Attachable_BattleRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_BattleRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -287,7 +287,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_Carbine_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_Carbine/AArmoury_Attachable_Carbine</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Carbine</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -365,7 +365,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_ServiceRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_ServiceRifle/AArmoury_Attachable_ServiceRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_ServiceRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -373,7 +373,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_BattleRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_BattleRifle/AArmoury_Attachable_BattleRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_BattleRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -381,7 +381,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_Carbine_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Attachable_Carbine/AArmoury_Attachable_Carbine</texPath>
+							<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Carbine</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -465,7 +465,7 @@
 								<li MayRequire="VanillaExpanded.VWE">
 									<key>VWE_Gun_ServiceRifle_Unique</key>
 									<value>
-										<texPath>Things/Weapon/AArmoury_Attachable_ServiceRifle/AArmoury_Attachable_ServiceRifle</texPath>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_ServiceRifle</texPath>
 										<graphicClass>Graphic_Random</graphicClass>
 										<shaderType>CutoutComplex</shaderType>
 									</value>
@@ -473,7 +473,7 @@
 								<li MayRequire="VanillaExpanded.VWE">
 									<key>VWE_Gun_BattleRifle_Unique</key>
 									<value>
-										<texPath>Things/Weapon/AArmoury_Attachable_BattleRifle/AArmoury_Attachable_BattleRifle</texPath>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_BattleRifle</texPath>
 										<graphicClass>Graphic_Random</graphicClass>
 										<shaderType>CutoutComplex</shaderType>
 									</value>
@@ -481,7 +481,7 @@
 								<li MayRequire="VanillaExpanded.VWE">
 									<key>VWE_Gun_Carbine_Unique</key>
 									<value>
-										<texPath>Things/Weapon/AArmoury_Attachable_Carbine/AArmoury_Attachable_Carbine</texPath>
+										<texPath>Things/Weapon/AArmoury_Attachable/AArmoury_Attachable_Carbine</texPath>
 										<graphicClass>Graphic_Random</graphicClass>
 										<shaderType>CutoutComplex</shaderType>
 									</value>

@@ -144,7 +144,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_ServiceRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Bayonet_ServiceRifle/AArmoury_Bayonet_ServiceRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Bayonet/AArmoury_Bayonet_ServiceRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -152,7 +152,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_BattleRifle_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Bayonet_BattleRifle/AArmoury_Bayonet_BattleRifle</texPath>
+							<texPath>Things/Weapon/AArmoury_Bayonet/AArmoury_Bayonet_BattleRifle</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
@@ -160,7 +160,7 @@
 					<li MayRequire="VanillaExpanded.VWE">
 						<key>VWE_Gun_Carbine_Unique</key>
 						<value>
-							<texPath>Things/Weapon/AArmoury_Bayonet_Carbine/AArmoury_Bayonet_Carbine</texPath>
+							<texPath>Things/Weapon/AArmoury_Bayonet/AArmoury_Bayonet_Carbine</texPath>
 							<graphicClass>Graphic_Random</graphicClass>
 							<shaderType>CutoutComplex</shaderType>
 						</value>
