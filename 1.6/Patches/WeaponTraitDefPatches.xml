@@ -295,6 +295,51 @@
 			</li>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/WeaponTraitDef[defName = "ShortenedBarrel"]/modExtensions/li[@Class="VEF.Weapons.WeaponTraitDefExtension"]/graphicOverrides</xpath>
+					<value>
+						<li>
+							<key>VWE_Gun_SawedOffShotgun_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrel_SawedOffShotgun</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+						<li>
+							<key>VWE_Gun_ChargeShotgun_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrel_ChargeShotgun</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+						<li>
+							<key>VWE_Gun_TrenchGun_Unique</key>
+							<value>
+								<texPath>Things/Weapon/AArmoury_ShortenedBarrel/AArmoury_ShortenedBarrel_TrenchGun</texPath>
+								<graphicClass>Graphic_Random</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+							</value>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/WeaponTraitDef[defName = "ExtendedMagazine"]</xpath>
 		<value>
